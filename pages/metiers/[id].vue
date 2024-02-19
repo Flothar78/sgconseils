@@ -1,8 +1,9 @@
 <template>
   <div class="global">
     Rendu global de la page des métiers <br />Ci-dessous composant avec id:
-    {{ id }} </div>
-    <div>
+    {{ id }}
+  </div>
+  <div>
     <Juridique v-if="id === 'juridique'" />
     <Gestion v-else-if="id === 'gestion'" />
     <Audit v-else-if="id === 'audit'" />
@@ -21,6 +22,6 @@ console.log(id);
 <style scoped>
 .global {
   background-color: grey;
-  color: white
+  color: white;
 }
 </style>

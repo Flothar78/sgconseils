@@ -28,6 +28,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+middleware: "errorOnMetiers";
+</script>
 
 <style lang="scss" scoped></style>
