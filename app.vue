@@ -1,4 +1,5 @@
 <template>
-  <div>APPLI REELLE
+  <div>
+    <NuxtPage />
   </div>
 </template>
