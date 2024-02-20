@@ -1,35 +1,45 @@
 <template>
-  <div>Home page</div>
-
-  <div>
-    <NuxtLink :to="`/metiers/juridique`">Lien pour la page juridique</NuxtLink>
-  </div>
-  <div>
-    <NuxtLink :to="`/metiers/audit`">Lien pour la page audit</NuxtLink>
-  </div>
-  <div>
-    <NuxtLink :to="`/metiers/comptabilite`"
-      >Lien pour la page comptabilité</NuxtLink
-    >
-  </div>
-  <div>
-    <NuxtLink :to="`/metiers/conseil`">Lien pour la page conseil</NuxtLink>
-  </div>
-  <div>
-    <NuxtLink :to="`/metiers/gestion`">Lien pour la page gestion</NuxtLink>
-  </div>
-  <div>
-    <NuxtLink :to="`/metiers/informatique`"
-      >Lien pour la page informatique</NuxtLink
-    >
-  </div>
-  <div>
-    <NuxtLink :to="`/metiers/social`">Lien pour la page social</NuxtLink>
+  <div class="hero">Home page</div>
+  <div class="expertises-cards">
+    <div >
+      <NuxtLink :to="`/metiers/juridique`">Page juridique</NuxtLink>
+    </div>
+    <div>
+      <NuxtLink :to="`/metiers/audit`">Page audit</NuxtLink>
+    </div>
+    <div>
+      <NuxtLink :to="`/metiers/comptabilite`">Page comptabilité</NuxtLink>
+    </div>
+    <div>
+      <NuxtLink :to="`/metiers/conseil`">Page conseil</NuxtLink>
+    </div>
+    <div>
+      <NuxtLink :to="`/metiers/gestion`">Page gestion</NuxtLink>
+    </div>
+    <div>
+      <NuxtLink :to="`/metiers/informatique`">Page informatique</NuxtLink>
+    </div>
+    <div>
+      <NuxtLink :to="`/metiers/social`">Page social</NuxtLink>
+    </div>
   </div>
 </template>
 
-<script setup>
-middleware: "errorOnMetiers";
-</script>
+<script setup></script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.hero{
+  border: black 1px solid;
+  min-height: 20vh
+}
+.expertises-cards {
+  border: black 1px solid;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.expertises-cards div {
+  width: 22vw;
+}
+</style>

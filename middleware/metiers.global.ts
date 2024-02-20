@@ -1,5 +1,5 @@
-export default defineNuxtRouteMiddleware((to, from) => {
-//  if (to.params.id === "pages/metiers") {
-//    return navigateTo("pages/index.vue");
-//  }
+export default defineNuxtRouteMiddleware((to) => {
+  if (to.path === "/metiers" || to.path === "/metiers/") {
+    return navigateTo("/");
+  }
 });
