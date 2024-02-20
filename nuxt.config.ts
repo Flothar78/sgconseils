@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   alias: {
     "@": "/<rootDir>",
   },
+  css: ["assets/global.css"],
   app: {
     head: {
       title: "SG Conseils",
