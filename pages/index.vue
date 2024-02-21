@@ -43,8 +43,8 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-.expertises-cards div {
-  width: 22vw;
+  div {
+    width: 22vw;
+  }
 }
 </style>
