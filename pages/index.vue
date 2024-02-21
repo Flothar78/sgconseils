@@ -38,6 +38,7 @@
 }
 .expertises-cards {
   border: black 1px solid;
+  background-color: #425b8a;
   min-height: 50vh;
   display: flex;
   justify-content: space-around;
