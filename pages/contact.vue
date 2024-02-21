@@ -1,4 +1,5 @@
 <template>
+<NavBar/>
   <div>contact page</div>
 </template>
 

@@ -1,4 +1,5 @@
 <template>
+  <NavBar />
   <div class="global">
     Rendu global de la page des métiers <br />Ci-dessous composant avec id:
     {{ id }}

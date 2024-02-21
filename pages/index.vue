@@ -1,7 +1,8 @@
 <template>
+  <NavBar />
   <div class="hero">Home page</div>
   <div class="expertises-cards">
-    <div >
+    <div>
       <NuxtLink :to="`/metiers/juridique`">Page juridique</NuxtLink>
     </div>
     <div>
@@ -28,9 +29,8 @@
 <script setup></script>
 
 <style scoped>
-.hero{
-  border: black 1px solid;
-  min-height: 20vh
+.hero {
+  min-height: 90vh;
 }
 .expertises-cards {
   border: black 1px solid;
