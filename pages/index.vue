@@ -30,6 +30,10 @@
 
 <style scoped>
 .hero {
+  padding-top: 12vh;
+  position: relative;
+  background-color: #425b8a;
+  color: white;
   min-height: 90vh;
 }
 .expertises-cards {

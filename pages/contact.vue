@@ -1,8 +1,16 @@
 <template>
-<NavBar/>
-  <div>contact page</div>
+  <NavBar />
+  <div class="global-contact-page">contact page</div>
 </template>
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.global-contact-page {
+  padding-top: 12vh;
+  position: relative;
+  background-color: #cccbcb;
+  color: black;
+  height: 150vh;
+}
+</style>

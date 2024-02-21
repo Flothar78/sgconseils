@@ -12,10 +12,13 @@
 
 <style scoped>
 .navbar-container {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   background: linear-gradient(0.25turn, #b12434, #858384);
   height: 10vh;
+  width: 100%;
+  z-index:30;
 }
 .menu-title {
   color: white;
