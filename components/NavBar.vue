@@ -31,6 +31,10 @@ const menuListSlideIn = () => {
   height: 10vh;
   width: 100%;
   z-index: 30;
+  img {
+    width: 78px;
+    height: 100%;
+  }
   button {
     background: transparent;
   }
