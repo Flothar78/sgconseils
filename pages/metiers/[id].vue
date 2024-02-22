@@ -19,7 +19,6 @@
 
 <script setup>
 const id = useRoute().params.id;
-console.log(id);
 </script>
 
 <style scoped>
