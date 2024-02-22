@@ -1,13 +1,14 @@
 <template>
   <div class="navbar-container">
-    <img
-      src="~/assets/img/logo_sg_conseils.png"
-      alt="logo sg conseils format png"
-    />
+    <NuxtLink class="link-item" :to="`/`">
+      <img
+        src="~/assets/img/logo_sg_conseils.png"
+        alt="logo sg conseils format png"
+    /></NuxtLink>
     <button @click="menuListSlideIn()" class="menu-button">MENU</button>
     <div class="menu-list" :class="{ active: isActive }">
       <NuxtLink class="link-item" :to="`/`">Accueil</NuxtLink>
-      <NuxtLink class="link-item" :to="`/`">Nos Métiers</NuxtLink>
+      <NuxtLink class="link-item" :to="`/#cards`">Nos Métiers</NuxtLink>
       <NuxtLink class="link-item" :to="`/contact`">Contact</NuxtLink>
     </div>
   </div>

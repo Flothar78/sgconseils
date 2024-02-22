@@ -7,7 +7,7 @@
     />
     <ScrollButton @scrollTo="scrollToTopOfCards" />
   </div>
-  <div class="expertises-cards" ref="cardsDiv">
+  <div class="expertises-cards" id="cards" ref="cardsDiv">
     <div>
       <NuxtLink :to="`/metiers/juridique`">Page juridique</NuxtLink>
     </div>
