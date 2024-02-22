@@ -61,7 +61,8 @@ const scrollToTopOfCards = () => {
 .expertises-cards {
   border: black 1px solid;
   background-color: #425b8a;
-  height: 150vh;
+  height: 100vh;
+  padding-top: 10vh;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
