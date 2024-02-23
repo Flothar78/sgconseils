@@ -1,5 +1,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
+//  router: {
+//    options: {
+//      scrollBehaviorType: "smooth",
+//    },
+//  },
   alias: {
     "@": "/<rootDir>",
   },

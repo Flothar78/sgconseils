@@ -15,7 +15,7 @@ import { ref } from "vue";
 const isActive = ref(true);
 const emit = defineEmits(["scrollTo"]);
 const scrollDown = () => {
-  //isActive.value = false;
+  isActive.value = false;
   emit("scrollTo");
 };
 </script>
