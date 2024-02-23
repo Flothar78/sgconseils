@@ -1,5 +1,4 @@
 <template>
-  <NavBar />
   <div class="global-metiers">
     <div>
       Rendu global de la page des métiers <br />Ci-dessous composant avec id:

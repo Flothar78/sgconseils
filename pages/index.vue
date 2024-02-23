@@ -1,5 +1,4 @@
 <template>
-  <NavBar />
   <div class="hero" @scrollTo="scrollToTopOfCards">
     <img
       src="assets/img/background-image-metier.jpeg"

@@ -1,5 +1,4 @@
 <template>
-  <NavBar />
   <div class="global-contact-page">contact page</div>
 </template>
 

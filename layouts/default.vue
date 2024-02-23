@@ -12,6 +12,7 @@
       <NuxtLink class="link-item" :to="`/contact`">Contact</NuxtLink>
     </div>
   </div>
+  <slot />
 </template>
 
 <script lang="ts" setup>
