@@ -38,6 +38,7 @@ const scrollToTopOfCards = () => {
   const div = cardsDiv.value;
   console.log(div);
   div.scrollIntoView({ behavior: "smooth" });
+  // return navigateTo("/#cards");
 };
 </script>
 
