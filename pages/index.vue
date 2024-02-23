@@ -38,17 +38,16 @@ const scrollToTopOfCards = () => {
   const div = cardsDiv.value;
   console.log(div);
   div.scrollIntoView({ behavior: "smooth" });
-  // return navigateTo("/#cards");
 };
 </script>
 
 <style lang="scss" scoped>
 .hero {
-  padding-top: 12vh;
+  padding-top: 10vh;
   position: relative;
   background-color: #425b8a;
   color: white;
-  height: 92vh;
+  height: 95vh;
   img {
     height: 100%;
     width: 100%;
@@ -59,15 +58,18 @@ const scrollToTopOfCards = () => {
   }
 }
 .expertises-cards {
-  border: black 1px solid;
   background-color: #425b8a;
-  height: 100vh;
+  height: 80vh;
   padding-top: 10vh;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 40px;
   div {
-    width: 22vw;
+    border: 2px black solid;
+    width: 18vw;
+    height: 18vh;
   }
 }
 </style>
