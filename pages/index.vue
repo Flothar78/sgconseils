@@ -8,13 +8,17 @@
   </div>
   <div class="expertises-cards" id="cards" ref="cardsDiv">
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/juridique`">Juridique</NuxtLink>
+      <NuxtLink class="nuxt-link" :to="`/metiers/juridique`"
+        >Juridique</NuxtLink
+      >
     </div>
     <div>
       <NuxtLink class="nuxt-link" :to="`/metiers/audit`">Audit</NuxtLink>
     </div>
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/comptabilite`">Comptabilité</NuxtLink>
+      <NuxtLink class="nuxt-link" :to="`/metiers/comptabilite`"
+        >Comptabilité</NuxtLink
+      >
     </div>
     <div>
       <NuxtLink class="nuxt-link" :to="`/metiers/conseil`">Conseil</NuxtLink>
@@ -23,7 +27,9 @@
       <NuxtLink class="nuxt-link" :to="`/metiers/gestion`">Gestion</NuxtLink>
     </div>
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/informatique`">Informatique</NuxtLink>
+      <NuxtLink class="nuxt-link" :to="`/metiers/informatique`"
+        >Informatique</NuxtLink
+      >
     </div>
     <div>
       <NuxtLink class="nuxt-link" :to="`/metiers/social`">Social</NuxtLink>
@@ -59,26 +65,28 @@ const scrollToTopOfCards = () => {
 }
 .expertises-cards {
   background-color: #425b8a;
-  height: 80vh;
-  padding-top: 8vh;
+  height: 61.5vh;
+  padding: 20.5vh 0 10vh 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
-   .nuxt-link {
+  gap: 63px;
+  .nuxt-link {
     text-decoration: none;
-    font-size:1.3rem;
+    color: black;
+    font-weight: 500;
+    font-size: 1.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #d5ecd4;
     width: 18vw;
-    height: 18vh;
+    height: 20vh;
     border-radius: 10%;
     box-shadow: 6px 6px 20px black;
   }
-   .nuxt-link:hover {
+  .nuxt-link:hover {
     box-shadow: 6px 6px black;
   }
 }
