@@ -5,7 +5,7 @@
         src="~/assets/img/logo_sg_conseils.png"
         alt="logo sg conseils format png"
     /></NuxtLink>
-    <button @click="menuListSlideIn()" class="menu-button">MENU</button>
+    <button @click.stop="menuListSlide()" class="menu-button">MENU</button>
     <div class="menu-list" :class="{ active: isActive }">
       <NuxtLink class="link-item" :to="`/`">Accueil</NuxtLink>
       <NuxtLink class="link-item" :to="`/#cards`">Nos Métiers</NuxtLink>
@@ -16,9 +16,8 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
-const isActive = ref(false);
-const menuListSlideIn = () => {
+const isActive = useState("isActive");
+const menuListSlide = () => {
   isActive.value = !isActive.value;
 };
 </script>

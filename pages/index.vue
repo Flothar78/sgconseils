@@ -42,7 +42,6 @@ import { ref } from "vue";
 const cardsDiv = ref(null);
 const scrollToTopOfCards = () => {
   const div = cardsDiv.value;
-  console.log(div);
   div.scrollIntoView({ behavior: "smooth" });
 };
 </script>
