@@ -5,7 +5,7 @@
         src="~/assets/img/logo_sg_conseils.png"
         alt="logo sg conseils format png"
     /></NuxtLink>
-    <button @click.stop="menuListSlide()" class="menu-button">MENU</button>
+    <div @click.stop="menuListSlide()" class="menu-button">MENU</div>
     <div class="menu-list" :class="{ active: isActive }">
       <NuxtLink class="link-item" :to="`/`">Accueil</NuxtLink>
       <NuxtLink class="link-item" :to="`/#cards`">Nos Métiers</NuxtLink>
@@ -31,13 +31,14 @@ const menuListSlide = () => {
   background: linear-gradient(0.25turn, #b12434, #858384);
   height: 10vh;
   width: 100%;
+  padding-left: 0.3rem;
   z-index: 30;
   img {
     width: 78px;
     height: 100%;
   }
-  button {
-    background: transparent;
+  .menu-button {
+    margin-right: 1rem;
   }
 }
 .menu-button {
