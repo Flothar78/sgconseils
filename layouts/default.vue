@@ -28,7 +28,7 @@ const menuListSlide = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background:  #b12434;
+  background: #b12434;
   height: 10vh;
   width: 100%;
   padding-left: 0.3rem;
@@ -38,14 +38,12 @@ const menuListSlide = () => {
     height: 100%;
   }
   .menu-button {
-    margin-right: 1rem;
+    margin-right: 2rem;
+    background: transparent;
+    border: 1px white solid;
+    color: white;
+    font-size: 1.3rem;
   }
-}
-.menu-button {
-  background: transparent;
-  border: 1px white solid;
-  color: white;
-  font-size: 1.3rem;
 }
 .menu-list {
   display: flex;
