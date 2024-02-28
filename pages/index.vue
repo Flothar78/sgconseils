@@ -47,7 +47,7 @@ const scrollToTopOfCards = () => {
 </script>
 
 <style lang="scss" scoped>
-$base-blue: #9FB1D1;
+$base-blue: #839BC3;
 .hero {
   padding-top: 10vh;
   position: relative;
@@ -74,7 +74,7 @@ $base-blue: #9FB1D1;
   gap: 63px;
   .nuxt-link {
     text-decoration: none;
-    color: black;
+    color: #57000A;
     font-weight: 500;
     font-size: 1.3rem;
     display: flex;
@@ -84,10 +84,10 @@ $base-blue: #9FB1D1;
     width: 18vw;
     height: 20vh;
     border-radius: 10%;
-    box-shadow: 6px 6px 20px black;
+    box-shadow: 6px 6px 8px #57000A;
   }
   .nuxt-link:hover {
-    box-shadow: 6px 6px black;
+    box-shadow: 1px 1px 1px #FFAAAA;
   }
 }
 </style>
