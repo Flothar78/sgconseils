@@ -1,12 +1,12 @@
 <template>
-  <div class="hero" @scrollTo="scrollToTopOfCards">
+  <div class="hero" id="accueil" @scrollTo="scrollToTopOfCards">
     <img
       src="assets/img/background-image-metier.jpeg"
       alt="desk picture in background"
     />
     <ScrollButton @scrollTo="scrollToTopOfCards" />
   </div>
-  <div class="expertises-cards" id="cards" ref="cardsDiv">
+  <div class="expertises-cards" id="metiers" ref="cardsDiv">
     <div>
       <NuxtLink class="nuxt-link" :to="`/metiers/juridique`"
         >Juridique</NuxtLink
