@@ -47,10 +47,11 @@ const scrollToTopOfCards = () => {
 </script>
 
 <style lang="scss" scoped>
+$base-blue: #9FB1D1;
 .hero {
   padding-top: 10vh;
   position: relative;
-  background-color: #9FB1D1;
+  background-color: $base-blue;
   color: white;
   height: 95vh;
   img {
@@ -63,7 +64,7 @@ const scrollToTopOfCards = () => {
   }
 }
 .expertises-cards {
-  background-color: #758FBD;
+  background-color:  $base-blue;
   height: 61.5vh;
   padding: 20.5vh 0 10vh 0;
   display: flex;

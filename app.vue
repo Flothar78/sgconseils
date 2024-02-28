@@ -6,7 +6,7 @@
   </div>
 </template>
 <style lang="scss">
-@use "~/assets/scss/main.scss";
+@use "~/assets/scss/main.css";
 </style>
 
 <script setup lang="ts">
