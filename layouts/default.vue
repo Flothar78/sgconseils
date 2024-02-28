@@ -42,7 +42,8 @@ const menuListSlide = () => {
     background: #b12434;
     border: 1px #858384 solid;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    padding:.5rem;
   }
 }
 .menu-list {
