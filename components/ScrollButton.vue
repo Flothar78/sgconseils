@@ -33,10 +33,10 @@ const scrollDown = () => {
   }
 }
 .twinkle {
-  animation: flash 1s infinite ease-in-out;
+  animation: flash 1.5s infinite ease-in;
 }
 .scroll-button {
-  border: 8px #425b8a solid;
+  border: 6px black solid;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -44,7 +44,7 @@ const scrollDown = () => {
   right: 46.9%;
   top: 85%;
   .arrow-down {
-    border: 5px #425b8a solid;
+    border: 5px black solid;
     border-width: 0 0.2em 0.2em 0;
     margin: 0.5em 0 -0.5em 1.2em;
     height: 15%;

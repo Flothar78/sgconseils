@@ -50,7 +50,7 @@ const scrollToTopOfCards = () => {
 .hero {
   padding-top: 10vh;
   position: relative;
-  background-color: #858384;
+  background-color: #758FBD;
   color: white;
   height: 95vh;
   img {
@@ -58,12 +58,12 @@ const scrollToTopOfCards = () => {
     width: 100%;
     object-fit: cover;
     margin-top: -3vh;
-    filter: grayscale(70%) contrast(25%);
-    opacity: 0.3;
+    filter: grayscale(100%) contrast(25%);
+    opacity: 0.2;
   }
 }
 .expertises-cards {
-  background-color: #425b8a;
+  background-color: #758FBD;
   height: 61.5vh;
   padding: 20.5vh 0 10vh 0;
   display: flex;
