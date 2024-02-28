@@ -50,7 +50,7 @@ const scrollToTopOfCards = () => {
 .hero {
   padding-top: 10vh;
   position: relative;
-  background-color: #758FBD;
+  background-color: #9FB1D1;
   color: white;
   height: 95vh;
   img {

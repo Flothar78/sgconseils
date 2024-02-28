@@ -28,7 +28,7 @@ const menuListSlide = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg,#858384,#b12434);
+  background: #858384;
   height: 10vh;
   width: 100%;
   padding-left: 0.3rem;
@@ -39,15 +39,15 @@ const menuListSlide = () => {
   }
   .menu-button {
     margin-right: 2rem;
-    background: transparent;
-    border: 1px white solid;
+    background: #b12434;
+    border: 1px #858384 solid;
     color: white;
     font-size: 1.3rem;
   }
 }
 .menu-list {
   background-color: white;
-  border:3px solid #b12434;
+  border: 3px solid #b12434;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -66,7 +66,7 @@ const menuListSlide = () => {
   border-radius: 10% 0 0 10%;
   .link-item {
     text-decoration: none;
-    color: black;
+    color: #b12434;
     font-family: Arial, sans-serif;
     font-size: 1rem;
     font-weight: 800;
