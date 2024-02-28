@@ -28,7 +28,7 @@ const menuListSlide = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #b12434;
+  background: linear-gradient(90deg,#858384,#b12434);
   height: 10vh;
   width: 100%;
   padding-left: 0.3rem;
