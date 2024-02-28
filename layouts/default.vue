@@ -23,12 +23,13 @@ const menuListSlide = () => {
 </script>
 
 <style lang="scss" scoped>
+$base-blue: #9fb1d1;
 .navbar-container {
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #858384;
+  background: linear-gradient(145deg, #b12434, #858384);
   height: 10vh;
   width: 100%;
   padding-left: 0.3rem;
@@ -40,15 +41,19 @@ const menuListSlide = () => {
   .menu-button {
     margin-right: 2rem;
     background: #b12434;
-    border: 1px #858384 solid;
+    border: 1px transparent solid;
     color: white;
     font-size: 1rem;
-    padding:.5rem;
+    padding: 0.5rem;
+    box-shadow: 4px 4px 5px #57000a;
+  }
+  .menu-button:hover {
+    box-shadow: 1px 1px 2px #57000a;
   }
 }
 .menu-list {
   background-color: white;
-  border: 3px solid #b12434;
+  border: 2px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -60,7 +65,7 @@ const menuListSlide = () => {
   right: -12rem;
   margin-right: -1rem;
   margin-top: 25vh;
-  padding: 0.7rem 0.3rem 0.7rem 0.6rem;
+  padding: 0.7rem 1rem 0.7rem 0.6rem;
   display: flex;
   flex-direction: column;
   transition: right 0.5s ease;
