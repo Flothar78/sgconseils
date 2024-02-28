@@ -4,7 +4,7 @@
     @click="scrollDown()"
     :class="{ twinkle: isActive }"
   >
-   METIERS
+    METIERS
   </div>
 </template>
 
@@ -38,14 +38,14 @@ const scrollDown = () => {
   align-items: center;
   justify-content: center;
   border: 6px #b12434 solid;
-  background:#b12434;
+  background: #b12434;
   width: 5rem;
   height: 2rem;
   border-radius: 10%;
   position: absolute;
-  right: 68vh;
+  right: 50%;
+  transform: translateX(50%);
   top: 85%;
-  margin: auto
-  
+  margin: auto;
 }
 </style>
