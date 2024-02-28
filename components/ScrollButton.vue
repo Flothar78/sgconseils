@@ -1,11 +1,11 @@
 <template>
-  <div
+  <button
     class="scroll-button"
     @click="scrollDown()"
     :class="{ twinkle: isActive }"
   >
     METIERS
-  </div>
+  </button>
 </template>
 
 <script lang="ts" setup>
@@ -19,29 +19,42 @@ const scrollDown = () => {
 </script>
 
 <style lang="scss" scoped>
-@keyframes flash {
+@keyframes glitter {
   0% {
-    opacity: 1;
+    background: #b12434;
+    box-shadow: 0px 0px 0px;
+    // transform: translateX(50%);
+    transform: translateY(0);
   }
-  75% {
-    opacity: 0;
+  50% {
+    background: #D94556;
+    box-shadow: -8px 8px 8px 2px;
+    // transform: translateX(55%);
+    transform: translateY(-6px);
   }
   100% {
-    opacity: 1;
+    background: #b12434;
+    box-shadow: 0px 0px 0px;
+    // transform: translateX(50%);
+    transform: translateY(0);
   }
 }
 .twinkle {
-  animation: flash 1.5s infinite ease-in;
+  animation: glitter 1.5s ease-in-out infinite;
 }
 .scroll-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 6px #b12434 solid;
+  border: 0px transparent solid;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
   background: #b12434;
-  width: 5rem;
-  height: 2rem;
-  border-radius: 10%;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 5%;
   position: absolute;
   right: 50%;
   transform: translateX(50%);
