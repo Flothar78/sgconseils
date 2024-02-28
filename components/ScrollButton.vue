@@ -4,9 +4,7 @@
     @click="scrollDown()"
     :class="{ twinkle: isActive }"
   >
-    <div class="arrow-down"></div>
-    <div class="arrow-down"></div>
-    <div class="arrow-down"></div>
+   METIERS
   </div>
 </template>
 
@@ -36,20 +34,18 @@ const scrollDown = () => {
   animation: flash 1.5s infinite ease-in;
 }
 .scroll-button {
-  border: 6px black solid;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 6px #b12434 solid;
+  background:#b12434;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 10%;
   position: absolute;
-  right: 46.9%;
+  right: 68vh;
   top: 85%;
-  .arrow-down {
-    border: 5px black solid;
-    border-width: 0 0.2em 0.2em 0;
-    margin: 0.5em 0 -0.5em 1.2em;
-    height: 15%;
-    width: 15%;
-    transform: rotate(45deg);
-  }
+  margin: auto
+  
 }
 </style>
