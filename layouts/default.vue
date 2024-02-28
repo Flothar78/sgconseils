@@ -7,8 +7,8 @@
     /></NuxtLink>
     <button @click.stop="menuListSlide()" class="menu-button">MENU</button>
     <div class="menu-list" :class="{ active: isActive }">
-      <NuxtLink class="link-item" :to="`/`">Accueil</NuxtLink>
-      <NuxtLink class="link-item" :to="`/#cards`">Nos Métiers</NuxtLink>
+      <NuxtLink class="link-item" :to="`/#accueil`">Accueil</NuxtLink>
+      <NuxtLink class="link-item" :to="`/#metiers`">Nos Métiers</NuxtLink>
       <NuxtLink class="link-item" :to="`/contact`">Contact</NuxtLink>
     </div>
   </div>
