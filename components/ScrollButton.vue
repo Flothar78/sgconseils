@@ -24,19 +24,23 @@ const scrollDown = () => {
     background: #b12434;
     box-shadow: 0px 0px 0px;
     // transform: translateX(50%);
- //   transform: translateY(0);
+    //   transform: translateY(0);
   }
   50% {
-    background: #D94556;
+    background: #d94556;
     box-shadow: -1px 1px 8px;
+    width: 7rem;
+    height: 3.2rem;
+    font-size: 0.95rem;
+    letter-spacing: 1.5px;
     // transform: translateX(55%);
- //   transform: translateY(-6px);
+    //   transform: translateY(-6px);
   }
   100% {
     background: #b12434;
     box-shadow: 0px 0px 0px;
     // transform: translateX(50%);
- //   transform: translateY(0);
+    //   transform: translateY(0);
   }
 }
 .twinkle {
