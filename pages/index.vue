@@ -1,5 +1,7 @@
 <template>
   <div class="hero" id="accueil" @scrollTo="scrollToTopOfCards">
+    <CompanyTitle />
+    <CompanyBusiness />
     <img
       src="assets/img/background-image-metier.jpeg"
       alt="desk picture in background"
@@ -59,7 +61,7 @@ $base-blue: #7d93b5;
     width: 100%;
     object-fit: cover;
     margin-top: -3vh;
-    filter: grayscale(100%) contrast(25%);
+    filter:  contrast(22%);
     opacity: 0.2;
   }
 }
