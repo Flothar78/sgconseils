@@ -10,31 +10,31 @@
   </div>
   <div class="expertises-cards" id="metiers" ref="cardsDiv">
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/juridique`"
-        >Juridique</NuxtLink
-      >
-    </div>
-    <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/audit`">Audit</NuxtLink>
-    </div>
-    <div>
       <NuxtLink class="nuxt-link" :to="`/metiers/comptabilite`"
-        >Comptabilité</NuxtLink
+        >COMPTABILITE</NuxtLink
       >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/conseil`">Conseil</NuxtLink>
+      <NuxtLink class="nuxt-link" :to="`/metiers/juridique`"
+        >JURIDIQUE</NuxtLink
+      >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/gestion`">Gestion</NuxtLink>
+      <NuxtLink class="nuxt-link" :to="`/metiers/audit`">AUDIT</NuxtLink>
+    </div>
+    <div>
+      <NuxtLink class="nuxt-link" :to="`/metiers/conseil`">CONSEIL</NuxtLink>
+    </div>
+    <div>
+      <NuxtLink class="nuxt-link" :to="`/metiers/gestion`">GESTION</NuxtLink>
     </div>
     <div>
       <NuxtLink class="nuxt-link" :to="`/metiers/informatique`"
-        >Informatique</NuxtLink
+        >INFORMATIQUE</NuxtLink
       >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/social`">Social</NuxtLink>
+      <NuxtLink class="nuxt-link" :to="`/metiers/social`">SOCIAL</NuxtLink>
     </div>
   </div>
 </template>
@@ -50,6 +50,8 @@ const scrollToTopOfCards = () => {
 
 <style lang="scss" scoped>
 $base-blue: #7d93b5;
+$dark-blue: #425b8a;
+$base-red: #b12434;
 .hero {
   padding-top: 10vh;
   position: relative;
@@ -61,7 +63,7 @@ $base-blue: #7d93b5;
     width: 100%;
     object-fit: cover;
     margin-top: -3vh;
-    filter:  contrast(22%);
+    filter: contrast(22%);
     opacity: 0.2;
   }
 }
@@ -73,23 +75,27 @@ $base-blue: #7d93b5;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 63px;
+  gap: 80px;
   .nuxt-link {
-    color: black;
+    color:black ;
     background-color: #d5ecd4;
     text-decoration: none;
-    font-weight: 900;
-    font-size: 1.3rem;
+    font-weight: 700;
+    font-size: 1rem;
     display: flex;
+    flex-shrink: 1;
     justify-content: center;
     align-items: center;
-    width: 18vw;
-    height: 20vh;
-    border-radius: 10%;
-    box-shadow: 6px 6px 8px black;
+    border: 6px solid $dark-blue;
+    width: 20vw;
+    height: 14vh;
+    border-radius: 2%;
+    box-shadow: 8px 8px 10px black;
   }
   .nuxt-link:hover {
-    box-shadow: 3px 3px 4px #858384;
+    box-shadow: 0 0;
+  border: 6px solid $base-red;
+    color: $base-red;
   }
 }
 </style>

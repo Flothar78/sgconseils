@@ -7,6 +7,7 @@
 
 <style lang="scss" scoped>
 $base-blue: #7d93b5;
+$dark-blue: #425b8a;
 .company-activity {
   position: absolute;
   top: 22rem;
@@ -15,8 +16,8 @@ $base-blue: #7d93b5;
   background: linear-gradient(
     0.35turn,
     $base-blue,
-    #425b8a,
-    #425b8a,
+    $dark-blue,
+    $dark-blue,
     $base-blue
   );
   display: flex;
