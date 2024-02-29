@@ -24,23 +24,23 @@ const scrollDown = () => {
     background: #b12434;
     box-shadow: 0px 0px 0px;
     // transform: translateX(50%);
-    transform: translateY(0);
+ //   transform: translateY(0);
   }
   50% {
     background: #D94556;
-    box-shadow: -8px 8px 8px 2px;
+    box-shadow: -1px 1px 8px;
     // transform: translateX(55%);
-    transform: translateY(-6px);
+ //   transform: translateY(-6px);
   }
   100% {
     background: #b12434;
     box-shadow: 0px 0px 0px;
     // transform: translateX(50%);
-    transform: translateY(0);
+ //   transform: translateY(0);
   }
 }
 .twinkle {
-  animation: glitter 1.5s ease-in-out infinite;
+  animation: glitter 1s ease-in-out infinite;
 }
 .scroll-button {
   display: flex;
