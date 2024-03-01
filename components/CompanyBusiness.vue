@@ -17,11 +17,11 @@ $dark-blue: #425b8a;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 1rem;
+  padding:1rem 0 1rem 1rem;
   font-size: 1.3rem;
   letter-spacing: 1.1px;
   text-shadow: 2px 2px 2px black;
   width: 50vw;
-  height: 6vh;
+  min-height: 6vh;
 }
 </style>
