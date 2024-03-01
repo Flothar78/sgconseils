@@ -57,7 +57,7 @@ $base-red: #b12434;
   position: relative;
   background-color: $base-blue;
   color: white;
-  height: 95vh;
+  height: 90vh;
   img {
     height: 100%;
     width: 100%;
@@ -69,33 +69,32 @@ $base-red: #b12434;
 }
 .expertises-cards {
   background-color: white;
-  height: 61.5vh;
-  padding: 20.5vh 0 10vh 0;
+  height: 70vh;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 80px;
+  column-gap: 80px;
   .nuxt-link {
-    color:black ;
-    background-color:$base-blue;
+    color: #1c212f;
+    background-color: $base-blue;
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
     display: flex;
-    flex-shrink: 1;
     justify-content: center;
     align-items: center;
     border: 6px solid $dark-blue;
     width: 20vw;
     height: 14vh;
     border-radius: 2%;
-    box-shadow: 8px 8px 10px black;
+    box-shadow: 8px 8px 10px;
   }
   .nuxt-link:hover {
     box-shadow: 0 0;
-  border: 6px solid $base-red;
-    
+    border: 6px solid $base-red;
   }
 }
 </style>
