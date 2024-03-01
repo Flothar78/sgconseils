@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar-container">
+  <header class="navbar-container">
     <NuxtLink class="link-item" :to="`/`">
       <img
         src="~/assets/img/logo_sg_conseils.png"
@@ -11,8 +11,32 @@
       <NuxtLink class="link-item" :to="`/#metiers`">Nos Métiers</NuxtLink>
       <NuxtLink class="link-item" :to="`/contact`">Contact</NuxtLink>
     </div>
-  </div>
+  </header>
   <slot />
+  <footer class="footer">
+    <div class="footer-div">
+      <NuxtLink class="footer-title" >NOS COMPETENCES:</NuxtLink>
+      <NuxtLink class="footer-infos" :to="`/metiers/comptabilite`" >Comptabilité</NuxtLink>
+      <NuxtLink class="footer-infos" :to="`/metiers/juridique`" >Juridique</NuxtLink>
+      <NuxtLink class="footer-infos" :to="`/metiers/audit`" >Audit</NuxtLink>
+      <NuxtLink class="footer-infos" :to="`/metiers/gestion`" >Gestion</NuxtLink>
+      <NuxtLink class="footer-infos" :to="`/metiers/social`" >Social / RH</NuxtLink>
+      <NuxtLink class="footer-infos" :to="`/metiers/conseil`" >Conseil</NuxtLink>
+      <NuxtLink class="footer-infos" :to="`/metiers/informatique`" >Informatique</NuxtLink>
+    </div>
+    <div class="footer-div">
+      <div class="footer-title">NOUS CONTACTER:</div>
+      <div class="footer-infos">contact@sgconseils.com</div>
+      <div class="footer-infos">09 73 61 17 22</div>
+    </div>
+    <div class="footer-div">
+      <div class="footer-title">NOS ADRESSES:</div>
+      <div class="footer-infos">6 chemin de Limayrac 31500 Toulouse</div>
+      <div class="footer-infos">
+        79 Rue République 31290 Villefranche-de-Lauragais
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script lang="ts" setup>
@@ -80,5 +104,27 @@ $base-blue: #9fb1d1;
 }
 .active {
   right: 0vw;
+}
+.footer {
+  height: 25vh;
+  padding-top: 2rem;
+  background: #1d2024;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    .footer-title {
+      margin: 1rem 0 1rem 0;
+    }
+    .footer-infos {
+      padding-left: 1rem;
+      text-decoration: none;
+      color: white;
+    }
+  }
 }
 </style>

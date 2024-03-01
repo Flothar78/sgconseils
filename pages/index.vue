@@ -68,7 +68,7 @@ $base-red: #b12434;
   }
 }
 .expertises-cards {
-  background-color: $base-blue;
+  background-color: white;
   height: 61.5vh;
   padding: 20.5vh 0 10vh 0;
   display: flex;
@@ -78,7 +78,7 @@ $base-red: #b12434;
   gap: 80px;
   .nuxt-link {
     color:black ;
-    background-color: #d5ecd4;
+    background-color:$base-blue;
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
@@ -95,7 +95,7 @@ $base-red: #b12434;
   .nuxt-link:hover {
     box-shadow: 0 0;
   border: 6px solid $base-red;
-    color: $base-red;
+    
   }
 }
 </style>
