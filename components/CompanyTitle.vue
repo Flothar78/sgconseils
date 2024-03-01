@@ -8,17 +8,23 @@
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 .company-name {
-  background: linear-gradient(0.25turn, $base-blue, $dark-blue, $dark-blue);
+  background: linear-gradient(
+    0.25turn,
+    $base-blue,
+    $dark-blue,
+    $dark-blue,
+    $dark-blue
+  );
   color: #e9ecf2;
-  text-shadow:  1px 1px 1px black;
+  text-shadow: 1px 1px 1px black;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: bold;
   letter-spacing: 1.6px;
-  width: 30vw;
-  height: 7vh;
-  box-shadow: 5px 0px 1px #edf060;
+  width: 35vw;
+  height: 9vh;
+  box-shadow: 4px 0px #edf060;
 }
 </style>
