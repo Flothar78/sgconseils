@@ -6,8 +6,9 @@
 
 <style lang="scss" scoped>
 $base-blue: #7d93b5;
+$dark-blue: #425b8a;
 .company-name {
-  background: linear-gradient(0.25turn, $base-blue, #425b8a, #425b8a);
+  background: linear-gradient(0.25turn, $base-blue, $dark-blue, $dark-blue);
   color: #e9ecf2;
   text-shadow:  1px 1px 1px black;
   display: flex;
