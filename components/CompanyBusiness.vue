@@ -1,6 +1,8 @@
 <template>
-  <div class="company-activity">Experts Comptables</div>
-  <div class="company-slogan">Le partenaire de vos ambitions.</div>
+  <div class="company-activity">
+   
+    <div>Pour la création et le développement de vos entreprises.</div>
+  </div>
 </template>
 
 <script setup></script>
@@ -9,31 +11,17 @@
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 .company-activity {
-  position: absolute;
-  top: 22rem;
-  left: 6rem;
-  color: white;
-  background: linear-gradient(
-    0.35turn,
-    $base-blue,
-    $dark-blue,
-    $dark-blue,
-    $base-blue
-  );
+  margin: 2rem 0 0 2rem;
+  color: #e9ecf2;
+  background: linear-gradient(0.25turn, $dark-blue, $dark-blue, $base-blue);
   display: flex;
   align-items: center;
   justify-content: flex-start;
-padding-left: 1rem;
+  padding-left: 1rem;
   font-size: 1.3rem;
+  letter-spacing: 1.1px;
   text-shadow: 2px 2px 2px black;
-  width: 28vw;
+  width: 50vw;
   height: 6vh;
-}
-.company-slogan {
-  position: absolute;
-  top: 26rem;
-  left: 8rem;
-  color: black;  font-size: 1.3rem;
-  text-shadow: 1px 1px 1px black;
 }
 </style>

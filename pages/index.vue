@@ -1,8 +1,7 @@
 <template>
   <div class="hero" id="accueil" @scrollTo="scrollToTopOfCards">
     <div class="hero-img"></div>
-    <CompanyBusiness />
-    <CompanyTitle />
+    <div class="company-business"><CompanyTitle /><CompanyBusiness /></div>
     <img
       class="background-img"
       src="assets/img/background-image-metier.jpeg"
@@ -60,10 +59,15 @@ $base-red: #b12434;
   background-color: $base-blue;
   color: white;
   height: 90vh;
+  .company-business {
+    position: absolute;
+    top: 20vh;
+    left: 1vw;
+  }
   .hero-img {
     position: absolute;
-    right: 10vw;
-    top: 15vh;
+    right: 5vw;
+    top: 20vh;
     object-fit: cover;
     width: 35vw;
     height: 50vh;
@@ -75,7 +79,7 @@ $base-red: #b12434;
     object-fit: cover;
     margin-top: -3vh;
     filter: contrast(22%);
-    opacity: 0.2;
+    opacity: 0.1;
   }
 }
 .expertises-cards {

@@ -7,20 +7,17 @@
 <style lang="scss" scoped>
 $base-blue: #7d93b5;
 .company-name {
-  position: absolute;
-  top: 16rem;
-  left: 3rem;
-  background: linear-gradient(0.35turn, $base-blue, #425b8a, #425b8a);
-  color: white;
+  background: linear-gradient(0.25turn, $base-blue, #425b8a, #425b8a);
+  color: #e9ecf2;
   text-shadow:  1px 1px 1px black;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.7rem;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 1.6px;
   width: 30vw;
   height: 7vh;
-  box-shadow: 8px 8px 12px #edf060;
+  box-shadow: 5px 0px 1px #edf060;
 }
 </style>
