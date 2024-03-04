@@ -1,6 +1,8 @@
 <template>
   <div class="hero" id="accueil" @scrollTo="scrollToTopOfCards">
-    <div class="hero-img"></div>
+ <div class="hero-img">
+  <img src="assets/img/happyPeopleInFrontOfPC_business_suit.jpeg" alt="happy people working with PC and ledger"></img>
+ </div>   
     <div class="company-business"><CompanyTitle /><CompanyBusiness /></div>
     <img
       class="background-img"
@@ -69,10 +71,14 @@ $base-red: #b12434;
     position: absolute;
     right: 5vw;
     top: 20vh;
-    object-fit: cover;
     width: 35vw;
     height: 50vh;
-    background-image: url("assets/img/happyPeopleInFrontOfPC_business_suit.jpeg");
+    overflow: hidden;
+    img{ 
+      width: 100%; 
+      object-fit: cover;
+      object-position: center;
+    }
   }
   .background-img {
     height: 100%;
