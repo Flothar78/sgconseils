@@ -109,6 +109,7 @@ $base-red: #b12434;
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
+    letter-spacing: .8px;
     display: flex;
     justify-content: center;
     align-items: center;
