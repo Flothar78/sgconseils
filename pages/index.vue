@@ -93,7 +93,7 @@ $base-red: #b12434;
   }
 }
 .expertises-cards {
-  background-color: white;
+  background-color: $base-blue;
   height: 70vh;
   padding-top: 20vh;
   padding-bottom: 10vh;
@@ -104,8 +104,8 @@ $base-red: #b12434;
   column-gap: 80px;
   .nuxt-link {
     color: $darkest-blue;
-     border: 6px solid $base-blue;
-    background-color: $base-blue;
+    border: 6px solid $base-red;
+    background-color: white;
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
@@ -114,12 +114,13 @@ $base-red: #b12434;
     align-items: center;
     width: 20vw;
     height: 14vh;
-    border-radius: 2%;
+    border-radius: 10%;
     box-shadow: 8px 8px 10px $darkest-blue;
   }
   .nuxt-link:hover {
     box-shadow: 0 0;
-    border: 6px solid $base-red;
+    border: 6px solid $base-red; 
+    box-shadow: 2px 2px 4px $darkest-blue;
   }
 }
 </style>
