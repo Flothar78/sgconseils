@@ -81,6 +81,7 @@ $base-red: #b12434;
       height: 100%;
       object-fit: contain;
       object-position: right;
+      opacity: 0.9;
     }
   }
   .background-img {
