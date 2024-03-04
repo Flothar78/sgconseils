@@ -64,21 +64,23 @@ $base-red: #b12434;
   height: 90vh;
   .company-business {
     position: absolute;
-    top: 50vh;
-    left: 1vw;
+    top: 51.7vh;
+    left: 2vw;
   }
   .hero-img {
     position: absolute;
-    right: 0vw;
-    top: 15vh;
-    width: 50vw;
-    height: 40vh;
+    right: 0;
+    margin-right: 1.6rem;
+    top: 12.5vh;
+    width: 80vw;
+    height: 39vh;
     overflow: hidden;
+    z-index:10;
     img{ 
       width: 100%; 
       height: 100%;
       object-fit: contain;
-      object-position: center;
+      object-position: right;
     }
   }
   .background-img {

@@ -20,11 +20,11 @@ $dark-blue: #425b8a;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   letter-spacing: 1.6px;
-  width: 35vw;
+  width: 40vw;
   height: 9vh;
-  box-shadow: 4px 0px #edf060;
+  box-shadow: 4px 0px;
 }
 </style>
