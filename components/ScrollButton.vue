@@ -4,7 +4,7 @@
     @click="scrollDown()"
     :class="{ twinkle: isActive }"
   >
-    METIERS
+    NOS METIERS
   </button>
 </template>
 
@@ -27,7 +27,7 @@ const scrollDown = () => {
   50% {
     background: #d94556;
     box-shadow: -1px 1px 18px;
-    width: 7rem;
+    width: 9rem;
     height: 3.2rem;
     font-size: 0.95rem;
     letter-spacing: 1.5px;
@@ -50,7 +50,7 @@ const scrollDown = () => {
   font-weight: 600;
   color: white;
   background: #b12434;
-  width: 6rem;
+  width: 8rem;
   height: 3rem;
   border-radius: 5%;
   position: absolute;

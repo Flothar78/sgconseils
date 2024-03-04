@@ -24,10 +24,11 @@ $dark-blue: #425b8a;
   align-items: center;
   justify-content: flex-start;
   padding: 1rem 0 1rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   letter-spacing: 1.2px;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 1px black;
   width: 75vw;
   min-height: 4vh;
+  box-shadow: -4px 0px;
 }
 </style>
