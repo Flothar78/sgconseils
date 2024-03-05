@@ -1,6 +1,6 @@
 <template>
   <div class="global-metiers">
-    <CompanyTitle class="company-business" />
+    <CompanyTitle class="company-business" :title="correctedId" />
     <div>
       <Juridique v-if="id === 'juridique'" />
       <Gestion v-else-if="id === 'gestion'" />
@@ -15,7 +15,10 @@
 
 <script setup>
 const id = useRoute().params.id;
-
+const correctedId = id === 'comptabilite' ? id
+  .toUpperCase()
+  .split("")
+  .map((x) => (x === "E" ? (x = "É") : x)).join(''):id.toUpperCase();
 </script>
 
 <style scoped lang="scss">

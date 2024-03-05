@@ -1,15 +1,12 @@
 <template>
   <div class="component-global">
-    <div class="activity">
-      <div class="activity-name">COMPTABILITÉ</div>
-      <div class="activity-slogan">
-        La comptabilité, pas uniquement une histoire de chiffres.
-      </div>
+    <div class="activity-slogan">
+      La comptabilité, pas uniquement une histoire de chiffres.
     </div>
+
     <div class="activity-description">
       <div>
-        SG Conseils vous accompagne sur la gestion de votre
-        comptabilité.
+        SG Conseils vous accompagne sur la gestion de votre comptabilité.
       </div>
       <div>
         Nous établissons votre bilan annuel, compte de résultat et nous
@@ -18,28 +15,20 @@
     </div>
   </div>
 </template>
-
 <script setup></script>
-
 <style scoped lang="scss">
 $base-white: #bec8da;
 $base-black: #191c20;
 $base-blue: #7d93b5;
 .component-global {
   color: $base-black;
-  .activity {
+  .activity-slogan {
     position: absolute;
     top: 45vh;
     left: 5vw;
-    .activity-name {
-      font-size: 2rem;
-      font-weight: 900;
-    }
-    .activity-slogan {
-      margin: 2.5rem 0 0 5rem;
-      font-size: 1.5rem;
-      font-style: italic;
-    }
+    margin: 2.5rem 0 0 5rem;
+    font-size: 1.5rem;
+    font-style: italic;
   }
   .activity-description {
     position: absolute;
@@ -51,7 +40,6 @@ $base-blue: #7d93b5;
     transform: translateX(50%);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     padding: 0 2rem;
     font-size: 1.2rem;

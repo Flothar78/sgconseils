@@ -1,8 +1,17 @@
 <template>
-  <div class="company-name">SG CONSEILS</div>
+  <div class="company-name">{{ title }}</div>
 </template>
 
-<script setup></script>
+<script setup>
+import { defineProps } from "vue";
+
+const props = defineProps({
+  title: {
+    type: String,
+    default: "SG CONSEILS",
+  },
+});
+</script>
 
 <style lang="scss" scoped>
 $base-blue: #7d93b5;
@@ -20,7 +29,7 @@ $dark-blue: #425b8a;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.7rem;
+  font-size: 2.1rem;
   text-shadow: 2px 2px 6px $base-blue;
   font-weight: bold;
   letter-spacing: 1.4px;
