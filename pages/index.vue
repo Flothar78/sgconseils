@@ -64,7 +64,7 @@ $base-red: #b12434;
   height: 90vh;
   .company-business {
     position: absolute;
-    top: 51.7vh;
+    top: 42.2vh;
     left: 2vw;
   }
   .hero-img {
