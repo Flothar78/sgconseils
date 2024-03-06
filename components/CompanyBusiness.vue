@@ -10,24 +10,24 @@
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 .company-activity {
-  margin: 5rem 0 0 4rem;
+  margin: 6rem 0 0 4rem;
   color: #e9ecf2;
   background: linear-gradient(
     0.25turn,
     $dark-blue,
     $dark-blue,
     $dark-blue,
-    $base-blue,
     $base-blue
   );
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 1rem 0 1rem 1rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   letter-spacing: 1.2px;
   text-shadow: 1px 1px 1px black;
-  width: 75vw;
+  width: 60vw;
   min-height: 4vh;
   box-shadow: -4px 0px;
 }

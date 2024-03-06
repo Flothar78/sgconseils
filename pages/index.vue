@@ -3,7 +3,7 @@
  <div class="hero-img">
   <img src="assets/img/happyPeopleInFrontOfPC_business_suit.jpeg" alt="happy people working with PC and ledger"></img>
  </div>   
-    <div class="company-business"><CompanyTitle /><CompanyBusiness /></div>
+    <div class="company-features"><CompanyTitle /><CompanyBusiness /></div>
     <img
       class="background-img"
       src="assets/img/background-image-metier.jpeg"
@@ -62,7 +62,7 @@ $base-red: #b12434;
   background-color: $base-blue;
   color: white;
   height: 90vh;
-  .company-business {
+  .company-features {
     position: absolute;
     top: 42.2vh;
     left: 2vw;
@@ -71,9 +71,8 @@ $base-red: #b12434;
     position: absolute;
     right: 0;
     margin-right: 1.6rem;
-    top: 12.5vh;
-    width: 80vw;
-    height: 39vh;
+    top: 15.5vh;
+    height: 36vh;
     overflow: hidden;
     z-index:10;
     img{ 

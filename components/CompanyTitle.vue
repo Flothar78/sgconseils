@@ -29,7 +29,7 @@ $dark-blue: #425b8a;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.1rem;
+  font-size: 2rem;
   text-shadow: 2px 2px 6px $base-blue;
   font-weight: bold;
   letter-spacing: 1.4px;
