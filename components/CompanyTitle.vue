@@ -16,6 +16,8 @@ const props = defineProps({
 <style lang="scss" scoped>
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
+$base-white: #bec8da;
+$base-black: #191c20;
 .company-name {
   background: linear-gradient(
     0.25turn,
@@ -30,7 +32,7 @@ $dark-blue: #425b8a;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  text-shadow: 2px 2px 6px $base-blue;
+  text-shadow: 2px 2px 8px $base-black;
   font-weight: bold;
   letter-spacing: 1.4px;
   width: 40vw;

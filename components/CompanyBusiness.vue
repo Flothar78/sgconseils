@@ -9,6 +9,8 @@
 <style lang="scss" scoped>
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
+$base-white: #bec8da;
+$base-black: #191c20;
 .company-activity {
   margin: 6rem 0 0 4rem;
   color: #e9ecf2;
@@ -26,8 +28,8 @@ $dark-blue: #425b8a;
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 1.2px;
-  text-shadow: 1px 1px 1px black;
-  width: 60vw;
+  text-shadow: 1px 1px 4px $base-black;
+  width: 63vw;
   min-height: 4vh;
   box-shadow: -4px 0px;
 }
