@@ -12,7 +12,7 @@ $dark-blue: #425b8a;
 $base-white: #bec8da;
 $base-black: #191c20;
 .company-activity {
-  margin: 6rem 0 0 4rem;
+  margin: 6.5rem 0 0 4rem;
   color: #e9ecf2;
   background: linear-gradient(
     0.25turn,
