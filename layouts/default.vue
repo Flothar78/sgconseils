@@ -151,6 +151,9 @@ $base-grey: #858384;
   right: 0vw;
 }
 .footer {
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.3;
   height: 25vh;
   padding-top: 2rem;
   background: #1d2024;
@@ -160,13 +163,12 @@ $base-grey: #858384;
   .footer-div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     padding-bottom: 2rem;
     .footer-title {
       margin: 1rem 0 1rem 0;
     }
     .footer-infos {
-      padding-left: 1rem;
       text-decoration: none;
       color: white;
     }
