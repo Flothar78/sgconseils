@@ -102,6 +102,7 @@ $base-red: #b12434;
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 80px;
+  font-family: Arial, sans-serif;
   .nuxt-link {
     color: $darkest-blue;
     border: 6px solid $base-red;
