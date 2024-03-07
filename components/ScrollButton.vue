@@ -4,7 +4,7 @@
     @click="scrollDown()"
     :class="{ twinkle: isActive }"
   >
-    NOS METIERS
+    NOS MÉTIERS
   </button>
 </template>
 

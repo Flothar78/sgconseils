@@ -28,8 +28,8 @@
         >Informatique</NuxtLink
       >
 
-      <NuxtLink class="menu-item" :to="`#`">EQUIPE</NuxtLink>
-      <NuxtLink class="menu-item" :to="`#`">MENTIONS LEGALES</NuxtLink>
+      <NuxtLink class="menu-item" :to="`#`">ÉQUIPE</NuxtLink>
+      <NuxtLink class="menu-item" :to="`#`">MENTIONS LÉGALES</NuxtLink>
       <NuxtLink class="menu-item" :to="`/contact`">CONTACT</NuxtLink>
     </div>
   </header>

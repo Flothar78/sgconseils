@@ -14,7 +14,7 @@
   <div class="expertises-cards" id="metiers" ref="cardsDiv">
     <div>
       <NuxtLink class="nuxt-link" :to="`/metiers/comptabilite`"
-        >COMPTABILITE</NuxtLink
+        >COMPTABILITÉ</NuxtLink
       >
     </div>
     <div>
