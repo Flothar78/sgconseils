@@ -6,31 +6,37 @@
         alt="logo sg conseils format png"
     /></NuxtLink>
     <button @click.stop="menuListSlide()" class="menu-button">MENU</button>
-    <div class="menu-list" :class="{ active: isActive }">
-      <NuxtLink class="link-item" :to="`/#accueil`">ACCUEIL</NuxtLink>
-      <NuxtLink class="link-item" id="link-item-metiers" :to="`/#metiers`"
-        >EXPERTISES</NuxtLink
-      >
-      <NuxtLink class="sublink-item" :to="`/metiers/comptabilite`"
+    <div
+      @click.stop="menuListSlide()"
+      class="menu-list"
+      :class="{ active: isActive }"
+    >
+      <NuxtLink class="menu-item" :to="`/#accueil`">ACCUEIL</NuxtLink>
+
+      <NuxtLink class="menu-item" :to="`/#metiers`">EXPERTISES</NuxtLink>
+      <NuxtLink class="metiers-item" :to="`/metiers/comptabilite`"
         >Comptabilité</NuxtLink
       >
-      <NuxtLink class="sublink-item" :to="`/metiers/audit`">Audit</NuxtLink
-      ><NuxtLink class="sublink-item" :to="`/metiers/juridique`"
+      <NuxtLink class="metiers-item" :to="`/metiers/audit`">Audit</NuxtLink
+      ><NuxtLink class="metiers-item" :to="`/metiers/juridique`"
         >Juridique</NuxtLink
       >
-      <NuxtLink class="sublink-item" :to="`/metiers/conseil`">Conseil</NuxtLink>
-      <NuxtLink class="sublink-item" :to="`/metiers/gestion`">Gestion</NuxtLink
-      ><NuxtLink class="sublink-item" :to="`/metiers/social`">Social</NuxtLink>
-      <NuxtLink class="sublink-item" :to="`/metiers/informatique`"
+      <NuxtLink class="metiers-item" :to="`/metiers/conseil`">Conseil</NuxtLink>
+      <NuxtLink class="metiers-item" :to="`/metiers/gestion`">Gestion</NuxtLink
+      ><NuxtLink class="metiers-item" :to="`/metiers/social`">Social</NuxtLink>
+      <NuxtLink class="metiers-item" :to="`/metiers/informatique`"
         >Informatique</NuxtLink
       >
-      <NuxtLink class="link-item" :to="`/contact`">CONTACT</NuxtLink>
+
+      <NuxtLink class="menu-item" :to="`#`">EQUIPE</NuxtLink>
+      <NuxtLink class="menu-item" :to="`#`">MENTIONS LEGALES</NuxtLink>
+      <NuxtLink class="menu-item" :to="`/contact`">CONTACT</NuxtLink>
     </div>
   </header>
   <slot />
   <footer class="footer">
     <div class="footer-div">
-      <NuxtLink class="footer-title">NOS COMPETENCES:</NuxtLink>
+      <NuxtLink class="footer-title">NOS EXPERTISES:</NuxtLink>
       <NuxtLink class="footer-infos" :to="`/metiers/comptabilite`"
         >Comptabilité</NuxtLink
       >
@@ -106,42 +112,39 @@ $base-grey: #858384;
   }
 }
 .menu-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: white;
-  border: 2px solid $base-black;
+  font-family: Arial, sans-serif;
+  background-color: $base-white;
+  border: 5px solid $base-red;
   font-size: 1rem;
-  width: 12vw;
-  height: 30vh;
+  min-width: 16vw;
+  min-height: 35vh;
   list-style: none;
   position: fixed;
-  right: -12rem;
+  right: -25vw;
+  top: 10vh;
   margin-right: -1rem;
-  margin-top: 54vh;
-  padding: 0.7rem 1rem;
   display: flex;
   flex-direction: column;
   transition: right 0.5s ease;
   border-radius: 10% 0 0 10%;
-  #link-item-metiers {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 0.4rem;
-  }
-  .link-item {
+  .menu-item {
     text-decoration: none;
     color: $base-black;
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 800;
-    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin:1rem 1.7rem .5rem 1.2rem; 
   }
-  .sublink-item {
+  .menu-item:hover {
+    text-shadow: 1px 1px $base-black;
+  }
+  .metiers-item {
     text-decoration: none;
     color: $base-black;
-    font-size: 0.8rem;
-    padding: 0.2rem 0 0 0.4rem;
+    font-size: 1.1rem;
+    padding-left: 1.6rem;
+  }
+  .metiers-item:hover {
+    font-weight: 900;
   }
 }
 .active {
