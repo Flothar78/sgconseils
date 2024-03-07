@@ -33,4 +33,13 @@ $base-black: #191c20;
   min-height: 4vh;
   box-shadow: -4px 0px;
 }
+@media screen and (max-width: 699px) {
+  .company-activity {
+    font-size: 1rem;
+    margin: 4rem 0 0 4rem;
+    width: 60vw;
+    height: 5vh;
+    box-shadow: -6px 0px;
+  }
+}
 </style>

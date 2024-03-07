@@ -37,6 +37,13 @@ $base-black: #191c20;
   letter-spacing: 1.4px;
   width: 40vw;
   height: 9vh;
-  box-shadow: 4px 0px;
+  box-shadow: 6px 0px;
+}
+@media screen and (max-width: 699px) {
+  .company-name {
+    font-size: 1.5rem;
+    width: 70vw;
+    height: 7vh;
+  }
 }
 </style>

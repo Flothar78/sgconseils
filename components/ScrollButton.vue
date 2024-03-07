@@ -56,7 +56,7 @@ const scrollDown = () => {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  bottom:9vh;
+  bottom: 9vh;
   margin: auto;
 }
 </style>

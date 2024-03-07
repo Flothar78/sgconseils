@@ -84,6 +84,7 @@ $base-red: #b12434;
 $base-white: #bec8da;
 $base-black: #191c20;
 $base-grey: #858384;
+
 .navbar-container {
   position: fixed;
   display: flex;
@@ -120,7 +121,7 @@ $base-grey: #858384;
   min-height: 35vh;
   list-style: none;
   position: fixed;
-  right: -25vw;
+  right: -70vw;
   top: 10vh;
   margin-right: -1rem;
   display: flex;
@@ -132,7 +133,7 @@ $base-grey: #858384;
     color: $base-black;
     font-size: 1.2rem;
     font-weight: 600;
-    margin:1rem 1.7rem .5rem 1.2rem; 
+    margin: 1rem 1.7rem 0.5rem 1.2rem;
   }
   .menu-item:hover {
     text-shadow: 1px 1px $base-black;
