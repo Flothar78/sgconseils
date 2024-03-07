@@ -59,4 +59,9 @@ const scrollDown = () => {
   bottom: 9vh;
   margin: auto;
 }
+@media screen and (max-width: 699px) {
+  .scroll-button {
+    bottom: 7.5vh;
+  }
+}
 </style>
