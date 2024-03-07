@@ -141,7 +141,7 @@ $base-black: #191c20;
     .company-features {
       border: 1px solid black;
         position: absolute;
-        top: 53vh;
+        top: 53comvh;
         left: 2vw;
       }
     .hero-img {

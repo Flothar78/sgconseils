@@ -43,7 +43,7 @@ $base-black: #191c20;
   .company-name {
     font-size: 1.5rem;
     width: 70vw;
-    height: 7vh;
+    height: 8vh;
   }
 }
 </style>
