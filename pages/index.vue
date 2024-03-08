@@ -139,7 +139,7 @@ $base-black: #191c20;
     height:90vh;
     .company-features {
       position: absolute;
-      top: 54.5vh;
+      top: 58vh;
       left: 2vw;
       }
     .hero-img {
