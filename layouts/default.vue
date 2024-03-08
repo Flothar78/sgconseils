@@ -36,7 +36,7 @@
   <slot />
   <footer class="footer">
     <div class="footer-div">
-      <NuxtLink class="footer-title">NOS EXPERTISES:</NuxtLink>
+      <NuxtLink class="footer-title">METIERS:</NuxtLink>
       <NuxtLink class="footer-infos" :to="`/metiers/comptabilite`"
         >Comptabilité</NuxtLink
       >
@@ -61,9 +61,13 @@
     </div>
     <div class="footer-div">
       <div class="footer-title">NOS ADRESSES:</div>
-      <div class="footer-infos">6 chemin de Limayrac 31500 Toulouse</div>
       <div class="footer-infos">
-        79 Rue République 31290 Villefranche-de-Lauragais
+        6 chemin de Limayrac <br />
+        31500 Toulouse <br /><br />
+      </div>
+      <div class="footer-infos">
+        79 Rue République <br />
+        31290 Villefranche-de-Lauragais
       </div>
     </div>
   </footer>
@@ -122,11 +126,11 @@ $base-grey: #858384;
   position: fixed;
   right: -80vw;
   top: 10vh;
-  margin-right: -.3rem;
+  margin-right: -0.3rem;
   display: flex;
   flex-direction: column;
   transition: right 0.5s ease;
-  padding-top:  1rem; 
+  padding-top: 1rem;
   border-radius: 10% 0 0 10%;
   .menu-item {
     text-decoration: none;
@@ -155,10 +159,10 @@ $base-grey: #858384;
   font-family: Arial, sans-serif;
   letter-spacing: 1px;
   line-height: 1.3;
-  height: 25vh;
+  min-height: 25vh;
   padding-top: 2rem;
-  background: #1d2024;
-  color: white;
+  background: $base-black;
+  color: $base-white;
   display: flex;
   justify-content: space-around;
   .footer-div {
@@ -176,93 +180,29 @@ $base-grey: #858384;
   }
 }
 @media screen and (max-width: 699px) {
-  .navbar-container {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(145deg, $base-red, $base-grey);
-    height: 10vh;
-    width: 100vw;
-    padding-left: 0.3rem;
-    z-index: 30;
-    img {
-      width: 78px;
-      height: 100%;
-    }
-    .menu-button {
-      margin-right: 2rem;
-      background: $base-red;
-      border: 1px transparent solid;
-      color: white;
-      font-size: 1rem;
-      padding: 0.5rem;
-      box-shadow: 4px 4px 5px $base-black;
-    }
-    .menu-button:hover {
-      box-shadow: 1px 1px 2px $base-black;
-    }
-  }
   .menu-list {
-    font-family: Arial, sans-serif;
-    background-color: $base-white;
-    border: 5px solid $base-red;
     height: 30vh;
-    list-style: none;
-    position: fixed;
     right: -70vw;
-    top: 10vh;
     margin-right: -1rem;
-    display: flex;
-    flex-direction: column;
-    transition: right 0.5s ease;
     padding: 1rem 1rem 0 1rem;
-    border-radius: 10% 0 0 10%;
     .menu-item {
-      text-decoration: none;
-      color: $base-black;
       font-size: 1rem;
-      font-weight: 600;
-      margin: 0.2rem .5rem;
-    }
-    .menu-item:hover {
-      text-shadow: 1px 1px $base-black;
+      margin: 0.2rem 0.5rem;
     }
     .metiers-item {
-      text-decoration: none;
-      color: $base-black;
       font-size: 1rem;
-      padding-left: 1.6rem;
-    }
-    .metiers-item:hover {
-      font-weight: 900;
     }
   }
   .active {
     right: 0vw;
   }
   .footer {
-    font-family: Arial, sans-serif;
-    letter-spacing: 1px;
-    line-height: 1.3;
-    height: 25vh;
-    padding-top: 2rem;
-    background: #1d2024;
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+    padding-top: 1rem;
     color: white;
-    display: flex;
-    justify-content: space-around;
     .footer-div {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      padding-bottom: 2rem;
-      .footer-title {
-        margin: 1rem 0 1rem 0;
-      }
-      .footer-infos {
-        text-decoration: none;
-        color: white;
-      }
+      border: 4px solid $base-black;
     }
   }
 }
