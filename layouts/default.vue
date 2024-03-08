@@ -116,17 +116,17 @@ $base-grey: #858384;
   font-family: Arial, sans-serif;
   background-color: $base-white;
   border: 5px solid $base-red;
-  height: 40.5vh;
+  height: 38.6vh;
   font-size: 1rem;
   list-style: none;
   position: fixed;
   right: -80vw;
   top: 10vh;
-  margin-right: -1rem;
+  margin-right: -.3rem;
   display: flex;
   flex-direction: column;
   transition: right 0.5s ease;
-  padding: 0 1rem;
+  padding-top:  1rem; 
   border-radius: 10% 0 0 10%;
   .menu-item {
     text-decoration: none;
@@ -183,7 +183,7 @@ $base-grey: #858384;
     align-items: center;
     background: linear-gradient(145deg, $base-red, $base-grey);
     height: 10vh;
-    width: 100%;
+    width: 100vw;
     padding-left: 0.3rem;
     z-index: 30;
     img {
@@ -207,23 +207,23 @@ $base-grey: #858384;
     font-family: Arial, sans-serif;
     background-color: $base-white;
     border: 5px solid $base-red;
-    height: 34vh;
+    height: 30vh;
     list-style: none;
     position: fixed;
-    right: -80vw;
+    right: -70vw;
     top: 10vh;
     margin-right: -1rem;
     display: flex;
     flex-direction: column;
     transition: right 0.5s ease;
-    padding:  1rem 1rem 0 1rem ;
+    padding: 1rem 1rem 0 1rem;
     border-radius: 10% 0 0 10%;
     .menu-item {
       text-decoration: none;
       color: $base-black;
       font-size: 1rem;
       font-weight: 600;
-      margin: 0.4rem 1.2rem;
+      margin: 0.2rem .5rem;
     }
     .menu-item:hover {
       text-shadow: 1px 1px $base-black;

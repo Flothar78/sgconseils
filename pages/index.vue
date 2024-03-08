@@ -59,7 +59,6 @@ $base-red: #b12434;
 $base-red: #b12434;
 $base-white: #bec8da;
 $base-black: #191c20;
-@media screen and (min-width: 700px) {
     // and (max-width:1199px)
     .hero {
       padding-top: 10vh;
@@ -130,7 +129,7 @@ $base-black: #191c20;
       box-shadow: 2px 2px 4px $darkest-blue;
     }
   }
-  }
+
 @media screen and (max-width: 699px) {
 .hero {
     padding-top: 14vh;
@@ -141,7 +140,7 @@ $base-black: #191c20;
     .company-features {
       border: 1px solid black;
         position: absolute;
-        top: 53comvh;
+        top: 53vh;
         left: 2vw;
       }
     .hero-img {
