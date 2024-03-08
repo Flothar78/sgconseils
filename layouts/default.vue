@@ -182,7 +182,7 @@ $base-grey: #858384;
 @media screen and (max-width: 699px) {
   .menu-list {
     height: 30vh;
-    right: -70vw;
+    right: -65vw;
     margin-right: -1rem;
     padding: 1rem 1rem 0 1rem;
     .menu-item {
