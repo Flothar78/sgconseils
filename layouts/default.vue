@@ -87,28 +87,45 @@ $base-grey: #858384;
 
 @media screen and (max-width: 699px) {
   .menu-list {
-   font-family: Arial, sans-serif;
-  background-color: $base-white;
-  border: 5px solid $base-red;
-  width: 28vw;
-  min-height: 35vh;
-  position: fixed;
-  right: -80vw;
-  top: 10vh;
-  margin-right: -1rem;
-  display: flex;
-  flex-direction: column;
-  transition: right 0.5s ease;
-  border-radius: 10% 0 0 10%;
+    font-family: Arial, sans-serif;
+    background-color: $base-white;
+    border: 5px solid $base-red;
+    font-size: 1rem;
+    list-style: none;
+    position: fixed;
+    right: -80vw;
+    top: 10vh;
+    margin-right: -1rem;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.5s ease;
+    padding: 0 1rem;
+    border-radius: 10% 0 0 10%;
     .menu-item {
-      
-      margin: 1rem 1.7rem 0.5rem 1.2rem;
+      text-decoration: none;
+      color: $base-black;
+      font-size: 1.2rem;
+      font-weight: 600;
+      //  margin-left: 1.2rem;
+      //  margin-top: .5rem;
+      //  margin-right: 1.2rem;
+      margin: 0.4rem 1.2rem;
+    }
+    .menu-item:hover {
+      text-shadow: 1px 1px $base-black;
     }
     .metiers-item {
+      text-decoration: none;
+      color: $base-black;
+      font-size: 1.1rem;
       padding-left: 1.6rem;
+    }
+    .metiers-item:hover {
+      font-weight: 900;
     }
   }
 }
+
 .navbar-container {
   position: fixed;
   display: flex;
@@ -140,6 +157,7 @@ $base-grey: #858384;
   font-family: Arial, sans-serif;
   background-color: $base-white;
   border: 5px solid $base-red;
+  height: 40.5vh;
   font-size: 1rem;
   list-style: none;
   position: fixed;
@@ -156,10 +174,10 @@ $base-grey: #858384;
     color: $base-black;
     font-size: 1.2rem;
     font-weight: 600;
-  //  margin-left: 1.2rem;
-  //  margin-top: .5rem;
-  //  margin-right: 1.2rem;
-    margin: .4rem 1.2rem;
+    //  margin-left: 1.2rem;
+    //  margin-top: .5rem;
+    //  margin-right: 1.2rem;
+    margin: 0.4rem 1.2rem;
   }
   .menu-item:hover {
     text-shadow: 1px 1px $base-black;
