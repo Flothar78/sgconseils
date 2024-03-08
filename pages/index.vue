@@ -139,21 +139,23 @@ $base-black: #191c20;
     height:90vh;
     .company-features {
       position: absolute;
-      top: 58vh;
-      left: 2vw;
+      top: 60vh;
+      left:50%;
+      transform: translateX(-50%);
+      width: 70vw;
       }
     .hero-img {
       position: absolute;
       top: 13.2vh;
-      left: 5vw;
+      left:3vw;
       height: 36vh;
       overflow: hidden;
       z-index:10;
       img{ 
-        width: 85%; 
-        height: 85%;
+        width: 100%; 
+        height: 100%;
         object-fit: contain;
-        object-position: left;
+        object-position: center;
         opacity: 0.8;
       }
     }

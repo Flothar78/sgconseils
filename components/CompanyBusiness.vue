@@ -35,9 +35,10 @@ $base-black: #191c20;
 }
 @media screen and (max-width: 699px) {
   .company-activity {
-    font-size: 1rem;letter-spacing: .8px;
-    margin: 2rem 0 0 1rem;
-    width: 85vw;
+    font-size: 1.1rem;letter-spacing: .8px;
+    font-weight: 500;
+    margin: 2rem 0 0 0;
+    width: 95%;
     height: 5vh;
     box-shadow: -6px 0px;
   }
