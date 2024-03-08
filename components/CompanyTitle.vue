@@ -40,8 +40,9 @@ $base-black: #191c20;
 @media screen and (max-width: 699px) {
   .company-name {
     font-size: 1.5rem;
-    width: 70vw;
+    width: 300px;
     height: 8vh;
+    margin-left: 2vw;
   }
 }
 </style>

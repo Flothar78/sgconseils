@@ -138,15 +138,14 @@ $base-black: #191c20;
     color: white;
     height:90vh;
     .company-features {
-      border: 1px solid black;
-        position: absolute;
-        top: 53vh;
-        left: 2vw;
+      position: absolute;
+      top: 54.5vh;
+      left: 2vw;
       }
     .hero-img {
       position: absolute;
-      right: -3vw;
-      top: 10vh;
+      top: 13.2vh;
+      left: 5vw;
       height: 36vh;
       overflow: hidden;
       z-index:10;
