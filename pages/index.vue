@@ -64,7 +64,7 @@ $base-black: #191c20;
       padding-top: 10vh;
       position: relative;
       background-color: $base-blue;
-      color: white;
+      color: $base-white;
       height: 90vh;
       .company-features {
         position: absolute;
@@ -107,7 +107,7 @@ $base-black: #191c20;
   flex-wrap: wrap;
   column-gap: 80px;
   font-family: Arial, sans-serif;
-  .nuxt-link {
+  .nuxt-link {border: 6px solid transparent; 
     color: $darkest-blue;
     background-color: $base-white;
     text-decoration: none;
@@ -132,63 +132,30 @@ $base-black: #191c20;
 @media screen and (max-width: 699px) {
 .hero {
     padding-top: 14vh;
-    position: relative;
-    background-color: $base-blue;
-    color: white;
-    height:90vh;
     .company-features {
-      position: absolute;
       top: 60vh;
       left:50%;
       transform: translateX(-50%);
       width: 70vw;
       }
     .hero-img {
-      position: absolute;
       top: 13.2vh;
       left:3vw;
-      height: 36vh;
-      overflow: hidden;
-      z-index:10;
       img{ 
-        width: 100%; 
-        height: 100%;
-        object-fit: contain;
         object-position: center;
         opacity: 0.8;
       }
     }
-    .background-img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      margin-top: -3vh;
-      filter: contrast(22%);
-      opacity: 0.1;
-    }
   }
   .expertises-cards {
-    background-color: $base-blue;
     padding: 20vh 0 10vh 0;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     row-gap: 50px;
-    font-family: Arial, sans-serif;
     height: 100%;
     .nuxt-link {
-      color: $darkest-blue;
-      background-color: $base-white;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40vw;
-      height: 18vh;
+      width: 37vw;
+      height: 13vh;
       border-radius: 10%;
-      box-shadow: 8px 8px 10px $darkest-blue;
     }
   }
 }
