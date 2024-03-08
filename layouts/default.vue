@@ -85,6 +85,30 @@ $base-white: #bec8da;
 $base-black: #191c20;
 $base-grey: #858384;
 
+@media screen and (max-width: 699px) {
+  .menu-list {
+   font-family: Arial, sans-serif;
+  background-color: $base-white;
+  border: 5px solid $base-red;
+  width: 28vw;
+  min-height: 35vh;
+  position: fixed;
+  right: -80vw;
+  top: 10vh;
+  margin-right: -1rem;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.5s ease;
+  border-radius: 10% 0 0 10%;
+    .menu-item {
+      
+      margin: 1rem 1.7rem 0.5rem 1.2rem;
+    }
+    .metiers-item {
+      padding-left: 1.6rem;
+    }
+  }
+}
 .navbar-container {
   position: fixed;
   display: flex;
@@ -92,7 +116,7 @@ $base-grey: #858384;
   align-items: center;
   background: linear-gradient(145deg, $base-red, $base-grey);
   height: 10vh;
-  width: 100vw;
+  width: 100%;
   padding-left: 0.3rem;
   z-index: 30;
   img {
@@ -117,23 +141,25 @@ $base-grey: #858384;
   background-color: $base-white;
   border: 5px solid $base-red;
   font-size: 1rem;
-  min-width: 16vw;
-  min-height: 35vh;
   list-style: none;
   position: fixed;
-  right: -70vw;
+  right: -80vw;
   top: 10vh;
   margin-right: -1rem;
   display: flex;
   flex-direction: column;
   transition: right 0.5s ease;
+  padding: 0 1rem;
   border-radius: 10% 0 0 10%;
   .menu-item {
     text-decoration: none;
     color: $base-black;
     font-size: 1.2rem;
     font-weight: 600;
-    margin: 1rem 1.7rem 0.5rem 1.2rem;
+  //  margin-left: 1.2rem;
+  //  margin-top: .5rem;
+  //  margin-right: 1.2rem;
+    margin: .4rem 1.2rem;
   }
   .menu-item:hover {
     text-shadow: 1px 1px $base-black;
