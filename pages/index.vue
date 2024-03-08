@@ -109,7 +109,7 @@ $base-black: #191c20;
   font-family: Arial, sans-serif;
   .nuxt-link {
     color: $darkest-blue;
-    background-color: white;
+    background-color: $base-white;
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
@@ -178,7 +178,7 @@ $base-black: #191c20;
     height: 100%;
     .nuxt-link {
       color: $darkest-blue;
-      background-color: white;
+      background-color: $base-white;
       text-decoration: none;
       font-weight: 700;
       font-size: 1rem;
