@@ -109,7 +109,6 @@ $base-black: #191c20;
   font-family: Arial, sans-serif;
   .nuxt-link {
     color: $darkest-blue;
-    border: 6px solid $base-red;
     background-color: white;
     text-decoration: none;
     font-weight: 700;
@@ -176,17 +175,17 @@ $base-black: #191c20;
     align-items: center;
     row-gap: 50px;
     font-family: Arial, sans-serif;
+    height: 100%;
     .nuxt-link {
       color: $darkest-blue;
-      border: 6px solid $base-red;
       background-color: white;
       text-decoration: none;
       font-weight: 700;
-      font-size: 1.2rem;
+      font-size: 1rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 42vw;
+      width: 40vw;
       height: 18vh;
       border-radius: 10%;
       box-shadow: 8px 8px 10px $darkest-blue;
