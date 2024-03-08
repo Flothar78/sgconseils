@@ -85,47 +85,6 @@ $base-white: #bec8da;
 $base-black: #191c20;
 $base-grey: #858384;
 
-@media screen and (max-width: 699px) {
-  .menu-list {
-    font-family: Arial, sans-serif;
-    background-color: $base-white;
-    border: 5px solid $base-red;
-    font-size: 1rem;
-    list-style: none;
-    position: fixed;
-    right: -80vw;
-    top: 10vh;
-    margin-right: -1rem;
-    display: flex;
-    flex-direction: column;
-    transition: right 0.5s ease;
-    padding: 0 1rem;
-    border-radius: 10% 0 0 10%;
-    .menu-item {
-      text-decoration: none;
-      color: $base-black;
-      font-size: 1.2rem;
-      font-weight: 600;
-      //  margin-left: 1.2rem;
-      //  margin-top: .5rem;
-      //  margin-right: 1.2rem;
-      margin: 0.4rem 1.2rem;
-    }
-    .menu-item:hover {
-      text-shadow: 1px 1px $base-black;
-    }
-    .metiers-item {
-      text-decoration: none;
-      color: $base-black;
-      font-size: 1.1rem;
-      padding-left: 1.6rem;
-    }
-    .metiers-item:hover {
-      font-weight: 900;
-    }
-  }
-}
-
 .navbar-container {
   position: fixed;
   display: flex;
@@ -174,9 +133,6 @@ $base-grey: #858384;
     color: $base-black;
     font-size: 1.2rem;
     font-weight: 600;
-    //  margin-left: 1.2rem;
-    //  margin-top: .5rem;
-    //  margin-right: 1.2rem;
     margin: 0.4rem 1.2rem;
   }
   .menu-item:hover {
@@ -216,6 +172,97 @@ $base-grey: #858384;
     .footer-infos {
       text-decoration: none;
       color: white;
+    }
+  }
+}
+@media screen and (max-width: 699px) {
+  .navbar-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, $base-red, $base-grey);
+    height: 10vh;
+    width: 100%;
+    padding-left: 0.3rem;
+    z-index: 30;
+    img {
+      width: 78px;
+      height: 100%;
+    }
+    .menu-button {
+      margin-right: 2rem;
+      background: $base-red;
+      border: 1px transparent solid;
+      color: white;
+      font-size: 1rem;
+      padding: 0.5rem;
+      box-shadow: 4px 4px 5px $base-black;
+    }
+    .menu-button:hover {
+      box-shadow: 1px 1px 2px $base-black;
+    }
+  }
+  .menu-list {
+    font-family: Arial, sans-serif;
+    background-color: $base-white;
+    border: 5px solid $base-red;
+    height: 34vh;
+    list-style: none;
+    position: fixed;
+    right: -80vw;
+    top: 10vh;
+    margin-right: -1rem;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.5s ease;
+    padding:  1rem 1rem 0 1rem ;
+    border-radius: 10% 0 0 10%;
+    .menu-item {
+      text-decoration: none;
+      color: $base-black;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0.4rem 1.2rem;
+    }
+    .menu-item:hover {
+      text-shadow: 1px 1px $base-black;
+    }
+    .metiers-item {
+      text-decoration: none;
+      color: $base-black;
+      font-size: 1rem;
+      padding-left: 1.6rem;
+    }
+    .metiers-item:hover {
+      font-weight: 900;
+    }
+  }
+  .active {
+    right: 0vw;
+  }
+  .footer {
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    height: 25vh;
+    padding-top: 2rem;
+    background: #1d2024;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    .footer-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-bottom: 2rem;
+      .footer-title {
+        margin: 1rem 0 1rem 0;
+      }
+      .footer-infos {
+        text-decoration: none;
+        color: white;
+      }
     }
   }
 }
