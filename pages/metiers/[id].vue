@@ -75,7 +75,6 @@ $base-black: #191c20;
     justify-content: center;
     padding: 0 2rem;
     font-size: 1.2rem;
-    // box-shadow: inset 5px 5px 10px #d9d9d9, inset -5px -5px 10px #ffffff;
   }
 }
 </style>

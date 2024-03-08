@@ -92,7 +92,7 @@ $base-grey: #858384;
   align-items: center;
   background: linear-gradient(145deg, $base-red, $base-grey);
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   padding-left: 0.3rem;
   z-index: 30;
   img {
@@ -164,7 +164,7 @@ $base-grey: #858384;
   .footer-div {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     padding-bottom: 2rem;
     .footer-title {
       margin: 1rem 0 1rem 0;
