@@ -43,7 +43,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 const cardsDiv = ref(null);
 const scrollToTopOfCards = () => {
   const div = cardsDiv.value;

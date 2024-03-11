@@ -98,7 +98,7 @@ $base-grey: #858384;
   height: 10vh;
   width: 100%;
   padding-left: 0.3rem;
-  z-index: 30;
+  z-index: 1001;
   img {
     width: 78px;
     height: 100%;

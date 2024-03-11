@@ -1,14 +1,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  //  router: {
-  //    options: {
-  //      scrollBehaviorType: "smooth",
-  //    },
-  //  },
   alias: {
     "@": "/<rootDir>",
   },
-  css: ["~/assets/scss/main.scss"],
+  css: ["~/assets/scss/main.css"],
+  modules: ["nuxt3-leaflet"],
   app: {
     head: {
       title: "SG Conseils",
