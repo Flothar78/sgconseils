@@ -20,6 +20,7 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@nuxt/image": "^1.4.0",
     "@nuxtjs/style-resources": "^1.2.2",
     "node-sass": "^9.0.0",
     "nuxt-simple-sitemap": "^4.4.1",

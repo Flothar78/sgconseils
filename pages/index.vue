@@ -1,13 +1,17 @@
 <template>
   <div class="hero" id="accueil" @scrollTo="scrollToTopOfCards">
- <div class="hero-img">
-  <img src="assets/img/happyPeopleInFrontOfPC_business_suit.jpeg" alt="happy people working with PC and ledger"></img>
- </div>   
+    <div class="hero-img">
+      <NuxtImg
+        format="webp"
+        src="/happyPeople.jpeg"
+        alt="employés de bureaux devant un PC"
+      ></NuxtImg>
+    </div>
     <div class="company-features"><CompanyTitle /><CompanyBusiness /></div>
-    <img
+    <NuxtImg
       class="background-img"
-      src="assets/img/background-image-metier.jpeg"
-      alt="desk picture in background"
+      src="/background-image.jpeg"
+      alt="Image de bureau en arrière fond, en tant que décor et peu visible."
     />
     <ScrollButton @scrollTo="scrollToTopOfCards" />
   </div>
@@ -32,7 +36,7 @@
       <NuxtLink class="nuxt-link" :to="`/metiers/gestion`">GESTION</NuxtLink>
     </div>
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/informatique`"
+      <NuxtLink class="nuxt-link" :to="`/metiers/informatique`" 916494
         >INFORMATIQUE</NuxtLink
       >
     </div>
@@ -58,44 +62,44 @@ $base-red: #b12434;
 $base-red: #b12434;
 $base-white: #bec8da;
 $base-black: #191c20;
-    // and (max-width:1199px)
-    .hero {
-      padding-top: 10vh;
-      position: relative;
-      background-color: $base-blue;
-      color: $base-white;
-      height: 90vh;
-      .company-features {
-        position: absolute;
-        top: 42.2vh;
-        left: 2vw;
-      }
-      .hero-img {
-        position: absolute;
-        right: 0;
-        margin-right: 1.6rem;
-        top: 15.5vh;
-        height: 36vh;
-        overflow: hidden;
-        z-index:10;
-        img{ 
-          width: 100%; 
-          height: 100%;
-          object-fit: contain;
-          object-position: right;
-          opacity: 0.9;
-        }
-      }
-      .background-img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        margin-top: -3vh;
-        filter: contrast(22%);
-        opacity: 0.1;
-      }
+// and (max-width:1199px)
+.hero {
+  padding-top: 10vh;
+  position: relative;
+  background-color: $base-blue;
+  color: $base-white;
+  height: 90vh;
+  .company-features {
+    position: absolute;
+    top: 42.2vh;
+    left: 2vw;
+  }
+  .hero-img {
+    position: absolute;
+    right: 0;
+    margin-right: 1.6rem;
+    top: 15.5vh;
+    height: 36vh;
+    overflow: hidden;
+    z-index: 10;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: right;
+      opacity: 0.9;
     }
-   .expertises-cards {
+  }
+  .background-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: -3vh;
+    filter: contrast(22%);
+    opacity: 0.1;
+  }
+}
+.expertises-cards {
   background-color: $base-blue;
   height: 70vh;
   padding-top: 20vh;
@@ -106,13 +110,14 @@ $base-black: #191c20;
   flex-wrap: wrap;
   column-gap: 80px;
   font-family: Arial, sans-serif;
-  .nuxt-link {border: 6px solid transparent; 
+  .nuxt-link {
+    border: 6px solid transparent;
     color: $darkest-blue;
     background-color: $base-white;
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
-    letter-spacing: .8px;
+    letter-spacing: 0.8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,26 +126,27 @@ $base-black: #191c20;
     border-radius: 10%;
     box-shadow: 8px 8px 10px $darkest-blue;
   }
-    .nuxt-link:hover {
-      box-shadow: 0 0;
-      border: 6px solid $base-red; 
-      box-shadow: 2px 2px 4px $darkest-blue;
-    }
+  .nuxt-link:hover {
+    box-shadow: 0 0;
+    border: 6px solid $base-red;
+    box-shadow: 2px 2px 4px $darkest-blue;
   }
+}
 
 @media screen and (max-width: 699px) {
-.hero {
-    padding-top: 14vh;
+  .hero {
+    padding-top: 10vh;
+    height: 94vh;
     .company-features {
       top: 60vh;
-      left:50%;
+      left: 50%;
       transform: translateX(-50%);
       width: 70vw;
-      }
+    }
     .hero-img {
       top: 13.2vh;
-      left:3vw;
-      img{ 
+      left: 3vw;
+      img {
         object-position: center;
         opacity: 0.8;
       }
