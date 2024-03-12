@@ -87,7 +87,7 @@ $base-black: #191c20;
       height: 100%;
       object-fit: contain;
       object-position: right;
-      opacity: 0.7;
+      opacity: 0.9;
     }
   }
   .background-img {
@@ -148,7 +148,6 @@ $base-black: #191c20;
       left: 3vw;
       img {
         object-position: center;
-        opacity: 0.7;
       }
     }
   }

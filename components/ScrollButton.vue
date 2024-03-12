@@ -20,11 +20,11 @@ const scrollDown = () => {
 <style lang="scss" scoped>
 @keyframes glitter {
   0% {
-    background: #b12434;
+    background: #d94556;
     box-shadow: -1px 1px 18px;
   }
   50% {
-    background: #d94556;
+    background: #b12434;
     box-shadow: 0px 0px 0px;
     width: 9rem;
     height: 3.2rem;
@@ -32,7 +32,7 @@ const scrollDown = () => {
     letter-spacing: 1.1px;
   }
   100% {
-    background: #b12434;
+    background: #d94556;
     box-shadow: -1px 1px 18px;
   }
 }
