@@ -21,19 +21,19 @@ const scrollDown = () => {
 @keyframes glitter {
   0% {
     background: #b12434;
-    box-shadow: 0px 0px 0px;
+    box-shadow: -1px 1px 18px;
   }
   50% {
     background: #d94556;
-    box-shadow: -1px 1px 18px;
+    box-shadow: 0px 0px 0px;
     width: 9rem;
     height: 3.2rem;
-    font-size: 0.95rem;
-    letter-spacing: 1.5px;
+    font-size: .93rem;
+    letter-spacing: 1.1px;
   }
   100% {
     background: #b12434;
-    box-shadow: 0px 0px 0px;
+    box-shadow: -1px 1px 18px;
   }
 }
 .twinkle {
