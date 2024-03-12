@@ -133,7 +133,7 @@ $base-black: #191c20;
   }
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 767px) {
   .hero {
     padding-top: 10vh;
     height: 94vh;

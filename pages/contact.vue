@@ -52,11 +52,11 @@
       <button class="form-button" type="submit">Envoyer</button>
     </Form>
     <NuxtLink :to="`/contact/#map-anchor`" id="scroll-to-map"
-      >Retrouvez-nous avec OpenStreetMap:</NuxtLink
+      > OpenStreetMap:</NuxtLink
     >
     <div id="map-anchor">
       <NuxtLink :to="`/contact/`" id="scroll-to-form"
-        >Retourner au formulaire de contact:</NuxtLink
+        >Aller au formulaire </NuxtLink
       >
       <div id="map-container">
         <LMap
@@ -88,23 +88,23 @@ const onSubmit = (values) => {
 };
 const validateEmail = (value) => {
   if (!value) {
-    return "Nous avons besoin d'une adresse mail.";
+    return "Votre adresse mail est requise.";
   }
   const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
   if (!regex.test(value)) {
-    return "Un mail valide est du type: nom@exemple.com.";
+    return "Mail du type: nom@exemple.com";
   }
   return true;
 };
 const validateCompany = (value) => {
   if (!value) {
-    return "Nous avons besoin du nom de votre société.";
+    return "Le nom de la société est requis.";
   }
   return true;
 };
 const validateName = (value) => {
   if (!value) {
-    return "Le nom de la personne à contacter est requis.";
+    return "Le nom d'un contact est requis.";
   }
   return true;
 };
@@ -133,9 +133,9 @@ $base-black: #191c20;
     border: 12px solid $darkest-blue;
     border-radius: 5%;
     background: white;
-    height: 70vh;
-    width: 60%;
-    margin: 3.5vh;
+    height: 68vh;
+    width: 45%;
+    margin: 2rem 3rem 3rem 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -158,11 +158,11 @@ $base-black: #191c20;
         height: 12vh;
       }
       .error-container {
+        margin-top: 1rem;
         height: 1rem;
         .error-message {
-          margin-top: 1vh;
           color: red;
-          font-size: 0.8rem;
+          font-size: 1rem;
           letter-spacing: 1.1px;
         }
       }
@@ -199,7 +199,7 @@ $base-black: #191c20;
   }
   #map-anchor {
     border: solid 2px transparent;
-    padding-bottom: 15vh;
+
     #scroll-to-form {
       height: 15vh;
       width: 15vw;
@@ -219,6 +219,67 @@ $base-black: #191c20;
       margin: 15vh 0 0 33vw;
       height: 68vh;
       width: 60%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .contact-form {
+      height: 50vh;
+      width: 75vw;
+      margin: 2rem 3rem 3rem 1rem;
+      .form-entry {
+        padding: 2% 0 0 5%;
+        .form-labels {
+          padding-bottom: 0.2rem;
+        }
+        #message {
+          height: 8vh;
+        }
+        .error-container {
+          margin: 0.2rem 0 0.2rem 0;
+          .error-message {
+            font-size: 0.8rem;
+            letter-spacing: 0.8px;
+          }
+        }
+      }
+    }
+    #scroll-to-map {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $base-black;
+      background: white;
+      position: absolute;
+      right: 8vw;
+      top: 89vh;
+      border: 4px solid $base-black;
+      height: 5vh;
+      width: 50vw;
+    }
+    #map-anchor {
+      border: solid 2px transparent;
+      margin-top: 9rem;
+      #scroll-to-form {
+        height: 5vh;
+        width: 50vw;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $base-black;
+        background: white;
+        position: absolute;
+        bottom: 10vh;
+        right: 8vw;
+        border: 4px solid $base-black;
+      }
+      #map-container {
+        border: 12px solid $darkest-blue;
+        margin: 30% 0 0 5%;
+        height: 62vh;
+        width: 80%;
+      }
     }
   }
 }

@@ -37,7 +37,7 @@ $base-black: #191c20;
   height: 9vh;
   box-shadow: 6px 0px;
 }
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 767px) {
   .company-name {
     background: linear-gradient(0.3turn, $base-blue, $dark-blue, $dark-blue);
     font-size: 1.5rem;
