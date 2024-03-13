@@ -11,46 +11,79 @@
       class="menu-list"
       :class="{ active: isActive }"
     >
-      <NuxtLink class="menu-item" :to="`/#accueil`">ACCUEIL</NuxtLink>
+      <NuxtLink class="menu-item" href="/#accueil" :to="`/#accueil`"
+        >ACCUEIL</NuxtLink
+      >
 
-      <NuxtLink class="menu-item" :to="`/#metiers`">EXPERTISES</NuxtLink>
-      <NuxtLink class="metiers-item" :to="`/metiers/comptabilite`"
+      <NuxtLink class="menu-item" href="/#accueil" :to="`/#metiers`"
+        >EXPERTISES</NuxtLink
+      >
+      <NuxtLink
+        class="metiers-item"
+        href="/metiers/comptabilite"
+        :to="`/metiers/comptabilite`"
         >Comptabilité</NuxtLink
       >
-      <NuxtLink class="metiers-item" :to="`/metiers/audit`">Audit</NuxtLink
-      ><NuxtLink class="metiers-item" :to="`/metiers/juridique`"
+      <NuxtLink
+        class="metiers-item"
+        href="/metiers/audit"
+        :to="`/metiers/audit`"
+        >Audit</NuxtLink
+      ><NuxtLink
+        class="metiers-item"
+        href="/metiers/juridique"
+        :to="`/metiers/juridique`"
         >Juridique</NuxtLink
       >
-      <NuxtLink class="metiers-item" :to="`/metiers/conseil`">Conseil</NuxtLink>
-      <NuxtLink class="metiers-item" :to="`/metiers/gestion`">Gestion</NuxtLink
-      ><NuxtLink class="metiers-item" :to="`/metiers/social`">Social</NuxtLink>
-      <NuxtLink class="metiers-item" :to="`/metiers/informatique`"
+      <NuxtLink
+        class="metiers-item"
+        href="/metiers/conseil"
+        :to="`/metiers/conseil`"
+        >Conseil</NuxtLink
+      >
+      <NuxtLink
+        class="metiers-item"
+        href="/metiers/gestion"
+        :to="`/metiers/gestion`"
+        >Gestion</NuxtLink
+      ><NuxtLink
+        class="metiers-item"
+        href="/metiers/social"
+        :to="`/metiers/social`"
+        >Social</NuxtLink
+      >
+      <NuxtLink
+        class="metiers-item"
+        href="/metiers/informatique"
+        :to="`/metiers/informatique`"
         >Informatique</NuxtLink
       >
 
-      <NuxtLink class="menu-item" :to="`#`">ÉQUIPE</NuxtLink>
-      <NuxtLink class="menu-item" :to="`#`">MENTIONS LÉGALES</NuxtLink>
-      <NuxtLink class="menu-item" :to="`/contact`">CONTACT</NuxtLink>
+      <NuxtLink class="menu-item" href="#" :to="`#`">ÉQUIPE</NuxtLink>
+      <NuxtLink class="menu-item" href="#" :to="`#`">MENTIONS LÉGALES</NuxtLink>
+      <NuxtLink class="menu-item" href="/contact" :to="`/contact`"
+        >CONTACT</NuxtLink
+      >
     </div>
   </header>
   <slot />
   <footer class="footer">
     <div class="footer-div">
-      <NuxtLink class="footer-title">METIERS:</NuxtLink>
-      <NuxtLink class="footer-infos" :to="`/metiers/comptabilite`"
+      <NuxtLink class="footer-title" href="/metiers">METIERS:</NuxtLink>
+      <NuxtLink class="footer-infos" href="/metiers/comptabilite" :to="`/metiers/comptabilite`"
         >Comptabilité</NuxtLink
       >
-      <NuxtLink class="footer-infos" :to="`/metiers/audit`">Audit</NuxtLink>
-      <NuxtLink class="footer-infos" :to="`/metiers/juridique`"
+      <NuxtLink class="footer-infos" href="/metiers/audit" :to="`/metiers/audit`">Audit</NuxtLink>
+      <NuxtLink class="footer-infos" href="/metiers/juridique" :to="`/metiers/juridique`"
         >Juridique</NuxtLink
       >
-      <NuxtLink class="footer-infos" :to="`/metiers/conseil`">Conseil</NuxtLink>
-      <NuxtLink class="footer-infos" :to="`/metiers/gestion`">Gestion</NuxtLink>
-      <NuxtLink class="footer-infos" :to="`/metiers/social`"
+      <NuxtLink class="footer-infos" href="/metiers/conseil" :to="`/metiers/conseil`">Conseil</NuxtLink>
+      <NuxtLink class="footer-infos" href="/metiers/gestion" :to="`/metiers/gestion`">Gestion</NuxtLink>
+      <NuxtLink class="footer-infos" href="/metiers/social" :to="`/metiers/social`"
         >Social / RH</NuxtLink
       >
 
-      <NuxtLink class="footer-infos" :to="`/metiers/informatique`"
+      <NuxtLink class="footer-infos" href="/metiers/informatique" :to="`/metiers/informatique`"
         >Informatique</NuxtLink
       >
     </div>

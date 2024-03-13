@@ -54,7 +54,7 @@
     <NuxtLink :to="`/contact/#map-anchor`" id="scroll-to-map"
       > OpenStreetMap:</NuxtLink
     >
-    <div id="map-anchor">
+    <div  href="map-anchor" id="map-anchor">
       <NuxtLink :to="`/contact/`" id="scroll-to-form"
         >Aller au formulaire </NuxtLink
       >
@@ -83,6 +83,11 @@
 
 <script setup>
 import { Form, Field, ErrorMessage } from "vee-validate";
+useSeoMeta({
+  title: "Site des experts-comptable SGConseils à Toulouse",
+  description:
+    "Site qui présente les services de la société SGConseils, le juridique, la comptabilité, le conseil, l'informatique, le social, la gestion et l'audit.",
+});
 const onSubmit = (values) => {
   console.log(JSON.stringify(values));
 };

@@ -18,6 +18,11 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: "Site des experts-comptable SGConseils à Toulouse",
+  description:
+    "Site qui présente les services de la société SGConseils, le juridique, la comptabilité, le conseil, l'informatique, le social, la gestion et l'audit.",
+});
 const id = useRoute().params.id;
 const correctedId =
   id === "comptabilite"
