@@ -2,6 +2,7 @@
   <div class="hero" id="accueil" @scrollTo="scrollToTopOfCards">
     <div class="hero-img">
       <NuxtImg
+        defer
         format="webp"
         src="/happyPeople.jpeg"
         alt="employés de bureaux devant un PC"
@@ -9,6 +10,7 @@
     </div>
     <div class="company-features"><CompanyTitle /><CompanyBusiness /></div>
     <NuxtImg
+      defer
       class="background-img"
       src="/background-image.jpeg"
       alt="Image de bureau en arrière fond, en tant que décor et peu visible."
