@@ -17,38 +17,46 @@
   </div>
   <div class="expertises-cards" id="metiers" ref="cardsDiv">
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/comptabilite`"
+      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/comptabilite`"
         >COMPTABILITÉ</NuxtLink
       >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/juridique`"
+      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/juridique`"
         >JURIDIQUE</NuxtLink
       >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/audit`">AUDIT</NuxtLink>
+      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/audit`"
+        >AUDIT</NuxtLink
+      >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/conseil`">CONSEIL</NuxtLink>
+      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/conseil`"
+        >CONSEIL</NuxtLink
+      >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/gestion`">GESTION</NuxtLink>
+      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/gestion`"
+        >GESTION</NuxtLink
+      >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/informatique`" 916494
+      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/informatique`" 916494
         >INFORMATIQUE</NuxtLink
       >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" :to="`/metiers/social`">SOCIAL</NuxtLink>
+      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/social`"
+        >SOCIAL</NuxtLink
+      >
     </div>
   </div>
 </template>
 
 <script setup>
 useSeoMeta({
-  title: "Site des experts-comptable SGConseils à Toulouse",
+  title: "SGConseils experts-comptable à Toulouse",
   description:
     "Site qui présente les services de la société SGConseils, le juridique, la comptabilité, le conseil, l'informatique, le social, la gestion et l'audit.",
 });

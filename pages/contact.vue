@@ -51,13 +51,13 @@
       </div>
       <button class="form-button" type="submit">Envoyer</button>
     </Form>
-    <NuxtLink :to="`/contact/#map-anchor`" id="scroll-to-map"
-      > OpenStreetMap:</NuxtLink
+    <NuxtLink href="#" :to="`/contact/#map-anchor`" id="scroll-to-map">
+      OpenStreetMap:</NuxtLink
     >
-    <div  href="map-anchor" id="map-anchor">
-      <NuxtLink :to="`/contact/`" id="scroll-to-form"
-        >Aller au formulaire </NuxtLink
-      >
+    <div href="map-anchor" id="map-anchor">
+      <NuxtLink href="#" :to="`/contact/`" id="scroll-to-form"
+        >Aller au formulaire
+      </NuxtLink>
       <div id="map-container">
         <LMap
           ref="map"

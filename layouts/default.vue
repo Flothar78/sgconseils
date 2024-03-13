@@ -11,79 +11,59 @@
       class="menu-list"
       :class="{ active: isActive }"
     >
-      <NuxtLink class="menu-item" href="/#accueil" :to="`/#accueil`"
-        >ACCUEIL</NuxtLink
-      >
+      <NuxtLink class="menu-item" href="#" :to="`/#accueil`">ACCUEIL</NuxtLink>
 
-      <NuxtLink class="menu-item" href="/#accueil" :to="`/#metiers`"
+      <NuxtLink class="menu-item" href="#" :to="`/#metiers`"
         >EXPERTISES</NuxtLink
       >
-      <NuxtLink
-        class="metiers-item"
-        href="/metiers/comptabilite"
-        :to="`/metiers/comptabilite`"
+      <NuxtLink class="metiers-item" href="#" :to="`/metiers/comptabilite`"
         >Comptabilité</NuxtLink
       >
-      <NuxtLink
-        class="metiers-item"
-        href="/metiers/audit"
-        :to="`/metiers/audit`"
+      <NuxtLink class="metiers-item" href="#" :to="`/metiers/audit`"
         >Audit</NuxtLink
-      ><NuxtLink
-        class="metiers-item"
-        href="/metiers/juridique"
-        :to="`/metiers/juridique`"
+      ><NuxtLink class="metiers-item" href="#" :to="`/metiers/juridique`"
         >Juridique</NuxtLink
       >
-      <NuxtLink
-        class="metiers-item"
-        href="/metiers/conseil"
-        :to="`/metiers/conseil`"
+      <NuxtLink class="metiers-item" href="#" :to="`/metiers/conseil`"
         >Conseil</NuxtLink
       >
-      <NuxtLink
-        class="metiers-item"
-        href="/metiers/gestion"
-        :to="`/metiers/gestion`"
+      <NuxtLink class="metiers-item" href="#" :to="`/metiers/gestion`"
         >Gestion</NuxtLink
-      ><NuxtLink
-        class="metiers-item"
-        href="/metiers/social"
-        :to="`/metiers/social`"
+      ><NuxtLink class="metiers-item" href="#" :to="`/metiers/social`"
         >Social</NuxtLink
       >
-      <NuxtLink
-        class="metiers-item"
-        href="/metiers/informatique"
-        :to="`/metiers/informatique`"
+      <NuxtLink class="metiers-item" href="#" :to="`/metiers/informatique`"
         >Informatique</NuxtLink
       >
-
-      <NuxtLink class="menu-item" href="#" :to="`#`">ÉQUIPE</NuxtLink>
+      <NuxtLink class="menu-item" href="#" to="`#`">ÉQUIPE</NuxtLink>
       <NuxtLink class="menu-item" href="#" :to="`#`">MENTIONS LÉGALES</NuxtLink>
-      <NuxtLink class="menu-item" href="/contact" :to="`/contact`"
-        >CONTACT</NuxtLink
-      >
+      <NuxtLink class="menu-item" href="#" :to="`/contact`">CONTACT</NuxtLink>
     </div>
   </header>
   <slot />
   <footer class="footer">
     <div class="footer-div">
-      <NuxtLink class="footer-title" href="/metiers">METIERS:</NuxtLink>
-      <NuxtLink class="footer-infos" href="/metiers/comptabilite" :to="`/metiers/comptabilite`"
+      <NuxtLink class="footer-title" href="#">METIERS:</NuxtLink>
+      <NuxtLink class="footer-infos" href="#" :to="`/metiers/comptabilite`"
         >Comptabilité</NuxtLink
       >
-      <NuxtLink class="footer-infos" href="/metiers/audit" :to="`/metiers/audit`">Audit</NuxtLink>
-      <NuxtLink class="footer-infos" href="/metiers/juridique" :to="`/metiers/juridique`"
+      <NuxtLink class="footer-infos" href="#" :to="`/metiers/audit`"
+        >Audit</NuxtLink
+      >
+      <NuxtLink class="footer-infos" href="#" :to="`/metiers/juridique`"
         >Juridique</NuxtLink
       >
-      <NuxtLink class="footer-infos" href="/metiers/conseil" :to="`/metiers/conseil`">Conseil</NuxtLink>
-      <NuxtLink class="footer-infos" href="/metiers/gestion" :to="`/metiers/gestion`">Gestion</NuxtLink>
-      <NuxtLink class="footer-infos" href="/metiers/social" :to="`/metiers/social`"
+      <NuxtLink class="footer-infos" href="#" :to="`/metiers/conseil`"
+        >Conseil</NuxtLink
+      >
+      <NuxtLink class="footer-infos" href="#" :to="`/metiers/gestion`"
+        >Gestion</NuxtLink
+      >
+      <NuxtLink class="footer-infos" href="#" :to="`/metiers/social`"
         >Social / RH</NuxtLink
       >
 
-      <NuxtLink class="footer-infos" href="/metiers/informatique" :to="`/metiers/informatique`"
+      <NuxtLink class="footer-infos" href="#" :to="`/metiers/informatique`"
         >Informatique</NuxtLink
       >
     </div>
@@ -205,6 +185,8 @@ $base-grey: #858384;
     padding-bottom: 2rem;
     .footer-title {
       margin: 1rem 0 1rem 0;
+      text-decoration: none;
+      color: white;
     }
     .footer-infos {
       text-decoration: none;
