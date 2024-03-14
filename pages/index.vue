@@ -3,14 +3,17 @@
     <div class="hero-img">
       <NuxtImg
         defer
+        quality="60"
         format="webp"
         src="/happyPeople.jpeg"
         alt="employés de bureaux devant un PC"
+        sizes="281px"
       ></NuxtImg>
     </div>
     <div class="company-features"><CompanyTitle /><CompanyBusiness /></div>
     <NuxtImg
       defer
+      quality="10"
       class="background-img"
       src="/background-image.jpeg"
       alt="Image de bureau en arrière fond, en tant que décor et peu visible."

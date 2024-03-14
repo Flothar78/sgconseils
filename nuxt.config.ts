@@ -1,4 +1,8 @@
 export default defineNuxtConfig({
+  ssr: true,
+  nitro: {
+    compressPublicAssets: false,
+  },
   devtools: { enabled: true },
   alias: {
     "@": "/<rootDir>",
