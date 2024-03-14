@@ -7,61 +7,57 @@
     /></NuxtLink>
     <button @click.stop="menuListSlide()" class="menu-button">MENU</button>
     <div class="menu-list" :class="{ active: isActive }">
-      <NuxtLink class="menu-item" href="#" :to="`/#accueil`">ACCUEIL</NuxtLink>
+      <NuxtLink class="menu-item" href="#" to="/#accueil">ACCUEIL</NuxtLink>
 
-      <NuxtLink class="menu-item" href="#" :to="`/#metiers`"
-        >EXPERTISES</NuxtLink
-      >
-      <NuxtLink class="metiers-item" href="#" :to="`/metiers/comptabilite`"
+      <NuxtLink class="menu-item" href="#" to="/#metiers">EXPERTISES</NuxtLink>
+      <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
         >Comptabilité</NuxtLink
       >
-      <NuxtLink class="metiers-item" href="#" :to="`/metiers/audit`"
+      <NuxtLink class="metiers-item" href="#" to="/metiers/audit"
         >Audit</NuxtLink
-      ><NuxtLink class="metiers-item" href="#" :to="`/metiers/juridique`"
+      ><NuxtLink class="metiers-item" href="#" to="/metiers/juridique"
         >Juridique</NuxtLink
       >
-      <NuxtLink class="metiers-item" href="#" :to="`/metiers/conseil`"
+      <NuxtLink class="metiers-item" href="#" to="/metiers/conseil"
         >Conseil</NuxtLink
       >
-      <NuxtLink class="metiers-item" href="#" :to="`/metiers/gestion`"
+      <NuxtLink class="metiers-item" href="#" to="/metiers/gestion"
         >Gestion</NuxtLink
-      ><NuxtLink class="metiers-item" href="#" :to="`/metiers/social`"
+      ><NuxtLink class="metiers-item" href="#" to="/metiers/social"
         >Social</NuxtLink
       >
-      <NuxtLink class="metiers-item" href="#" :to="`/metiers/informatique`"
+      <NuxtLink class="metiers-item" href="#" to="/metiers/informatique"
         >Informatique</NuxtLink
       >
-      <NuxtLink class="menu-item" href="#" :to="`#`">ÉQUIPE</NuxtLink>
-      <NuxtLink class="menu-item" href="#" :to="`/#`"
-        >MENTIONS LÉGALES</NuxtLink
-      >
-      <NuxtLink class="menu-item" href="#" :to="`/contact/`">CONTACT</NuxtLink>
+      <NuxtLink class="menu-item" href="#" to="#`">ÉQUIPE</NuxtLink>
+      <NuxtLink class="menu-item" href="#" to="/#">MENTIONS LÉGALES</NuxtLink>
+      <NuxtLink class="menu-item" href="#" to="/contact">CONTACT</NuxtLink>
     </div>
   </header>
   <slot />
   <footer class="footer">
     <div class="footer-div">
       <NuxtLink class="footer-title" href="#">METIERS:</NuxtLink>
-      <NuxtLink class="footer-infos" href="#" :to="`/metiers/comptabilite`"
+      <NuxtLink class="footer-infos" href="#" to="/metiers/comptabilite"
         >Comptabilité</NuxtLink
       >
-      <NuxtLink class="footer-infos" href="#" :to="`/metiers/audit`"
+      <NuxtLink class="footer-infos" href="#" to="/metiers/audit"
         >Audit</NuxtLink
       >
-      <NuxtLink class="footer-infos" href="#" :to="`/metiers/juridique`"
+      <NuxtLink class="footer-infos" href="#" to="/metiers/juridique"
         >Juridique</NuxtLink
       >
-      <NuxtLink class="footer-infos" href="#" :to="`/metiers/conseil`"
+      <NuxtLink class="footer-infos" href="#" to="/metiers/conseil"
         >Conseil</NuxtLink
       >
-      <NuxtLink class="footer-infos" href="#" :to="`/metiers/gestion`"
+      <NuxtLink class="footer-infos" href="#" to="/metiers/gestion"
         >Gestion</NuxtLink
       >
-      <NuxtLink class="footer-infos" href="#" :to="`/metiers/social`"
+      <NuxtLink class="footer-infos" href="#" to="/metiers/social"
         >Social / RH</NuxtLink
       >
 
-      <NuxtLink class="footer-infos" href="#" :to="`/metiers/informatique`"
+      <NuxtLink class="footer-infos" href="#" to="/metiers/informatique"
         >Informatique</NuxtLink
       >
     </div>
