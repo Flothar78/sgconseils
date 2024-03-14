@@ -19,10 +19,9 @@ const closeMenu = () => {
   const menuClassesMatch = menuClasses.some((className) =>
     regex.test(className)
   );
-  console.log(menuClassesMatch);
   if (isActive.value && menuClassesMatch) {
     isActive.value = isActive.value;
-  } else if(isActive.value && !menuClassesMatch){
+  } else if (isActive.value && !menuClassesMatch) {
     isActive.value = !isActive.value;
   }
 };

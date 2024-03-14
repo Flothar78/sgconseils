@@ -54,6 +54,7 @@
     <NuxtLink href="#" :to="`/contact/#map-anchor`" id="scroll-to-map">
       OpenStreetMap:</NuxtLink
     >
+    <NuxtLink href="#" :to="`/#metiers`"> STESTKJOGFJMLHJFZMSQFSJMJHFSLMQJ</NuxtLink>
     <div href="map-anchor" id="map-anchor">
       <NuxtLink href="#" :to="`/contact/`" id="scroll-to-form"
         >Aller au formulaire

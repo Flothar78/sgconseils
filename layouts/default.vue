@@ -6,10 +6,7 @@
         alt="logo sg conseils format png"
     /></NuxtLink>
     <button @click.stop="menuListSlide()" class="menu-button">MENU</button>
-    <div
-      class="menu-list"
-      :class="{ active: isActive }"
-    >
+    <div class="menu-list" :class="{ active: isActive }">
       <NuxtLink class="menu-item" href="#" :to="`/#accueil`">ACCUEIL</NuxtLink>
 
       <NuxtLink class="menu-item" href="#" :to="`/#metiers`"
@@ -34,8 +31,10 @@
       <NuxtLink class="metiers-item" href="#" :to="`/metiers/informatique`"
         >Informatique</NuxtLink
       >
-      <NuxtLink class="menu-item" href="#" :to="`/`">ÉQUIPE</NuxtLink>
-      <NuxtLink class="menu-item" href="#" :to="`/`">MENTIONS LÉGALES</NuxtLink>
+      <NuxtLink class="menu-item" href="#" :to="`#`">ÉQUIPE</NuxtLink>
+      <NuxtLink class="menu-item" href="#" :to="`/#`"
+        >MENTIONS LÉGALES</NuxtLink
+      >
       <NuxtLink class="menu-item" href="#" :to="`/contact/`">CONTACT</NuxtLink>
     </div>
   </header>
