@@ -98,7 +98,6 @@ $base-black: #191c20;
     margin-right: 1.6rem;
     top: 15.5vh;
     height: 36vh;
-    overflow: hidden;
     z-index: 10;
     img {
       width: 100%;
@@ -163,7 +162,9 @@ $base-black: #191c20;
     }
     .hero-img {
       top: 13.2vh;
-      left: 3vw;
+      width: 230px;
+      left: 50%;
+      transform: translate(-50%);
       img {
         object-position: center;
       }
