@@ -7,7 +7,6 @@
     /></NuxtLink>
     <button @click.stop="menuListSlide()" class="menu-button">MENU</button>
     <div
-      @click.stop="menuListSlide()"
       class="menu-list"
       :class="{ active: isActive }"
     >
@@ -35,9 +34,9 @@
       <NuxtLink class="metiers-item" href="#" :to="`/metiers/informatique`"
         >Informatique</NuxtLink
       >
-      <NuxtLink class="menu-item" href="#" to="`#`">ÉQUIPE</NuxtLink>
-      <NuxtLink class="menu-item" href="#" :to="`#`">MENTIONS LÉGALES</NuxtLink>
-      <NuxtLink class="menu-item" href="#" :to="`/contact`">CONTACT</NuxtLink>
+      <NuxtLink class="menu-item" href="#" :to="`/`">ÉQUIPE</NuxtLink>
+      <NuxtLink class="menu-item" href="#" :to="`/`">MENTIONS LÉGALES</NuxtLink>
+      <NuxtLink class="menu-item" href="#" :to="`/contact/`">CONTACT</NuxtLink>
     </div>
   </header>
   <slot />

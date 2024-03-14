@@ -11,8 +11,18 @@
 
 <script setup lang="ts">
 const isActive = useState("isActive");
+
 const closeMenu = () => {
-  if (isActive.value) {
+  const menuClasses = Object.values(event.target.classList);
+  const regex = /metiers-item|menu-list|menu-item/;
+
+  const menuClassesMatch = menuClasses.some((className) =>
+    regex.test(className)
+  );
+  console.log(menuClassesMatch);
+  if (isActive.value && menuClassesMatch) {
+    isActive.value = isActive.value;
+  } else if(isActive.value && !menuClassesMatch){
     isActive.value = !isActive.value;
   }
 };
