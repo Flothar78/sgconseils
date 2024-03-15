@@ -22,37 +22,35 @@
   </div>
   <div class="expertises-cards" id="metiers" ref="cardsDiv">
     <div>
-      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/comptabilite`"
+      <NuxtLink class="nuxt-link" href="#" to="/metiers/comptabilite"
         >COMPTABILITÉ</NuxtLink
       >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/juridique`"
+      <NuxtLink class="nuxt-link" href="#" to="/metiers/juridique"
         >JURIDIQUE</NuxtLink
       >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/audit`"
-        >AUDIT</NuxtLink
-      >
+      <NuxtLink class="nuxt-link" href="#" to="/metiers/audit">AUDIT</NuxtLink>
     </div>
     <div>
-      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/conseil`"
+      <NuxtLink class="nuxt-link" href="#" to="/metiers/conseil"
         >CONSEIL</NuxtLink
       >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/gestion`"
+      <NuxtLink class="nuxt-link" href="#" to="/metiers/gestion"
         >GESTION</NuxtLink
       >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/informatique`" 916494
+      <NuxtLink class="nuxt-link" href="#" to="/metiers/informatique`"
         >INFORMATIQUE</NuxtLink
       >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" href="#" :to="`/metiers/social`"
+      <NuxtLink class="nuxt-link" href="#" to="/metiers/social`"
         >SOCIAL</NuxtLink
       >
     </div>
