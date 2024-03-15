@@ -137,18 +137,19 @@ $base-black: #191c20;
     }
     .contact-form {
       border: 12px solid $darkest-blue;
-      border-radius: 5%;
+      border-radius: 7%;
       background: white;
       height: 68vh;
-      width: 45%;
-      margin: 2rem 3rem 3rem 2.5rem;
+      width: 60vw;
+      margin-bottom: 4.5rem;
+      margin-left: 2rem;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       .form-entry {
         display: flex;
         flex-direction: column;
-        padding: 5% 0 0 5%;
+        padding: 1rem 1rem;
         .form-labels {
           color: $base-black;
           padding-bottom: 0.5rem;
@@ -156,12 +157,12 @@ $base-black: #191c20;
         .form-field {
           border: 2px solid $base-black;
           width: 65%;
-          height: 3vh;
+          height: 4vh;
         }
         #message {
           border: 2px solid $base-black;
-          width: 75%;
-          height: 12vh;
+          width: 45vw;
+          height: 8vh;
         }
         .error-container {
           margin-top: 1rem;
@@ -179,9 +180,9 @@ $base-black: #191c20;
         font-size: 1.1rem;
         font-weight: 900;
         letter-spacing: 1.2px;
-        height: 8%;
+        height: 4vh;
         width: 33%;
-        border-radius: 7%;
+        border-radius: 50px;
         margin: auto;
         box-shadow: 4px 4px 6px $base-black;
       }
@@ -198,7 +199,7 @@ $base-black: #191c20;
       background: white;
       position: absolute;
       right: 3vw;
-      top: 36vh;
+      top: 79vh;
       border: 4px solid $base-black;
       height: 15vh;
       width: 15vw;
@@ -211,7 +212,9 @@ $base-black: #191c20;
       border: 12px solid $darkest-blue;
       margin: 1rem 0 0 15rem;
       height: 68vh;
-      width: 60%;
+      width: 60vw;
+      margin: 2.2rem 0 3rem 2rem;
+      border-radius: 7px;
     }
     #scroll-to-form {
       height: 15vh;
@@ -223,9 +226,9 @@ $base-black: #191c20;
       color: $base-black;
       background: white;
       position: absolute;
-      bottom: 41vh;
-      left: 4vw;
-      border: 4px solid $base-red;
+      bottom: 15vh;
+      right: 3vw;
+      border: 4px solid $darkest-blue;
     }
   }
 }
