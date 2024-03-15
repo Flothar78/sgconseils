@@ -51,19 +51,11 @@
       </div>
       <button class="form-button" type="submit">Envoyer</button>
     </Form>
-    <NuxtLink
-      href="#"
-      to="/contact/#map-anchor"
-      target="map-anchor"
-      id="scroll-to-map"
-    >
+    <NuxtLink to="/contact/#scroll-to-form" id="scroll-to-map">
       OpenStreetMap:</NuxtLink
     >
-    <NuxtLink href="#" to="/#metiers" target="/">
-      STESTKJOGFJMLHJFZMSQFSJMJHFSLMQJ</NuxtLink
-    >
-    <div href="map-anchor" id="map-anchor">
-      <NuxtLink href="#" to="/contact/" id="scroll-to-form"
+    <div href="#" id="map-anchor">
+      <NuxtLink href="#" to="/contact/#scroll-to-map" id="scroll-to-form"
         >Aller au formulaire
       </NuxtLink>
       <div id="map-container">
@@ -205,7 +197,7 @@ $base-black: #191c20;
     background: white;
     position: absolute;
     right: 3vw;
-    top: 40vh;
+    top: 25vh;
     border: 4px solid black;
     height: 15vh;
     width: 15vw;
@@ -223,7 +215,7 @@ $base-black: #191c20;
       color: $base-black;
       background: white;
       position: absolute;
-      bottom: 60vh;
+      bottom: 73vh;
       left: 4vw;
       border: 4px solid black;
     }
