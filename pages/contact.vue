@@ -128,14 +128,13 @@ $base-black: #191c20;
   position: relative;
   background-color: #bec8da;
   color: $base-black;
-
-  .contact-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: 2rem 0 1rem 1rem;
-  }
   .form-and-anchor-container {
     padding-top: 7rem;
+    .contact-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 2rem 0 1rem 1rem;
+    }
     .contact-form {
       border: 12px solid $darkest-blue;
       border-radius: 5%;
@@ -146,7 +145,6 @@ $base-black: #191c20;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-
       .form-entry {
         display: flex;
         flex-direction: column;
@@ -201,7 +199,7 @@ $base-black: #191c20;
       position: absolute;
       right: 3vw;
       top: 36vh;
-      border: 4px solid black;
+      border: 4px solid $base-black;
       height: 15vh;
       width: 15vw;
     }
@@ -230,48 +228,74 @@ $base-black: #191c20;
       border: 4px solid $base-red;
     }
   }
-  @media screen and (max-width: 767px) {
-    .contact-form {
-      height: 50vh;
-      width: 75vw;
-      margin: 2rem 3rem 3rem 1rem;
-      .form-entry {
-        padding: 2% 0 0 5%;
-        .form-labels {
-          padding-bottom: 0.2rem;
-        }
-        #message {
-          height: 8vh;
-        }
-        .error-container {
-          margin: 0.2rem 0 0.2rem 0;
-          .error-message {
-            font-size: 0.8rem;
-            letter-spacing: 0.8px;
+}
+@media screen and (max-width: 767px) {
+  .global-contact-page {
+    position: relative;
+    background-color: #bec8da;
+    color: $base-black;
+    .form-and-anchor-container {
+      height: 90vh;
+      .contact-title {
+        font-size: 0;
+        margin: 0;
+        padding-bottom: 1.5rem;
+        padding-left: 0.5rem;
+      }
+      .contact-form {
+        border: 12px solid $darkest-blue;
+        border-radius: 5%;
+        background: white;
+        height: 60vh;
+        width: 70vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .form-entry {
+          display: flex;
+          flex-direction: column;
+          padding: 1rem 0 0 1rem;
+          .form-labels {
+            color: $base-black;
+            padding-bottom: 0.25rem;
+          }
+          .form-field {
+            border: 2px solid $base-black;
+            width: 55vw;
+            height: 3vh;
+          }
+          #message {
+            border: 2px solid $base-black;
+            width: 75%;
+            height: 8vh;
+          }
+          .error-container {
+            height: 1rem;
+            .error-message {
+              color: red;
+              font-size: 0.8rem;
+              letter-spacing: 0.8px;
+            }
           }
         }
+        .form-button {
+          background: $base-red;
+          color: white;
+          font-size: 1.1rem;
+          font-weight: 900;
+          letter-spacing: 1.2px;
+          height: 4vh;
+          width: 45%;
+          border-radius: 15px;
+          margin: auto;
+          box-shadow: 4px 4px 6px $base-black;
+        }
+        .form-button:hover {
+          box-shadow: 0 0 0;
+        }
       }
-    }
-    #scroll-to-map {
-      text-decoration: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $base-black;
-      background: white;
-      position: absolute;
-      right: 8vw;
-      top: 89vh;
-      border: 4px solid $base-black;
-      height: 5vh;
-      width: 50vw;
-    }
-    #map-anchor {
-      border: solid 2px transparent;
-      margin-top: 9rem;
-      #scroll-to-form {
-        height: 5vh;
-        width: 50vw;
+      #scroll-to-map {
         text-decoration: none;
         display: flex;
         justify-content: center;
@@ -279,15 +303,42 @@ $base-black: #191c20;
         color: $base-black;
         background: white;
         position: absolute;
-        bottom: 10vh;
-        right: 8vw;
+        right: 50%;
+        transform: translate(50%);
+        top: 87.6vh;
         border: 4px solid $base-black;
+        height: 5vh;
+        width: 45vw;
       }
-      #map-container {
+    }
+    .map-and-anchor-container {
+      padding-top: 18.5vh;
+      height: 90vh;
+      .map-container {
         border: 12px solid $darkest-blue;
-        margin: 30% 0 0 5%;
-        height: 62vh;
-        width: 80%;
+        border-radius: 10px;
+        background: white;
+        height: 60vh;
+        width: 70vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      #scroll-to-form {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $base-black;
+        background: white;
+        position: absolute;
+        bottom: 15vh;
+        left: 50%;
+        transform: translate(-50%);
+        border: 4px solid $base-black;
+        height: 5vh;
+        width: 45vw;
       }
     }
   }
