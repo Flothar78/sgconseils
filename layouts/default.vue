@@ -1,14 +1,13 @@
 <template>
   <header class="navbar-container">
-    <NuxtLink class="link-item" :to="`/`">
+    <NuxtLink class="link-item" href="#" to="/">
       <img
         src="~/assets/img/logo_sg_conseils.png"
         alt="logo sg conseils format png"
     /></NuxtLink>
     <button @click.stop="menuListSlide()" class="menu-button">MENU</button>
     <div class="menu-list" :class="{ active: isActive }">
-      <NuxtLink class="menu-item" href="#" to="/#accueil">ACCUEIL</NuxtLink>
-
+      <NuxtLink class="menu-item" to="/#accueil">ACCUEIL</NuxtLink>
       <NuxtLink class="menu-item" href="#" to="/#metiers">EXPERTISES</NuxtLink>
       <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
         >Comptabilité</NuxtLink
