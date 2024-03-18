@@ -45,12 +45,12 @@
       >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" href="#" to="/metiers/informatique`"
+      <NuxtLink class="nuxt-link" href="#" to="/metiers/informatique"
         >INFORMATIQUE</NuxtLink
       >
     </div>
     <div>
-      <NuxtLink class="nuxt-link" href="#" to="/metiers/social`"
+      <NuxtLink class="nuxt-link" href="#" to="/metiers/social"
         >SOCIAL</NuxtLink
       >
     </div>
