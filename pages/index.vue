@@ -83,7 +83,7 @@ $base-black: #191c20;
   position: relative;
   background-color: $base-blue;
   color: $base-white;
-  height: 90vh;
+  height: 93vh;
   .company-features {
     position: absolute;
     top: 42.2vh;

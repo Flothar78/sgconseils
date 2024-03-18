@@ -25,7 +25,7 @@ $base-black: #191c20;
     $base-blue,
     $dark-blue,
     $dark-blue,
-    $dark-blue
+    $darkest-blue
   );
   color: #e9ecf2;
   text-shadow: 1px 1px 1px black;
@@ -42,9 +42,15 @@ $base-black: #191c20;
 }
 @media screen and (max-width: 767px) {
   .company-name {
-    background: linear-gradient(0.3turn, $base-blue, $dark-blue, $dark-blue);
+    background: linear-gradient(
+      0.3turn,
+      $base-blue,
+      $dark-blue,
+      $dark-blue,
+      $darkest-blue
+    );
     font-size: 1.5rem;
-    width: 100%;
+    width: 85vw;
     height: 8vh;
     margin-left: -3rem;
   }

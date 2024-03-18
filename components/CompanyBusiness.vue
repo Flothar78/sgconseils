@@ -19,7 +19,7 @@ $base-black: #191c20;
   color: #e9ecf2;
   background: linear-gradient(
     0.25turn,
-    $dark-blue,
+    $darkest-blue,
     $dark-blue,
     $dark-blue,
     $base-blue
@@ -38,10 +38,12 @@ $base-black: #191c20;
 }
 @media screen and (max-width: 767px) {
   .company-activity {
-    font-size: 1.1rem;letter-spacing: .8px;
+    font-size: 1.1rem;
+    letter-spacing: 0.8px;
     font-weight: 500;
-    margin: 2rem 0 0 0;
-    width: 95%;
+    margin: 2rem 0 0 -2rem;
+    padding: 1rem 0 1rem 1rem;
+    width: 85vw;
     height: 5vh;
     box-shadow: -6px 0px;
   }

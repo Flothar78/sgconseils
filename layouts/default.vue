@@ -100,38 +100,40 @@ $base-grey: #858384;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(145deg, $base-red, $base-grey);
-  height: 10vh;
+  background: $darkest-blue;
+  height: 7vh;
   width: 100%;
   padding-left: 0.3rem;
   z-index: 1001;
   img {
-    width: 78px;
-    height: 100%;
+    width: 50px;
   }
   .menu-button {
+    height: 3.5vh;
     margin-right: 2rem;
     background: $base-red;
     border: 1px transparent solid;
     color: white;
     font-size: 1rem;
-    padding: 0.5rem;
-    box-shadow: 4px 4px 5px $base-black;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px;
   }
   .menu-button:hover {
-    box-shadow: 1px 1px 2px $base-black;
+    box-shadow: 0 0 0;
+    font-weight: 500;
+    letter-spacing: 0.9px;
   }
 }
 .menu-list {
   font-family: Arial, sans-serif;
   background-color: $base-white;
   border: 5px solid $base-red;
-  height: 38.6vh;
+  height: 42vh;
   font-size: 1rem;
   list-style: none;
   position: fixed;
   right: -80vw;
-  top: 10vh;
+  top: 7vh;
   margin-right: -0.3rem;
   display: flex;
   flex-direction: column;

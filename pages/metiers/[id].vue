@@ -44,11 +44,11 @@ $base-red: #b12434;
 $base-white: #bec8da;
 $base-black: #191c20;
 .global-metiers {
-  padding-top: 12vh;
+  padding-top: 7vh;
   position: relative;
   background-color: $base-blue;
   color: white;
-  height: 90vh;
+  height: 93vh;
   .company-business {
     color: $base-white;
     width: 26vw;
