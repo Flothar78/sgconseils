@@ -18,6 +18,12 @@ const scrollDown = () => {
 </script>
 
 <style lang="scss" scoped>
+$base-blue: #7d93b5;
+$dark-blue: #425b8a;
+$darkest-blue: #1c212f;
+$base-red: #b12434;
+$base-white: #bec8da;
+$base-black: #191c20;
 @keyframes glitter {
   0% {
     background: #d94556;
@@ -28,7 +34,7 @@ const scrollDown = () => {
     box-shadow: 0px 0px 0px;
     width: 9rem;
     height: 3.2rem;
-    font-size: .93rem;
+    font-size: 0.93rem;
     letter-spacing: 1.1px;
   }
   100% {
