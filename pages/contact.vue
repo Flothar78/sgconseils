@@ -170,7 +170,6 @@ $base-black: #191c20;
           height: 8vh;
         }
         .error-container {
-          margin-top: 1rem;
           height: 1rem;
           .error-message {
             color: red;
