@@ -236,7 +236,6 @@ $base-black: #191c20;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  //  padding: 2rem 0;
     align-items: center;
     width: 20vw;
     height: 14vh;
@@ -274,9 +273,10 @@ $base-black: #191c20;
     row-gap: 50px;
     height: 100%;
     .nuxt-link {
-      width: 37vw;
+    width: 38vw;
       height: 13vh;
       border-radius: 10%;
+      font-size: .9rem;
     }
   }
 }
