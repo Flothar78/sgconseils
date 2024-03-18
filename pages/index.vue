@@ -215,7 +215,7 @@ $base-black: #191c20;
   }
 }
 .expertises-cards {
-  background-color: $base-blue;
+  background-color: $base-white;
   height: 70vh;
   padding-top: 20vh;
   padding-bottom: 10vh;
@@ -226,7 +226,7 @@ $base-black: #191c20;
   column-gap: 80px;
   font-family: Arial, sans-serif;
   .nuxt-link {
-    border: 6px solid transparent;
+    border: 9px solid $darkest-blue;
     color: $darkest-blue;
     background-color: $base-white;
     text-decoration: none;
@@ -241,12 +241,10 @@ $base-black: #191c20;
     width: 20vw;
     height: 14vh;
     border-radius: 10%;
-    box-shadow: 8px 8px 10px $darkest-blue;
+    box-shadow: 8px 8px 10px $dark-blue;
   }
   .nuxt-link:hover {
-    box-shadow: 0 0;
-    border: 6px solid $base-red;
-    box-shadow: 2px 2px 4px $darkest-blue;
+    box-shadow: 4px 4px 6px $base-red;
   }
 }
 

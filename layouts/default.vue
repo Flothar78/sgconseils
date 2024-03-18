@@ -121,7 +121,7 @@ $base-grey: #858384;
   .menu-button:hover {
     box-shadow: 0 0 0;
     font-weight: 500;
-    letter-spacing: 0.9px;
+    transform: translate(2px,2px);
   }
 }
 .menu-list {
