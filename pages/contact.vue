@@ -134,9 +134,10 @@ $base-black: #191c20;
       margin: 2rem 0 1rem 1rem;
       .form-invitation {
         padding-left: 2rem;
+        font-style: italic;
         font-size: 1.2rem;
-        font-weight: 500;
-        text-shadow: 1px 1px 1px grey;
+        font-weight: 300;
+        text-shadow: 1px 1px 3px grey;
       }
     }
     .contact-form {
