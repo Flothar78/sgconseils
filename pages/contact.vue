@@ -4,9 +4,7 @@
       <div class="contact-title">
         Pour toutes vos questions juridiques, comptables, sociales, de gestion,
         de conseil:
-        <div style="padding-left: 2rem; font-size: 1.2rem">
-          Contactez nos consultants:
-        </div>
+        <div class="form-invitation">Contactez nos consultants:</div>
       </div>
       <Form @submit="onSubmit" class="contact-form">
         <div class="form-entry">
@@ -134,6 +132,12 @@ $base-black: #191c20;
       font-size: 1.2rem;
       font-weight: 700;
       margin: 2rem 0 1rem 1rem;
+      .form-invitation {
+        padding-left: 2rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-shadow: 1px 1px 1px grey;
+      }
     }
     .contact-form {
       border: 12px solid $darkest-blue;
