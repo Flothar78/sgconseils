@@ -75,7 +75,6 @@ $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
 $base-red: #b12434;
-$base-red: #b12434;
 $base-white: #bec8da;
 $base-black: #191c20;
 // and (max-width:1199px)
