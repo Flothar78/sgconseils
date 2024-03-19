@@ -1,6 +1,6 @@
 <template>
   <div class="global-metiers">
-    <CompanyTitle class="company-business" :title="correctedId" />
+    <CompanyTitle class="company-title" :title="correctedId" />
     <Juridique v-if="id === 'juridique'" :childClasses="parentClasses" />
     <Gestion v-else-if="id === 'gestion'" :childClasses="parentClasses" />
     <Audit v-else-if="id === 'audit'" :childClasses="parentClasses" />
@@ -33,7 +33,7 @@ const correctedId =
         .join("")
     : id.toUpperCase();
 
-const parentClasses = ref(["activity-slogan", "activity-description"]);
+const parentClasses = ref(["svg-icon","activity-slogan", "activity-description"]);
 </script>
 
 <style lang="scss">
@@ -44,35 +44,44 @@ $base-red: #b12434;
 $base-white: #bec8da;
 $base-black: #191c20;
 .global-metiers {
-  padding-top: 7vh;
+  padding-top: 10vh;
   position: relative;
   background-color: $base-blue;
-  color: white;
-  height: 93vh;
-  .company-business {
-    color: $base-white;
-    width: 26vw;
-    margin-top: 3.8rem;
+  color: $base-white;
+  height: 90vh;
+  .company-title {
+    background: $dark-blue;
+    width: 45vw;
+    margin-top: 3rem;
     font-size: 1.5rem;
-    text-shadow: 1px 1px 4px $base-blue;
+    text-shadow: 3px 3px 2px $base-black;
     padding: 0;
+    box-shadow: 6px 6px 4px $base-black;
+  }
+  .svg-icon{
+margin: -3.1rem 0 0 4rem;
+color: white;
   }
   .activity-slogan {
+    background: $base-white;
     color: $base-black;
+    font-weight: 500;
+    font-size: 2rem;
+    min-width: 55vw;
     position: absolute;
-    top: 45vh;
-    left: 5vw;
-    margin: 2.5rem 0 0 5rem;
-    font-size: 1.5rem;
-    font-style: italic;
+    top: 30vh;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 2.5rem;
+    padding: 1rem 2rem;
   }
   .activity-description {
     color: $base-black;
     position: absolute;
     background: $base-white;
     top: 64vh;
-    height: 20vh;
-    width: 50vw;
+    height: 25vh;
+    width: 55vw;
     right: 50%;
     transform: translateX(50%);
     display: flex;
