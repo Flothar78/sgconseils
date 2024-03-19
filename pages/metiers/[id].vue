@@ -14,6 +14,9 @@
     />
     <Conseil v-else-if="id === 'conseil'" :childClasses="parentClasses" />
     <Social v-else-if="id === 'social'" :childClasses="parentClasses" />
+    <NuxtLink class="contact-button" href="#" to="/contact"
+      >Écrivez-nous</NuxtLink
+    >
   </div>
 </template>
 
@@ -33,7 +36,11 @@ const correctedId =
         .join("")
     : id.toUpperCase();
 
-const parentClasses = ref(["svg-icon","activity-slogan", "activity-description"]);
+const parentClasses = ref([
+  "svg-icon",
+  "activity-slogan",
+  "activity-description",
+]);
 </script>
 
 <style lang="scss">
@@ -52,22 +59,23 @@ $base-black: #191c20;
   .company-title {
     background: $dark-blue;
     width: 45vw;
-    margin-top: 3rem;
+    margin-top: 3.2rem;
     font-size: 1.5rem;
     text-shadow: 3px 3px 2px $base-black;
     padding: 0;
-    box-shadow: 6px 6px 4px $base-black;
+    box-shadow: 6px 6px 4px ;
   }
-  .svg-icon{
-margin: -3.1rem 0 0 4rem;
-color: white;
+  .svg-icon {
+    margin: -3.2rem 0 0 2rem;
+    color: white;
   }
   .activity-slogan {
-    background: $base-white;
+    background: linear-gradient(0.25turn, $base-white, $base-white, $base-blue);
     color: $base-black;
     font-weight: 500;
-    font-size: 2rem;
-    min-width: 55vw;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    width: 70vw;
     position: absolute;
     top: 30vh;
     right: 50%;
@@ -79,9 +87,9 @@ color: white;
     color: $base-black;
     position: absolute;
     background: $base-white;
-    top: 64vh;
+    top: 50vh;
     height: 25vh;
-    width: 55vw;
+    width: 60vw;
     right: 50%;
     transform: translateX(50%);
     display: flex;
@@ -89,6 +97,77 @@ color: white;
     justify-content: center;
     padding: 0 2rem;
     font-size: 1.2rem;
+  }
+  .contact-button {
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $base-red;
+    color: white;
+    padding: 0.5rem;
+    opacity: 0.5;
+  }
+  .contact-button:hover {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .global-metiers {
+    padding-top: 10vh;
+    position: relative;
+    background-color: $base-blue;
+    color: $base-white;
+    height: 90vh;
+    .company-title {
+      position: absolute;
+      left: 0;
+      min-width: 60vw;
+      background: $dark-blue;
+      margin: 4.5rem 0 0 0;
+      font-size:1.2rem;
+      padding: 0;
+      text-shadow: 2px 2px 3px $base-black;
+      box-shadow: 6px 6px 4px;
+    }
+    .svg-icon {
+      color: transparent;
+    }
+    .activity-slogan {
+      color: $base-black;
+      position: absolute;
+      top: 35vh;
+      right: 50%;
+      transform: translateX(50%);
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: .2px;
+    }
+    .activity-description {
+      color: $base-black;
+      position: absolute;
+      background: $base-white;
+      height: 30vh;
+      top: 58vh;
+      right: 50%;
+      transform: translateX(50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0 2rem;
+      font-size: 1rem;
+    }
+    .contact-button {
+      text-decoration: none;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: $base-red;
+      color: white;
+      padding: 0.5rem;
+      opacity: 0.7;
+    }
   }
 }
 </style>

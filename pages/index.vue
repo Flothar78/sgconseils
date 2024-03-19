@@ -273,10 +273,10 @@ $base-black: #191c20;
     row-gap: 50px;
     height: 100%;
     .nuxt-link {
-    width: 38vw;
+      width: 38vw;
       height: 13vh;
       border-radius: 10%;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 }
