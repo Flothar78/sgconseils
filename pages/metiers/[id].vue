@@ -63,7 +63,7 @@ $base-black: #191c20;
     font-size: 1.5rem;
     text-shadow: 3px 3px 2px $base-black;
     padding: 0;
-    box-shadow: 6px 6px 4px ;
+    box-shadow: 6px 6px 4px;
   }
   .svg-icon {
     margin: -3.2rem 0 0 2rem;
@@ -115,57 +115,30 @@ $base-black: #191c20;
 
 @media screen and (max-width: 767px) {
   .global-metiers {
-    padding-top: 10vh;
-    position: relative;
-    background-color: $base-blue;
-    color: $base-white;
-    height: 90vh;
     .company-title {
       position: absolute;
       left: 0;
       min-width: 60vw;
-      background: $dark-blue;
       margin: 4.5rem 0 0 0;
-      font-size:1.2rem;
-      padding: 0;
+      font-size: 1.2rem;
       text-shadow: 2px 2px 3px $base-black;
-      box-shadow: 6px 6px 4px;
     }
     .svg-icon {
       color: transparent;
     }
     .activity-slogan {
-      color: $base-black;
-      position: absolute;
       top: 35vh;
-      right: 50%;
-      transform: translateX(50%);
       font-weight: 600;
       font-size: 1rem;
-      letter-spacing: .2px;
+      letter-spacing: 0.2px;
     }
     .activity-description {
-      color: $base-black;
-      position: absolute;
-      background: $base-white;
       height: 30vh;
       top: 58vh;
-      right: 50%;
-      transform: translateX(50%);
-      display: flex;
-      flex-direction: column;
       justify-content: space-around;
-      padding: 0 2rem;
       font-size: 1rem;
     }
     .contact-button {
-      text-decoration: none;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      background: $base-red;
-      color: white;
-      padding: 0.5rem;
       opacity: 0.7;
     }
   }
