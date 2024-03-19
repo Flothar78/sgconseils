@@ -100,13 +100,13 @@ $base-grey: #858384;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $darkest-blue;
+  background: $base-black;
   height: 7vh;
   width: 100%;
   padding-left: 0.3rem;
   z-index: 1001;
   img {
-    width: 50px;
+    width: 38px;
   }
   .menu-button {
     height: 3.5vh;
@@ -121,7 +121,7 @@ $base-grey: #858384;
   .menu-button:hover {
     box-shadow: 0 0 0;
     font-weight: 500;
-    transform: translate(2px,2px);
+    transform: translate(2px, 2px);
   }
 }
 .menu-list {
