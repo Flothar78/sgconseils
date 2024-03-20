@@ -15,8 +15,9 @@
     <Conseil v-else-if="id === 'conseil'" :childClasses="parentClasses" />
     <Social v-else-if="id === 'social'" :childClasses="parentClasses" />
     <NuxtLink class="contact-button" href="#" to="/contact"
-      >Écrivez-nous</NuxtLink
+      >Nous écrire</NuxtLink
     >
+    <button class="method-button" @click="showDetails()">Voir nos méthodes</button>
   </div>
 </template>
 
@@ -24,7 +25,7 @@
 useSeoMeta({
   title: "Site des experts-comptable SGConseils à Toulouse",
   description:
-    "Page qui présente end étail une des expertises de SGConseils, le juridique, la comptabilité, le conseil, l'informatique, le social, la gestion et l'audit.",
+    "Page qui présente en détail une des expertises de SGConseils, le juridique, la comptabilité, le conseil, l'informatique, le social, la gestion et l'audit.",
 });
 const id = useRoute().params.id;
 const correctedId =
@@ -40,7 +41,14 @@ const parentClasses = ref([
   "svg-icon",
   "activity-slogan",
   "activity-description",
+  "method-details",
 ]);
+const showDetails = () => {
+  const showDetails = parentClasses.value;
+  showDetails[showDetails.length - 1] !== "visible"
+    ? showDetails.push("visible")
+    : showDetails.pop();
+};
 </script>
 
 <style lang="scss">
@@ -106,10 +114,49 @@ $base-black: #191c20;
     background: $base-red;
     color: white;
     padding: 0.5rem;
-    opacity: 0.5;
+    opacity: 0.7;
+    border-radius: 10px;
   }
   .contact-button:hover {
     opacity: 1;
+  }
+  .method-details {
+    visibility: hidden;
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: $base-black;
+    border: $darkest-blue 10px solid;
+    background: $base-white;
+    width: 80vw;
+    height: 50vh;
+    border-radius: 5px;
+    padding: 0 0 1rem 1rem;
+    .title {
+      color: $darkest-blue;
+      font-weight: 900;
+      margin-top: 1rem;
+    }
+  }
+  .visible {
+    visibility: visible;
+  }
+  .method-button {
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    background: $base-red;
+    color: white;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    background: $base-red;
   }
 }
 
@@ -139,7 +186,29 @@ $base-black: #191c20;
       font-size: 1rem;
     }
     .contact-button {
-      opacity: 0.7;
+      opacity: 0.5;
+    }
+    .method-details {
+      position: absolute;
+      top: 30vh;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      color: $base-black;
+      border: $darkest-blue 10px solid;
+      background: $base-white;
+      width: 80vw;
+      height: 60vh;
+      border-radius: 10px;
+      padding: 0 0 1rem 1rem;
+      .title {
+        color: $darkest-blue;
+        font-weight: 900;
+        margin-top: 1rem;
+      }
     }
   }
 }
