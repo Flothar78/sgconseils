@@ -119,6 +119,7 @@ $base-grey: #858384;
     font-size: 1rem;
     font-weight: 600;
     box-shadow: 2px 2px 5px;
+    border-radius: 53x;
   }
   .menu-button:hover {
     box-shadow: 0 0 0;
@@ -126,7 +127,9 @@ $base-grey: #858384;
     transform: translate(2px, 2px);
   }
   .inner-menu-closing {
-    border: 1px solid $base-black;
+    border: 2px solid $base-red;
+    border-radius: 3px;
+    color: $base-red;
     background: transparent;
     position: absolute;
     right: 0.5rem;
@@ -202,7 +205,6 @@ $base-grey: #858384;
 @media screen and (max-width: 767px) {
   .navbar-container {
     .inner-menu-closing {
-      border: 1px solid $base-black;
       background: transparent;
       position: absolute;
       top: 1.5rem;
@@ -213,7 +215,7 @@ $base-grey: #858384;
   .menu-list {
     top: 28vh;
     height: 50vh;
-    width: 31vw;
+    width: 35vw;
     right: -65vw;
     margin-right: -1rem;
     padding: 0 1rem;

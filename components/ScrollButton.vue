@@ -22,15 +22,16 @@ $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
 $base-red: #b12434;
+$light-red: #d94556;
 $base-white: #bec8da;
 $base-black: #191c20;
 @keyframes glitter {
   0% {
-    background: #d94556;
+    background: $light-red;
     box-shadow: -1px 1px 18px;
   }
   50% {
-    background: #b12434;
+    background: $base-red;
     box-shadow: 0px 0px 0px;
     width: 9rem;
     height: 3.2rem;
@@ -38,7 +39,7 @@ $base-black: #191c20;
     letter-spacing: 1.1px;
   }
   100% {
-    background: #d94556;
+    background: $light-red;
     box-shadow: -1px 1px 18px;
   }
 }

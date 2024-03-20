@@ -50,12 +50,12 @@
         <button class="form-button" type="submit">Envoyer</button>
       </Form>
       <NuxtLink to="/contact/#map-anchor" id="scroll-to-map">
-        OpenStreetMap:</NuxtLink
+        Géo-localisation</NuxtLink
       >
     </div>
     <div class="map-and-anchor-container" id="map-anchor">
       <NuxtLink href="#" to="/contact/#form-anchor" id="scroll-to-form"
-        >Aller au formulaire
+        >Formulaire
       </NuxtLink>
       <div class="map-container">
         <LMap
@@ -186,7 +186,7 @@ $base-black: #191c20;
         letter-spacing: 1.2px;
         height: 4vh;
         width: 33%;
-        border-radius: 50px;
+        border-radius: 7px;
         margin: auto;
         box-shadow: 4px 4px 6px $base-black;
       }
@@ -199,14 +199,19 @@ $base-black: #191c20;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: $base-black;
-      background: white;
+      color: white;
+      background: $base-red;
       position: absolute;
       right: 3vw;
-      top: 79vh;
-      border: 4px solid $base-black;
-      height: 15vh;
+      top: 89.7vh;
+      border: 1px solid $base-black;
+      height: 5vh;
       width: 15vw;
+      border-radius: 7px;
+      box-shadow: 4px 4px 6px $base-black;
+    }
+    #scroll-to-map:hover {
+      box-shadow: 0 0 0;
     }
   }
   .map-and-anchor-container {
@@ -221,18 +226,23 @@ $base-black: #191c20;
       border-radius: 7px;
     }
     #scroll-to-form {
-      height: 15vh;
-      width: 15vw;
       text-decoration: none;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: $base-black;
-      background: white;
+      color: white;
+      background: $base-red;
       position: absolute;
-      bottom: 15vh;
       right: 3vw;
-      border: 4px solid $darkest-blue;
+      bottom: 15vh;
+      border: 1px solid $base-black;
+      height: 5vh;
+      width: 15vw;
+      border-radius: 7px;
+      box-shadow: 4px 4px 6px $base-black;
+    }
+    #scroll-to-form:hover {
+      box-shadow: 0 0 0;
     }
   }
 }
@@ -294,7 +304,7 @@ $base-black: #191c20;
           letter-spacing: 1.2px;
           height: 4vh;
           width: 45%;
-          border-radius: 15px;
+          border-radius: 5px;
           margin: auto;
           box-shadow: 4px 4px 6px $base-black;
         }
@@ -312,10 +322,14 @@ $base-black: #191c20;
         position: absolute;
         right: 50%;
         transform: translate(50%);
-        top: 87.6vh;
-        border: 4px solid $base-black;
+        top: 88.3vh;
+        border: 1px solid $base-black;
         height: 5vh;
         width: 45vw;
+        border-radius: 7px;
+        box-shadow: 4px 4px 6px $base-black;
+        color: white;
+        background: $base-red;
       }
     }
     .map-and-anchor-container {
@@ -343,9 +357,13 @@ $base-black: #191c20;
         bottom: 15vh;
         left: 50%;
         transform: translate(-50%);
-        border: 4px solid $base-black;
+        border: 1px solid $base-black;
         height: 5vh;
         width: 45vw;
+        border-radius: 7px;
+        box-shadow: 4px 4px 6px $base-black;
+        color: white;
+        background: $base-red;
       }
     }
   }

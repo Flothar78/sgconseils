@@ -20,6 +20,7 @@
     <button class="method-button" @click="showDetails()">
       Voir nos méthodes
     </button>
+    <button class="close-details-button" @click="showDetails()">Fermer</button>
   </div>
 </template>
 
@@ -45,11 +46,14 @@ const parentClasses = ref([
   "activity-description",
   "method-details",
 ]);
-const showDetails = () => {
+const showDetails = async () => {
   const showDetails = parentClasses.value;
-  showDetails[showDetails.length - 1] !== "visible"
+  const closeDetailsButton = document.querySelector(".close-details-button");
+  console.log(closeDetailsButton);
+  (await showDetails[showDetails.length - 1]) !== "visible"
     ? showDetails.push("visible")
     : showDetails.pop();
+  await closeDetailsButton.classList.toggle("visible");
 };
 </script>
 
@@ -58,6 +62,7 @@ $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
 $base-red: #b12434;
+$light-red: #d94556;
 $base-white: #bec8da;
 $base-black: #191c20;
 .global-metiers {
@@ -113,11 +118,11 @@ $base-black: #191c20;
     position: absolute;
     bottom: 0;
     right: 0;
-    background: $base-red;
+    background: $light-red;
     color: white;
     padding: 0.5rem;
-    opacity: 0.7;
-    border-radius: 10px;
+    margin: 0.5rem;
+    border-radius: 5px;
   }
   .contact-button:hover {
     opacity: 1;
@@ -142,7 +147,6 @@ $base-black: #191c20;
     padding: 0 0 1rem 0;
     .paragraph {
       margin: 0 3rem;
-
       .title {
         color: $darkest-blue;
         font-weight: 900;
@@ -164,6 +168,20 @@ $base-black: #191c20;
     color: white;
     font-size: 1rem;
     background: $base-red;
+    margin: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px;
+  }
+  .close-details-button {
+    visibility: hidden;
+    border: 2px solid $base-red;
+    border-radius: 3px;
+    color: $base-red;
+    background: transparent;
+    font-weight: 700;
+    position: absolute;
+    top: 32vh;
+    right: 10vw;
   }
 }
 
