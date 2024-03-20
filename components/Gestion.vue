@@ -29,6 +29,28 @@
       sur-mesure.
     </div>
   </div>
+  <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
+    <div>
+      <div class="title">Aide à la prise de décision</div>
+      Nous rassemblons et organisons les informations pertinentes pour consolider
+      vos choix.
+    </div>
+    <div>
+      <div class="title">Suivez votre activité</div>
+      Grâce à notre efficacité, réduisez votre charge administrative et
+      maîtrisez votre activité.
+    </div>
+    <div>
+      <div class="title">Anticipez les risques</div>
+      Adoptez une approche globale de votre entreprise pour anticiper et prendre
+      des mesures permettant d'éviter ou de réduire un risque.
+    </div>
+    <div>
+      <div class="title">Ajustez vos objectifs</div>
+      Etablissez des prévisions réalistes et ajustez vos objectifs grâce à nos
+      conseils.
+    </div>
+  </div>
 </template>
 
 <script setup>

@@ -31,6 +31,32 @@
       la paie jusqu’aux ressources humaines, restez confiant en toute situation.
     </div>
   </div>
+  <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
+    <div>
+      <div class="title">Congés annuels</div>
+      En fonction de votre secteur d’activité et de votre structure, il est
+      parfois difficile d’y voir clair sur la règlementation en vigueur. Notre
+      équipe vous accompagne pour gérer les congés au sein de votre entreprise.
+    </div>
+    <div>
+      <div class="title">Paie</div>
+      Le bulletin de paie est devenu un document de plus en plus complet mais
+      aussi de plus en plus complexe au fil du temps. Faites confiance à nos
+      experts pour éditer ces supports essentiels à votre activité.
+    </div>
+    <div>
+      <div class="title">Recrutement</div>
+      Le recrutement est essentiel à votre entreprise mais peut s’avérer
+      compliqué. Vous apportez des conseils pour réussir cette étape cruciale
+      dans le développement de votre entreprise, c’est notre mission.
+    </div>
+    <div>
+      <div class="title">Social</div>
+      Les réformes impactent régulièrement les métiers RH et poussent à une
+      réactivité accrue, la réforme de la formation professionnelle en est une
+      illustration. Restez à jour grâce à nos conseils.
+    </div>
+  </div>
 </template>
 
 <script setup>
