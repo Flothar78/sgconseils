@@ -17,7 +17,9 @@
     <NuxtLink class="contact-button" href="#" to="/contact"
       >Nous écrire</NuxtLink
     >
-    <button class="method-button" @click="showDetails()">Voir nos méthodes</button>
+    <button class="method-button" @click="showDetails()">
+      Voir nos méthodes
+    </button>
   </div>
 </template>
 
@@ -121,6 +123,7 @@ $base-black: #191c20;
     opacity: 1;
   }
   .method-details {
+    font-size: 1.3rem;
     visibility: hidden;
     position: absolute;
     top: 30vh;
@@ -136,11 +139,15 @@ $base-black: #191c20;
     width: 80vw;
     height: 50vh;
     border-radius: 5px;
-    padding: 0 0 1rem 1rem;
-    .title {
-      color: $darkest-blue;
-      font-weight: 900;
-      margin-top: 1rem;
+    padding: 0 0 1rem 0;
+    .paragraph {
+      margin: 0 3rem;
+
+      .title {
+        color: $darkest-blue;
+        font-weight: 900;
+        margin-top: 1rem;
+      }
     }
   }
   .visible {
@@ -189,27 +196,27 @@ $base-black: #191c20;
       opacity: 0.5;
     }
     .method-details {
-      position: absolute;
-      top: 30vh;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      color: $base-black;
-      border: $darkest-blue 10px solid;
-      background: $base-white;
-      width: 80vw;
+      font-size: 1rem;
       height: 60vh;
       border-radius: 10px;
-      padding: 0 0 1rem 1rem;
-      .title {
-        color: $darkest-blue;
-        font-weight: 900;
-        margin-top: 1rem;
+      padding: 0 0.5rem;
+      .paragraph {
+        margin: 0 0;
       }
     }
   }
 }
+//@media screen and (min-width: 1180px) {
+//  .global-metiers {
+//    .method-details {
+//      font-size: 1.7rem;
+//      height: 60vh;
+//      border-radius: 10px;
+//      padding: 0 1rem;
+//      .paragraph {
+//        margin: 0 0;
+//      }
+//    }
+//  }
+//}
 </style>

@@ -28,24 +28,24 @@
     </div>
   </div>
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
-    <div>
+    <div class="paragraph">
       <div class="title">Simplifiez votre gestion</div>
       Nous convenons avec vous du meilleur outil qui pourra vous accompagner au
       quotidien. Simplifiez vous les démarches administratives pour vous
       concentrer sur vos projets.
     </div>
-    <div>
+    <div class="paragraph">
       <div class="title">Gagnez du temps</div>
       Grâce à notre gestion optimale, libérez vous du temps et consacrez vous
       totalement à votre activité, trouvez de nouveaux clients et développez
       votre chiffre d’affaires.
     </div>
-    <div>
+    <div class="paragraph">
       <div class="title">Utilisez un outil adapté</div>
       Nous vous aidons à prendre en main vos outils informatiques et les
       adaptons à vos besoins.
     </div>
-    <div>
+    <div class="paragraph">
       <div class="title">Transparence des informations</div>
       Accédez en temps réel à toutes les informations, en toute indépendance et
       transparence. ils.

@@ -7,6 +7,9 @@
     /></NuxtLink>
     <button @click.stop="menuListSlide()" class="menu-button">MENU</button>
     <div class="menu-list" :class="{ active: isActive }">
+      <button @click.stop="menuListSlide()" class="inner-menu-closing">
+        X
+      </button>
       <NuxtLink class="menu-item" to="/#accueil">ACCUEIL</NuxtLink>
       <NuxtLink class="menu-item" href="#" to="/#metiers">EXPERTISES</NuxtLink>
       <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
@@ -123,6 +126,14 @@ $base-grey: #858384;
     font-weight: 500;
     transform: translate(2px, 2px);
   }
+  .inner-menu-closing {
+    border: 1px solid $base-black;
+    background: transparent;
+    position: absolute;
+    right: 0.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
 }
 .menu-list {
   font-family: Arial, sans-serif;
@@ -189,7 +200,16 @@ $base-grey: #858384;
     }
   }
 }
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 767px) {
+  .navbar-container {
+    .inner-menu-closing {
+      border: 1px solid $base-black;
+      background: transparent;
+      position: absolute;
+      right: 0.7rem;
+      font-weight: 700;
+    }
+  }
   .menu-list {
     height: 30vh;
     right: -65vw;
