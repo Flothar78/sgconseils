@@ -36,16 +36,14 @@
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
       <div class="title">Certification des comptes de l’entreprise</div>
-      Cette obligation légale permet de s’assurer que votre entreprise est en
-      conformité avec les normes en vigueur. Cela permet aussi de fournir des
-      informations claires sur la santé économique et financière de la
-      structure.
+      Cette obligation légale permet d’assurer la conformité avec les normes en
+      vigueur, mais aussi de fournir des informations claires sur la santé
+      financière de la structure.
     </div>
     <div>
       <div class="title">Sécurisez votre développement</div>
-      Dans un environnement économique sans cesse plus complexe, vous avez
-      besoin d’avoir une vision claire sur la santé financière de votre
-      entreprise.
+      Dans un environnement économique plus complexe, vous devez avoir une
+      vision claire sur la santé financière de votre entreprise.
     </div>
     <div>
       <div class="title">Améliorez votre contrôle interne</div>

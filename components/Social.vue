@@ -34,21 +34,20 @@
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
       <div class="title">Congés annuels</div>
-      En fonction de votre secteur d’activité et de votre structure, il est
-      parfois difficile d’y voir clair sur la règlementation en vigueur. Notre
-      équipe vous accompagne pour gérer les congés au sein de votre entreprise.
+      Il est parfois difficile d’y voir clair sur la règlementation en vigueur.
+      Nous vous accompagnons pour gérer les congés au sein de votre
+      entreprise.
     </div>
     <div>
       <div class="title">Paie</div>
-      Le bulletin de paie est devenu un document de plus en plus complet mais
-      aussi de plus en plus complexe au fil du temps. Faites confiance à nos
+      Le bulletin de paie est devenu un document complet mais
+      aussi plus complexe. Faites confiance à nos
       experts pour éditer ces supports essentiels à votre activité.
     </div>
     <div>
       <div class="title">Recrutement</div>
       Le recrutement est essentiel à votre entreprise mais peut s’avérer
-      compliqué. Vous apportez des conseils pour réussir cette étape cruciale
-      dans le développement de votre entreprise, c’est notre mission.
+      compliqué. Vous apportez des conseils dans le développement de votre entreprise, c’est notre mission.
     </div>
     <div>
       <div class="title">Social</div>

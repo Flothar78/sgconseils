@@ -28,32 +28,25 @@
     <div>
       <div class="title">Droit des affaires</div>
       Nos équipes de juristes apportent leurs compétences dans tous les domaines
-      du Droit des Affaires pour vous guider dans vos projets et tout au long de
-      la vie de votre structure.
+      du Droit des Affaires pour vous guider dans vos projets.
     </div>
     <div>
       <div class="title">Droit des sociétés</div>
-      Entre le choix du statut juridique, la réalisation des opérations de
-      constitution, d’augmentation de capital, de cession de parts, des
-      comptes-rendus de conseils d’administration et d’assemblées générales,
-      nous nous occupons de tout.
+      Nous gérons le statut juridique, les opérations de constitution,
+      l’augmentation de capital, la cession de parts, les comptes-rendus de
+      conseils d’administration.
     </div>
     <div>
       <div class="title">Droit de l’entreprise individuelle</div>
       Le traitement des charges d’une entreprise individuelle ne suit pas
-      toujours les mêmes règles que pour une société que ce soit dans leur
-      évaluation ou dans leur déductibilité. De nombreuses spécificités
-      s’appliquent, et il est important de les maîtriser. C’est pourquoi faire
-      appel à nous c’est assurer la bonne tenue de la comptabilité pour votre
-      entreprise.
+      toujours les mêmes règles que pour une société. Faire appel à nous c’est
+      assurer la bonne tenue de la comptabilité pour votre entreprise.
     </div>
     <div>
       <div class="title">Droit fiscal</div>
-      La fiscalité des entreprises est un domaine complexe et technique. Notre
-      cabinet d’expert-comptable est là pour vous apporter les éclairages
-      nécessaires, réaliser vos déclarations et notamment en ce qui concerne les
-      obligations fiscales, les problématiques de TVA, d’impôts sur les
-      sociétés…
+      La fiscalité des entreprises est un domaine complexe et technique. Nous
+      sommes là pour réaliser vos déclarations, par exemple les obligations
+      fiscales ou les problématiques de TVA.
     </div>
   </div>
 </template>

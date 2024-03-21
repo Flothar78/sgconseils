@@ -128,7 +128,7 @@ $base-black: #191c20;
     opacity: 1;
   }
   .method-details {
-    font-size: 1.3rem;
+    font-size: 1rem;
     visibility: hidden;
     position: absolute;
     top: 30vh;
@@ -144,14 +144,11 @@ $base-black: #191c20;
     width: 80vw;
     height: 50vh;
     border-radius: 5px;
-    padding: 0 0 1rem 0;
-    .paragraph {
-      margin: 0 3rem;
-      .title {
-        color: $darkest-blue;
-        font-weight: 900;
-        margin-top: 1rem;
-      }
+    padding: 0 0 1rem 1rem;
+  
+    .title {
+      color: $darkest-blue;
+      font-weight: 900;
     }
   }
   .visible {
