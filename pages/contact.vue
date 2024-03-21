@@ -93,7 +93,7 @@ const onSubmit = async (values) => {
   const bodyContent = JSON.stringify(values);
   console.log(bodyContent);
   try {
-    const response = await $fetch("/api/hello", {
+    const response = await $fetch("/api/form", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
