@@ -1,4 +1,6 @@
 <template>
+  ()
+
   <div class="global-contact-page">
     <div class="form-and-anchor-container" id="form-anchor">
       <div class="contact-title">
@@ -45,17 +47,17 @@
         </div>
         <div class="form-entry">
           <div class="form-labels">Votre message:</div>
-          <textarea id="message"></textarea>
+          <Field as="textarea" name="message" id="message"></Field>
         </div>
         <button class="form-button" type="submit">Envoyer</button>
       </Form>
       <NuxtLink to="/contact/#map-anchor" id="scroll-to-map">
-        Géo-localisation</NuxtLink
+        Nous localiser</NuxtLink
       >
     </div>
     <div class="map-and-anchor-container" id="map-anchor">
       <NuxtLink href="#" to="/contact/#form-anchor" id="scroll-to-form"
-        >Formulaire
+        >Nous écrire
       </NuxtLink>
       <div class="map-container">
         <LMap
@@ -87,8 +89,20 @@ useSeoMeta({
   description:
     "Site qui présente les services de la société SGConseils, le juridique, la comptabilité, le conseil, l'informatique, le social, la gestion et l'audit.",
 });
-const onSubmit = (values) => {
-  console.log(JSON.stringify(values));
+const onSubmit = async (values) => {
+  const bodyContent = JSON.stringify(values);
+  console.log(bodyContent);
+  try {
+    const response = await $fetch("/api/hello", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: bodyContent,
+    });
+  } catch (error) {
+    console.error("Erreur lors de la requête POST :", error);
+  }
 };
 const validateEmail = (value) => {
   if (!value) {
