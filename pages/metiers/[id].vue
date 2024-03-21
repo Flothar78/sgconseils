@@ -20,7 +20,7 @@
     <button class="method-button" @click="showDetails()">
       Voir nos méthodes
     </button>
-    <button class="close-details-button" @click="showDetails()">Fermer</button>
+    <button class="close-details-button" @click="showDetails()">X</button>
   </div>
 </template>
 
@@ -49,7 +49,6 @@ const parentClasses = ref([
 const showDetails = async () => {
   const showDetails = parentClasses.value;
   const closeDetailsButton = document.querySelector(".close-details-button");
-  console.log(closeDetailsButton);
   (await showDetails[showDetails.length - 1]) !== "visible"
     ? showDetails.push("visible")
     : showDetails.pop();
@@ -145,14 +144,10 @@ $base-black: #191c20;
     height: 50vh;
     border-radius: 5px;
     padding: 0 0 1rem 1rem;
-  
     .title {
       color: $darkest-blue;
       font-weight: 900;
     }
-  }
-  .visible {
-    visibility: visible;
   }
   .method-button {
     text-decoration: none;
@@ -179,6 +174,9 @@ $base-black: #191c20;
     position: absolute;
     top: 32vh;
     right: 10vw;
+  }
+  .visible {
+    visibility: visible;
   }
 }
 
