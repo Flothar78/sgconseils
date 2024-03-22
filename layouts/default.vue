@@ -225,7 +225,7 @@ $base-grey: #858384;
       margin: 0.5rem 0.5rem;
     }
     .metiers-item {
-      margin-top: .2rem;
+      margin-top: 0.2rem;
       font-size: 1rem;
     }
   }
@@ -234,9 +234,11 @@ $base-grey: #858384;
   }
   .footer {
     font-size: 0.8rem;
-    letter-spacing: 0.3px;
+    letter-spacing: 0px;
     padding-top: 1rem;
     color: white;
+    justify-content: space-around;
+    
     .footer-div {
       border: 4px solid $base-black;
     }
