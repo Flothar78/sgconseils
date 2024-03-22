@@ -31,7 +31,7 @@
       <NuxtLink class="metiers-item" href="#" to="/metiers/informatique"
         >Informatique</NuxtLink
       >
-      <NuxtLink class="menu-item" href="#" to="#`">ÉQUIPE</NuxtLink>
+      <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink>
       <NuxtLink class="menu-item" href="#" to="/#">MENTIONS LÉGALES</NuxtLink>
       <NuxtLink class="menu-item" href="#" to="/contact">CONTACT</NuxtLink>
     </div>
