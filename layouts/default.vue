@@ -33,7 +33,9 @@
       >
       <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink>
       <NuxtLink class="menu-item" href="#" to="/#">MENTIONS LÉGALES</NuxtLink>
-      <NuxtLink class="menu-item" href="#" to="/contact">CONTACT</NuxtLink>
+      <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor"
+        >CONTACT</NuxtLink
+      >
     </div>
   </header>
   <slot />
@@ -93,8 +95,8 @@ const menuListSlide = () => {
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
-$base-red: #FC440F;
-$light-red: #FF8811;
+$base-red: #fc440f;
+$light-red: #ff8811;
 $base-white: #bec8da;
 $base-black: #191c20;
 $base-grey: #858384;
@@ -239,7 +241,7 @@ $base-grey: #858384;
     padding-top: 1rem;
     color: white;
     justify-content: space-around;
-    
+
     .footer-div {
       border: 4px solid $base-black;
     }

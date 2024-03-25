@@ -14,7 +14,7 @@
     />
     <Conseil v-else-if="id === 'conseil'" :childClasses="parentClasses" />
     <Social v-else-if="id === 'social'" :childClasses="parentClasses" />
-    <NuxtLink class="contact-button" href="#" to="/contact"
+    <NuxtLink class="contact-button" href="#" to="/contact/#form-anchor"
       >Nous écrire</NuxtLink
     >
     <button class="method-button" @click="showDetails()">
@@ -61,7 +61,7 @@ $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
 $base-red: #fc440f;
-$light-red: #FF8811;
+$light-red: #ff8811;
 $base-white: #bec8da;
 $base-black: #191c20;
 .global-metiers {
@@ -120,7 +120,8 @@ $base-black: #191c20;
     background: $base-red;
     color: white;
     padding: 0.5rem;
-    border-radius: 5px;opacity: .6;
+    border-radius: 5px;
+    opacity: 0.6;
   }
   .contact-button:hover {
     opacity: 1;
