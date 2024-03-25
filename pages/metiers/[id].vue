@@ -60,8 +60,8 @@ const showDetails = async () => {
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
-$base-red: #b12434;
-$light-red: #d94556;
+$base-red: #fc440f;
+$light-red: #FF8811;
 $base-white: #bec8da;
 $base-black: #191c20;
 .global-metiers {
@@ -117,11 +117,10 @@ $base-black: #191c20;
     position: absolute;
     bottom: 0;
     right: 0;
-    background: $light-red;
+    background: $base-red;
     color: white;
     padding: 0.5rem;
-    margin: 0.5rem;
-    border-radius: 5px;
+    border-radius: 5px;opacity: .6;
   }
   .contact-button:hover {
     opacity: 1;
@@ -162,7 +161,10 @@ $base-black: #191c20;
     background: $base-red;
     margin: 0.5rem;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px;
+    box-shadow: 2px 2px 4px $darkest-blue;
+  }
+  .method-button:hover {
+    box-shadow: 0 0;
   }
   .close-details-button {
     visibility: hidden;

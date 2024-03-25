@@ -175,7 +175,8 @@ const scrollToTopOfCards = () => {
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
-$base-red: #b12434;
+$base-red: #fc440f;
+$light-red: #ff8811;
 $base-white: #bec8da;
 $base-black: #191c20;
 // and (max-width:1199px)
@@ -240,7 +241,7 @@ $base-black: #191c20;
     width: 20vw;
     height: 14vh;
     border-radius: 10%;
-    box-shadow: 8px 8px 10px $dark-blue;
+    box-shadow: 6px 6px 10px;
   }
   .nuxt-link:hover {
     box-shadow: 4px 4px 6px $base-red;
@@ -277,6 +278,10 @@ $base-black: #191c20;
       height: 13vh;
       border-radius: 10%;
       font-size: 0.9rem;
+      box-shadow: 4px 4px 6px $base-red;
+    }
+    .nuxt-link:hover {
+      box-shadow: 0 0;
     }
   }
 }

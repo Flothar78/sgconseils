@@ -93,7 +93,8 @@ const menuListSlide = () => {
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
-$base-red: #b12434;
+$base-red: #FC440F;
+$light-red: #FF8811;
 $base-white: #bec8da;
 $base-black: #191c20;
 $base-grey: #858384;
@@ -118,7 +119,7 @@ $base-grey: #858384;
     color: white;
     font-size: 1rem;
     font-weight: 600;
-    box-shadow: 2px 2px 5px;
+    box-shadow: 2px 2px 5px $base-white;
     border-radius: 53x;
   }
   .menu-button:hover {

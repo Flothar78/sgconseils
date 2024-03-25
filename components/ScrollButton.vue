@@ -21,16 +21,18 @@ const scrollDown = () => {
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
-$base-red: #b12434;
-$light-red: #d94556;
+$base-red: #FC440F;
+$light-red: #FF8811;
 $base-white: #bec8da;
 $base-black: #191c20;
 @keyframes glitter {
   0% {
+   
     background: $light-red;
-    box-shadow: -1px 1px 18px;
+    box-shadow: -1px 1px 18px $base-white;
   }
   50% {
+    
     background: $base-red;
     box-shadow: 0px 0px 0px;
     width: 9rem;
@@ -39,8 +41,9 @@ $base-black: #191c20;
     letter-spacing: 1.1px;
   }
   100% {
+    
     background: $light-red;
-    box-shadow: -1px 1px 18px;
+    box-shadow: -1px 1px 18px $base-white;
   }
 }
 .twinkle {
@@ -55,7 +58,7 @@ $base-black: #191c20;
   font-size: 0.9rem;
   font-weight: 600;
   color: white;
-  background: #b12434;
+  background: $base-red;
   width: 8rem;
   height: 3rem;
   border-radius: 5%;
