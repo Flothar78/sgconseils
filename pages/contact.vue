@@ -59,7 +59,7 @@
       <NuxtLink href="#" to="/contact/#form-anchor" id="scroll-to-form"
         >Nous écrire
       </NuxtLink>
-    
+
       <div class="map-container">
         <LMap
           ref="map"
@@ -146,9 +146,11 @@ $base-black: #191c20;
     padding-top: 7rem;
     .contact-title {
       font-size: 1.2rem;
+      color: transparent;
       font-weight: 700;
       margin: 0rem 0 3rem 2rem;
       .form-invitation {
+        color: $base-black;
         padding-left: 0rem;
         font-style: italic;
         font-size: 1.2rem;

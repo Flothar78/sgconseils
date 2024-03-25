@@ -115,7 +115,7 @@ $base-black: #191c20;
   .contact-button {
     text-decoration: none;
     position: absolute;
-    top: 50vh;
+    bottom: 0;
     right: 0;
     background: $base-red;
     color: white;
@@ -152,7 +152,7 @@ $base-black: #191c20;
   .method-button {
     text-decoration: none;
     position: absolute;
-    bottom: 4vh;
+    bottom: 2vh;
     right: 50%;
     transform: translate(50%);
     border-radius: 5px;
@@ -211,16 +211,22 @@ $base-black: #191c20;
       font-size: 1rem;
     }
     .contact-button {
+      bottom: 89vh;
+
       opacity: 0.5;
     }
     .method-details {
-      font-size: 1.1rem;
+      font-size: 1rem;
       height: 60vh;
       border-radius: 10px;
       padding: 0 0.5rem;
       .paragraph {
         margin: 0 0;
       }
+    }
+    .close-details-button {
+      top: 31.3vh;
+      right: 8vw;
     }
   }
 }
