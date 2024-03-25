@@ -179,7 +179,6 @@ $base-red: #fc440f;
 $light-red: #ff8811;
 $base-white: #bec8da;
 $base-black: #191c20;
-// and (max-width:1199px)
 .hero {
   padding-top: 10vh;
   position: relative;
@@ -245,6 +244,7 @@ $base-black: #191c20;
   }
   .nuxt-link:hover {
     box-shadow: 4px 4px 6px $base-red;
+    //text-shadow: 15px -70px 3px $base-red;
   }
 }
 
@@ -269,19 +269,43 @@ $base-black: #191c20;
     }
   }
   .expertises-cards {
-    padding: 20vh 0 10vh 0;
+    padding: 25vh 0 10vh 0;
     flex-direction: column;
     row-gap: 50px;
     height: 100%;
     .nuxt-link {
-      width: 38vw;
-      height: 13vh;
+      width: 46vw;
+      height: 15vh;
       border-radius: 10%;
-      font-size: 0.9rem;
+      font-size: 1.1rem;
       box-shadow: 4px 4px 6px $base-red;
     }
     .nuxt-link:hover {
       box-shadow: 0 0;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    .company-features {
+      top: 40vh;
+    }
+    .hero-img {
+      top: 10vh;
+      height: 42vh;
+    }
+  }
+  .expertises-cards {
+    column-gap: 100px;
+    .nuxt-link {
+      font-size: 1.3rem;
+      width: 15vw;
+      height: 20vh;
+      box-shadow: 10px 10px 12px;
+    }
+    .nuxt-link:hover {
+      box-shadow: 6px 6px 10px $base-red;
+      //text-shadow: 15px -70px 3px $base-red;
     }
   }
 }

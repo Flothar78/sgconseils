@@ -16,7 +16,7 @@ $base-white: #bec8da;
 $base-black: #191c20;
 .company-activity {
   margin: 7.45rem 0 0 4rem;
-  color: #e9ecf2;
+  color: white;
   background: linear-gradient(
     0.25turn,
     $darkest-blue,
@@ -46,6 +46,17 @@ $base-black: #191c20;
     width: 85vw;
     height: 5vh;
     box-shadow: -6px 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .company-activity {
+    padding: 1rem 0 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 4px black;
+    height: 9vh;
+    box-shadow: -8px 0px;
   }
 }
 </style>

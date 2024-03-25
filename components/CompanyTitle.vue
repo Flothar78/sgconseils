@@ -27,8 +27,7 @@ $base-black: #191c20;
     $dark-blue,
     $darkest-blue
   );
-  color: #e9ecf2;
-  text-shadow: 1px 1px 1px black;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +52,15 @@ $base-black: #191c20;
     width: 85vw;
     height: 8vh;
     margin-left: -3rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .company-name {
+    font-size: 2.3rem;
+    text-shadow: 4px 4px 6px black;
+    letter-spacing: 2.3px;
+    height: 12vh;
+    box-shadow: 8px 0px;
   }
 }
 </style>
