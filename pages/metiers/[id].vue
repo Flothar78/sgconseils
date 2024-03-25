@@ -73,7 +73,7 @@ $base-black: #191c20;
   .company-title {
     background: $dark-blue;
     width: 45vw;
-    margin-top: 3.2rem;
+    margin-top: 1.9rem;
     font-size: 1.5rem;
     text-shadow: 3px 3px 2px $base-black;
     padding: 0;
@@ -136,7 +136,7 @@ $base-black: #191c20;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     color: $base-black;
     border: $darkest-blue 10px solid;
     background: $base-white;
@@ -186,7 +186,7 @@ $base-black: #191c20;
       position: absolute;
       left: 0;
       min-width: 60vw;
-      margin: 4.5rem 0 0 0;
+      margin: 2.2rem 0 0 0;
       font-size: 1.2rem;
       text-shadow: 2px 2px 3px $base-black;
     }

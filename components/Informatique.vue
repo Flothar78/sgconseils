@@ -48,7 +48,7 @@
     <div class="paragraph">
       <div class="title">Transparence des informations</div>
       Accédez en temps réel à toutes les informations, en toute indépendance et
-      transparence. ils.
+      transparence. 
     </div>
   </div>
 </template>
