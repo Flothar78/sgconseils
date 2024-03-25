@@ -278,14 +278,13 @@ $base-black: #191c20;
       height: 15vh;
       border-radius: 10%;
       font-size: 1.1rem;
-      box-shadow: 4px 4px 6px $base-red;
     }
     .nuxt-link:hover {
-      box-shadow: 0 0;
+      box-shadow: 6px 6px 8px $base-red;
     }
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1536px) {
   .hero {
     .company-features {
       top: 40vh;

@@ -70,7 +70,7 @@ $base-black: #191c20;
     bottom: 7vh;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1536px) {
   .scroll-button {
     bottom: 7vh;
   }

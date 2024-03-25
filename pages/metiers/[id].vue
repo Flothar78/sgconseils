@@ -86,8 +86,8 @@ $base-black: #191c20;
   .activity-slogan {
     background: linear-gradient(0.25turn, $base-white, $base-white, $base-blue);
     color: $base-black;
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 1.3rem;
     letter-spacing: 0.5px;
     width: 70vw;
     position: absolute;
@@ -115,7 +115,7 @@ $base-black: #191c20;
   .contact-button {
     text-decoration: none;
     position: absolute;
-    bottom: 0;
+    top: 50vh;
     right: 0;
     background: $base-red;
     color: white;
@@ -127,7 +127,7 @@ $base-black: #191c20;
     opacity: 1;
   }
   .method-details {
-    font-size: 1rem;
+    font-size: 1.2rem;
     visibility: hidden;
     position: absolute;
     top: 30vh;
@@ -152,7 +152,9 @@ $base-black: #191c20;
   .method-button {
     text-decoration: none;
     position: absolute;
-    bottom: 0;
+    bottom: 4vh;
+    right: 50%;
+    transform: translate(50%);
     border-radius: 5px;
     background: $base-red;
     color: white;
@@ -160,9 +162,9 @@ $base-black: #191c20;
     color: white;
     font-size: 1rem;
     background: $base-red;
-    margin: 0.5rem;
+    margin: -0.2rem;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px $darkest-blue;
+    box-shadow: 6px 6px 8px $darkest-blue;
   }
   .method-button:hover {
     box-shadow: 0 0;
@@ -212,7 +214,7 @@ $base-black: #191c20;
       opacity: 0.5;
     }
     .method-details {
-      font-size: 1rem;
+      font-size: 1.1rem;
       height: 60vh;
       border-radius: 10px;
       padding: 0 0.5rem;
@@ -222,17 +224,28 @@ $base-black: #191c20;
     }
   }
 }
-//@media screen and (min-width: 1180px) {
-//  .global-metiers {
-//    .method-details {
-//      font-size: 1.7rem;
-//      height: 60vh;
-//      border-radius: 10px;
-//      padding: 0 1rem;
-//      .paragraph {
-//        margin: 0 0;
-//      }
-//    }
-//  }
-//}
+@media screen and (min-width: 1536px) {
+  .global-metiers {
+    .company-title {
+      height: 9vh;
+    }
+    .activity-slogan {
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      top: 31vh;
+    }
+    .activity-description {
+      top: 55vh;
+      height: 30vh;
+      font-size: 1.4rem;
+    }
+    .contact-button:hover {
+      opacity: 1;
+    }
+    .method-details {
+      font-size: 1.3rem;
+    }
+  }
+}
 </style>

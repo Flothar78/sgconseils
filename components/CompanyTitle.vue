@@ -54,7 +54,7 @@ $base-black: #191c20;
     margin-left: -3rem;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1536px) {
   .company-name {
     font-size: 2.3rem;
     text-shadow: 4px 4px 6px black;

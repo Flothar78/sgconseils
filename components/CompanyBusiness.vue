@@ -48,7 +48,7 @@ $base-black: #191c20;
     box-shadow: -6px 0px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1536px) {
   .company-activity {
     padding: 1rem 0 1rem 2rem;
     font-size: 1.4rem;
