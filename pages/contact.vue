@@ -147,9 +147,9 @@ $base-black: #191c20;
     .contact-title {
       font-size: 1.2rem;
       font-weight: 700;
-      margin: 2rem 0 1rem 1rem;
+      margin: 0rem 0 3rem 2rem;
       .form-invitation {
-        padding-left: 2rem;
+        padding-left: 0rem;
         font-style: italic;
         font-size: 1.2rem;
         font-weight: 300;
