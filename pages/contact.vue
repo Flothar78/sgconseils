@@ -59,6 +59,7 @@
       <NuxtLink href="#" to="/contact/#form-anchor" id="scroll-to-form"
         >Nous écrire
       </NuxtLink>
+    
       <div class="map-container">
         <LMap
           ref="map"
@@ -133,8 +134,8 @@ const zoom = ref(15);
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
-$base-red: #FC440F;
-$light-red: #FF8811;
+$base-red: #fc440f;
+$light-red: #ff8811;
 $base-white: #bec8da;
 $base-black: #191c20;
 .global-contact-page {
@@ -157,7 +158,7 @@ $base-black: #191c20;
     }
     .contact-form {
       border: 12px solid $darkest-blue;
-      border-radius: 7%;
+      border-radius: 7px;
       background: white;
       height: 68vh;
       width: 60vw;
