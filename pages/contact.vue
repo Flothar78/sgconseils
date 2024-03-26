@@ -86,9 +86,9 @@
 <script setup>
 import { Form, Field, ErrorMessage } from "vee-validate";
 useSeoMeta({
-  title: "Site des experts-comptable SGConseils à Toulouse",
+  title: "SGConseils experts-comptable à Toulouse",
   description:
-    "Site qui présente les services de la société SGConseils, le juridique, la comptabilité, le conseil, l'informatique, le social, la gestion et l'audit.",
+   "Page pour contacter SGConseils via email ou localisation géographique"
 });
 const onSubmit = async (values) => {
   const bodyContent = JSON.stringify(values);

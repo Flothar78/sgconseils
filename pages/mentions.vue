@@ -45,18 +45,18 @@
     <div class="mentions-items">
       <div class="mentions-title">5. RESPONSABILITÉS</div>
       <div>
-        Le site sgconseils.com est édité par Guillaume Lamaze. Il s’agit d’un site vitrine
-        qui ne peut aucunement être assimilé à un site de vente en ligne
-        intégrant un dispositif de passation de commande en ligne. Guillaume Lamaze décline
-        toute responsabilité en cas d’interruption du site (incident technique
-        serveur) d’attaques extérieures (bogues, modification des contenus suite
-        à une cyber-attaque, etc). De plus, Guillaume Lamaze n’apporte aucune garantie
-        quant à l’utilisation des informations présentes sur le site et ne sera
-        pas responsable du préjudice ou dommage pouvant résulter de
-        l’utilisation par un utilisateur du site des informations présentes sur
-        le site, ni d’erreurs ou omissions dans celles-ci, de défauts ou
-        d’interruptions dans leur fourniture ou de l’indisponibilité de tout ou
-        partie de celles-ci.
+        Le site sgconseils.com est édité par Guillaume Lamaze. Il s’agit d’un
+        site vitrine qui ne peut aucunement être assimilé à un site de vente en
+        ligne intégrant un dispositif de passation de commande en ligne.
+        Guillaume Lamaze décline toute responsabilité en cas d’interruption du
+        site (incident technique serveur) d’attaques extérieures (bogues,
+        modification des contenus suite à une cyber-attaque, etc). De plus,
+        Guillaume Lamaze n’apporte aucune garantie quant à l’utilisation des
+        informations présentes sur le site et ne sera pas responsable du
+        préjudice ou dommage pouvant résulter de l’utilisation par un
+        utilisateur du site des informations présentes sur le site, ni d’erreurs
+        ou omissions dans celles-ci, de défauts ou d’interruptions dans leur
+        fourniture ou de l’indisponibilité de tout ou partie de celles-ci.
       </div>
     </div>
     <div class="mentions-items">
@@ -105,6 +105,12 @@ $base-black: #191c20;
   border: 2px solid $base-black;
   border-radius: 5px;
   padding: 0.5rem;
-  margin-top:2rem;
+  margin-top: 2rem;
 }
 </style>
+<script setup>
+useSeoMeta({
+  title: "SGConseils experts-comptable à Toulouse",
+  description: "Page des mentions légales du site web de SGConseils",
+});
+</script>

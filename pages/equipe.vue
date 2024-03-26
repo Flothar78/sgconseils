@@ -77,7 +77,12 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useSeoMeta({
+  title: "SGConseils experts-comptable à Toulouse",
+  description: "Page qui présente l'équipe des experts de SGConseils",
+});
+</script>
 
 <style scoped lang="scss">
 $base-blue: #7d93b5;

@@ -24,7 +24,7 @@
 
 <script setup>
 useSeoMeta({
-  title: "Site des experts-comptable SGConseils à Toulouse",
+  title: "SGConseils experts-comptable à Toulouse",
   description:
     "Page qui présente en détail une des expertises de SGConseils, le juridique, la comptabilité, le conseil, l'informatique, le social, la gestion et l'audit.",
 });
