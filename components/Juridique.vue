@@ -27,26 +27,34 @@
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
       <div class="title">Droit des affaires</div>
-      Nos équipes de juristes apportent leurs compétences dans tous les domaines
-      du Droit des Affaires pour vous guider dans vos projets.
+      <div class="paragraph">
+        Nos équipes de juristes apportent leurs compétences dans tous les
+        domaines du Droit des Affaires pour vous guider dans vos projets.
+      </div>
     </div>
     <div>
       <div class="title">Droit des sociétés</div>
-      Nous gérons le statut juridique, les opérations de constitution,
-      l’augmentation de capital, la cession de parts, les comptes-rendus de
-      conseils d’administration.
+      <div class="paragraph">
+        Nous gérons le statut juridique, les opérations de constitution,
+        l’augmentation de capital, la cession de parts, les comptes-rendus de
+        conseils d’administration.
+      </div>
     </div>
     <div>
       <div class="title">Droit de l’entreprise individuelle</div>
-      Le traitement des charges d’une entreprise individuelle ne suit pas
-      toujours les mêmes règles que pour une société. Faire appel à nous c’est
-      assurer la bonne tenue de la comptabilité pour votre entreprise.
+      <div class="paragraph">
+        Le traitement des charges d’une entreprise individuelle ne suit pas
+        toujours les mêmes règles que pour une société. Faire appel à nous c’est
+        assurer la bonne tenue de la comptabilité pour votre entreprise.
+      </div>
     </div>
     <div>
       <div class="title">Droit fiscal</div>
-      La fiscalité des entreprises est un domaine complexe et technique. Nous
-      sommes là pour réaliser vos déclarations, par exemple les obligations
-      fiscales ou les problématiques de TVA.
+      <div class="paragraph">
+        La fiscalité des entreprises est un domaine complexe et technique. Nous
+        sommes là pour réaliser vos déclarations, par exemple les obligations
+        fiscales ou les problématiques de TVA.
+      </div>
     </div>
   </div>
 </template>

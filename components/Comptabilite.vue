@@ -29,24 +29,32 @@
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
       <div class="title">Des informations précieuses</div>
-      Grâce à nos analyses et nos conseils d’expert, nous vous aidons à
-      anticiper les décisions à prendre pour favoriser votre développement.
+      <div class="paragraph">
+        Grâce à nos analyses et nos conseils d’expert, nous vous aidons à
+        anticiper les décisions à prendre pour favoriser votre développement.
+      </div>
     </div>
     <div>
       <div class="title">En ligne et interactive</div>
-      Optimisez votre organisation comptable grâce à nos outils en ligne :
-      restitutez en ligne vos documents et accédez au partage de gestion
-      complet.
+      <div class="paragraph">
+        Optimisez votre organisation comptable grâce à nos outils en ligne :
+        restitutez en ligne vos documents et accédez au partage de gestion
+        complet.
+      </div>
     </div>
     <div>
       <div class="title">Claire et proactive</div>
-      Nous garantissons une information chiffrée fiable, rapide et commentée
-      indispensable à vos décisions stratégiques.
+      <div class="paragraph">
+        Nous garantissons une information chiffrée fiable, rapide et commentée
+        indispensable à vos décisions stratégiques.
+      </div>
     </div>
     <div>
       <div class="title">Libérez-vous</div>
-      Faites confiance à notre cabinet d’expertise comptable et concentrez vos
-      forces sur votre coeur de métier.
+      <div class="paragraph">
+        Faites confiance à notre cabinet d’expertise comptable et concentrez vos
+        forces sur votre coeur de métier.
+      </div>
     </div>
   </div>
 </template>

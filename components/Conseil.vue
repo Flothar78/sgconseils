@@ -33,25 +33,33 @@
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
       <div class="title">Créateur d’entreprise</div>
-      Afin que vous maîtrisiez vos coûts, nous nous engageons à vous accompagner
-      de manière personnalisée. Nous vous conseillons en fonction de vos besoins
-      et de vos attentes.
+      <div class="paragraph">
+        Afin que vous maîtrisiez vos coûts, nous nous engageons à vous
+        accompagner de manière personnalisée. Nous vous conseillons en fonction
+        de vos besoins et de vos attentes.
+      </div>
     </div>
     <div>
       <div class="title">Ressources humaines</div>
-      Découvrez les solutions de ressource humaine et de paie conçues pour votre
-      entreprise. Nos services et nos experts vous permettent de trouver la
-      solution la plus adaptée.
+      <div class="paragraph">
+        Découvrez les solutions de ressource humaine et de paie conçues pour
+        votre entreprise. Nos services et nos experts vous permettent de trouver
+        la solution la plus adaptée.
+      </div>
     </div>
     <div>
       <div class="title">Comptabilité</div>
-      Nous vous accompagnons dans vos choix et décisions financières, pour vous
-      aider à comprendre votre comptabilité, la maîtriser et l’optimiser.
+      <div class="paragraph">
+        Nous vous accompagnons dans vos choix et décisions financières, pour
+        vous aider à comprendre votre comptabilité, la maîtriser et l’optimiser.
+      </div>
     </div>
     <div>
       <div class="title">Juridique</div>
-      Nous nous engageons à donner un avis professionnel concernant le fond ou
-      la procédure de la loi en relation avec votre situation.
+      <div class="paragraph">
+        Nous nous engageons à donner un avis professionnel concernant le fond ou
+        la procédure de la loi en relation avec votre situation.
+      </div>
     </div>
   </div>
 </template>

@@ -114,7 +114,7 @@ $base-black: #191c20;
     font-family: Arial;
     text-decoration: none;
     position: absolute;
-    bottom: 83vh;
+    bottom: 76.5vh;
     right: 0;
     background: $light-red;
     color: white;
@@ -173,9 +173,9 @@ $base-black: #191c20;
   }
   .close-details-button {
     visibility: hidden;
-    border: 2px solid $base-red;
+    border: 4px solid black;
     border-radius: 3px;
-    color: $base-red;
+    color: black;
     background: transparent;
     font-weight: 700;
     position: absolute;
@@ -201,29 +201,46 @@ $base-black: #191c20;
       color: transparent;
     }
     .activity-slogan {
-      top: 35vh;
-      font-weight: 600;
-      font-size: 1rem;
-      letter-spacing: 0.2px;
+      background: transparent;
+      width: 0;
+      height: 0;
+      font-size: 0;
     }
     .activity-description {
-      height: 30vh;
-      top: 55vh;
+      font-size: 1.2rem;
+      height: 50vh;
+      width: 65vw;
+      top: 35vh;
       justify-content: space-around;
-      font-size: 1rem;
+     
     }
     .contact-button {
       font-size: 0.8rem;
-      bottom: 83.2vh;
+      bottom: 77vh;
       padding: 0.3rem;
     }
     .method-details {
       font-size: 1rem;
       height: 60vh;
       border-radius: 10px;
-      padding: 0 0.5rem;
+      position: absolute;
+      z-index: 20;
+      top: 7vh;
+      left: 0%;
+      transform: translateX(0%);
+      display: flex;
+      flex-direction: space-between;
+
+      color: $base-black;
+      border: $darkest-blue 0 solid;
+      background: $base-white;
+      width: 100vw;
+      height: 93vh;
+      .title {
+        margin-bottom: 1rem;
+      }
       .paragraph {
-        margin: 0 0;
+        margin-right: 3rem;
       }
     }
     .method-button {
@@ -234,8 +251,9 @@ $base-black: #191c20;
       box-shadow: 3px 3px 4px $darkest-blue;
     }
     .close-details-button {
-      top: 31.7vh;
-      right: 8vw;
+      z-index: 20;
+      top: 7.5vh;
+      right: 1vw;
     }
   }
 }

@@ -34,26 +34,36 @@
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
       <div class="title">Congés annuels</div>
-      Il est parfois difficile d’y voir clair sur la règlementation en vigueur.
-      Nous vous accompagnons pour gérer les congés au sein de votre
-      entreprise.
+
+      <div class="paragraph">
+        Il est parfois difficile d’y voir clair sur la règlementation en
+        vigueur. Nous vous accompagnons pour gérer les congés au sein de votre
+        entreprise.
+      </div>
     </div>
     <div>
       <div class="title">Paie</div>
-      Le bulletin de paie est devenu un document complet mais
-      aussi plus complexe. Faites confiance à nos
-      experts pour éditer ces supports essentiels à votre activité.
+      <div class="paragraph">
+        Le bulletin de paie est devenu un document complet mais aussi plus
+        complexe. Faites confiance à nos experts pour éditer ces supports
+        essentiels à votre activité.
+      </div>
     </div>
     <div>
       <div class="title">Recrutement</div>
-      Le recrutement est essentiel à votre entreprise mais peut s’avérer
-      compliqué. Vous apportez des conseils dans le développement de votre entreprise, c’est notre mission.
+      <div class="paragraph">
+        Le recrutement est essentiel à votre entreprise mais peut s’avérer
+        compliqué. Vous apportez des conseils dans le développement de votre
+        entreprise, c’est notre mission.
+      </div>
     </div>
     <div>
       <div class="title">Social</div>
-      Les réformes impactent régulièrement les métiers RH et poussent à une
-      réactivité accrue, la réforme de la formation professionnelle en est une
-      illustration. Restez à jour grâce à nos conseils.
+      <div class="paragraph">
+        Les réformes impactent régulièrement les métiers RH et poussent à une
+        réactivité accrue, la réforme de la formation professionnelle en est une
+        illustration. Restez à jour grâce à nos conseils.
+      </div>
     </div>
   </div>
 </template>
