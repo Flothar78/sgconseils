@@ -15,7 +15,7 @@
     <Conseil v-else-if="id === 'conseil'" :childClasses="parentClasses" />
     <Social v-else-if="id === 'social'" :childClasses="parentClasses" />
     <NuxtLink class="contact-button" href="#" to="/contact/#form-anchor"
-      >Nous écrire</NuxtLink
+      >NOUS ECRIRE</NuxtLink
     >
     <button class="method-button" @click="showDetails()">NOS MÉTIERS</button>
     <button class="close-details-button" @click="showDetails()">X</button>
@@ -111,18 +111,20 @@ $base-black: #191c20;
     font-size: 1.2rem;
   }
   .contact-button {
+    font-family: Arial;
     text-decoration: none;
     position: absolute;
-    bottom: 2.3vh;
+    bottom: 83vh;
     right: 0;
-    background: $base-red;
+    background: $light-red;
     color: white;
     padding: 0.5rem;
     border-radius: 5px;
-    opacity: 0.6;
+    opacity: 0.5;
   }
   .contact-button:hover {
     opacity: 1;
+    background: $base-red;
   }
   .method-details {
     font-size: 1.2rem;
@@ -206,12 +208,12 @@ $base-black: #191c20;
     }
     .activity-description {
       height: 30vh;
-      top: 58vh;
+      top: 55vh;
       justify-content: space-around;
       font-size: 1rem;
     }
     .contact-button {
-      bottom: 71.5vh;
+      bottom: 82vh;
       right: 0;
       opacity: 0.5;
     }
@@ -250,7 +252,7 @@ $base-black: #191c20;
     }
     .activity-description {
       top: 55vh;
-      height: 30vh;
+      height: 28vh;
       font-size: 1.4rem;
     }
     .contact-button:hover {

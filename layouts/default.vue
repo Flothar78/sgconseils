@@ -112,7 +112,7 @@ $base-grey: #858384;
   background: $base-black;
   height: 7vh;
   width: 100%;
-  padding-left: 0.3rem;
+  padding-left: 0.5rem;
   z-index: 1001;
   img {
     width: 38px;
@@ -148,22 +148,22 @@ $base-grey: #858384;
   font-family: Arial, sans-serif;
   background-color: $base-white;
   border: 7px solid $darkest-blue;
-  height: 50vh;
-  font-size: 1rem;
+  height: 60vh;
+  width: 25vw;
   list-style: none;
   position: fixed;
-  right: -82vw;
-  top: 27vh;
+  right: -50vw;
+  top: 20vh;
   margin-right: -0.5rem;
   display: flex;
   flex-direction: column;
   transition: right 0.5s ease;
-  padding-top: 1rem;
+  padding-top:  3rem;
   border-radius: 10% 0 0 10%;
   .menu-item {
     text-decoration: none;
     color: $base-black;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 1rem 1.2rem;
   }
@@ -173,7 +173,7 @@ $base-grey: #858384;
   .metiers-item {
     text-decoration: none;
     color: $base-black;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding-left: 1.6rem;
   }
   .metiers-item:hover {
@@ -222,18 +222,18 @@ $base-grey: #858384;
   .menu-list {
     top: 28vh;
     height: 50vh;
-    width: 35vw;
+    width: 50vw;
     right: -65vw;
     margin-right: -1rem;
     padding: 0 1rem;
     justify-content: center;
     .menu-item {
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin: 0.5rem 0.5rem;
     }
     .metiers-item {
       margin-top: 0.2rem;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
   .active {
@@ -248,6 +248,49 @@ $base-grey: #858384;
 
     .footer-div {
       border: 4px solid $base-black;
+    }
+  }
+}
+@media screen and (min-width: 1536px) {
+  .navbar-container {
+    .menu-list {
+      font-family: Arial, sans-serif;
+      background-color: $base-white;
+      border: 7px solid $darkest-blue;
+      height: 60vh;
+      width: 20vw;
+      list-style: none;
+      position: fixed;
+      right: -50vw;
+      top: 19vh;
+      margin-right: -0.5rem;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.5s ease;
+      padding: 2rem;
+      border-radius: 10% 0 0 10%;
+      .menu-item {
+        text-decoration: none;
+        color: $base-black;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 1rem 1.2rem;
+      }
+      .menu-item:hover {
+        text-shadow: 2px 2px $base-black;
+      }
+      .metiers-item {
+        text-decoration: none;
+        color: $base-black;
+        font-size: 1.4rem;
+        padding-left: 1.6rem;
+      }
+      .metiers-item:hover {
+        font-weight: 900;
+      }
+    }
+    .active {
+      right: 0vw;
     }
   }
 }
