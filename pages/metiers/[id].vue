@@ -113,6 +113,7 @@ $base-black: #191c20;
     font-size: 1.2rem;
   }
   .contact-button {
+    font-family: Arial;
     text-decoration: none;
     position: absolute;
     bottom: 0;
@@ -211,8 +212,6 @@ $base-black: #191c20;
       font-size: 1rem;
     }
     .contact-button {
-      bottom: 89vh;
-
       opacity: 0.5;
     }
     .method-details {

@@ -32,7 +32,9 @@
         >Informatique</NuxtLink
       >
       <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink>
-      <NuxtLink class="menu-item" href="#" to="/#">MENTIONS LÉGALES</NuxtLink>
+      <NuxtLink class="menu-item" href="#" to="/mentions"
+        >MENTIONS LÉGALES</NuxtLink
+      >
       <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor"
         >CONTACT</NuxtLink
       >
@@ -63,6 +65,8 @@
 
       <NuxtLink class="footer-infos" href="#" to="/metiers/informatique"
         >Informatique</NuxtLink
+      ><NuxtLink class="footer-infos" href="#" to="/mentions"
+        >MENTIONS LÉGALES</NuxtLink
       >
     </div>
     <div class="footer-div">
