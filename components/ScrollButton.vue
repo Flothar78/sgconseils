@@ -64,6 +64,10 @@ $base-black: #191c20;
   transform: translateX(50%);
   bottom: 9vh;
   margin: auto;
+  box-shadow: 6px 6px 8px $darkest-blue;
+}
+.scroll-button:hover {
+  box-shadow: 0 0;
 }
 @media screen and (max-width: 699px) {
   .scroll-button {

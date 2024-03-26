@@ -17,9 +17,7 @@
     <NuxtLink class="contact-button" href="#" to="/contact/#form-anchor"
       >Nous écrire</NuxtLink
     >
-    <button class="method-button" @click="showDetails()">
-      Voir nos méthodes
-    </button>
+    <button class="method-button" @click="showDetails()">NOS MÉTIERS</button>
     <button class="close-details-button" @click="showDetails()">X</button>
   </div>
 </template>
@@ -113,10 +111,9 @@ $base-black: #191c20;
     font-size: 1.2rem;
   }
   .contact-button {
-    font-family: Arial;
     text-decoration: none;
     position: absolute;
-    bottom: 0;
+    bottom: 2.3vh;
     right: 0;
     background: $base-red;
     color: white;
@@ -151,20 +148,22 @@ $base-black: #191c20;
     }
   }
   .method-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 8rem;
+    height: 3rem;
     position: absolute;
-    bottom: 2vh;
+    bottom: 2.3vh;
     right: 50%;
     transform: translate(50%);
     border-radius: 5px;
     background: $base-red;
     color: white;
     padding: 0.5rem;
-    color: white;
-    font-size: 1rem;
-    background: $base-red;
-    margin: -0.2rem;
-    border-radius: 5px;
     box-shadow: 6px 6px 8px $darkest-blue;
   }
   .method-button:hover {
@@ -212,6 +211,8 @@ $base-black: #191c20;
       font-size: 1rem;
     }
     .contact-button {
+      bottom: 71.5vh;
+      right: 0;
       opacity: 0.5;
     }
     .method-details {
@@ -223,8 +224,15 @@ $base-black: #191c20;
         margin: 0 0;
       }
     }
+    .method-button {
+      font-size: 0.8rem;
+      font-weight: 600;
+      height: 2.3rem;
+      bottom: 1.7vh;
+      box-shadow: 3px 3px 4px $darkest-blue;
+    }
     .close-details-button {
-      top: 31.3vh;
+      top: 31.7vh;
       right: 8vw;
     }
   }
