@@ -146,12 +146,11 @@ $base-black: #191c20;
     padding-top: 7rem;
     .contact-title {
       font-size: 1.2rem;
-      color: transparent;
-      font-weight: 700;
+      font-weight: 600;
       margin: 0rem 0 3rem 2rem;
       .form-invitation {
+        margin: 2rem 0 -2rem 0;
         color: $base-black;
-        padding-left: 0rem;
         font-style: italic;
         font-size: 1.2rem;
         font-weight: 300;

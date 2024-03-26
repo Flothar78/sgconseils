@@ -52,8 +52,8 @@ $base-black: #191c20;
   .company-activity {
     padding: 1rem 0 1rem 2rem;
     font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 3px;
+    font-weight: 500;
+    letter-spacing: 2px;
     text-shadow: 3px 3px 4px black;
     height: 9vh;
     box-shadow: -8px 0px;
