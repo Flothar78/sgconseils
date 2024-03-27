@@ -39,7 +39,7 @@ $base-black: #191c20;
 @media screen and (max-width: 767px) {
   .company-activity {
     font-size: 1rem;
-    letter-spacing: 0.8px;
+    letter-spacing: 0px;
     font-weight: 500;
     margin: 2rem 0 0 .5rem;
     padding: 1rem 0 1rem 1rem;

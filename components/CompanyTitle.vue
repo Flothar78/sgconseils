@@ -49,7 +49,7 @@ $base-black: #191c20;
       $darkest-blue
     );
     font-size: 1.2rem;
-    width: 85vw;
+    width: 65vw;
     height: 8vh;
     margin-left: 3rem;
   }
