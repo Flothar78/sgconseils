@@ -399,21 +399,21 @@ $base-black: #191c20;
         .contact-title {
           font-size: 1.3rem;
           .form-invitation {
-            margin: 2rem 0 -0.5rem 0;
+            margin: 2rem 0 -0.6rem 0;
           }
         }
         .contact-form {
           border-radius: 7px;
         }
         #scroll-to-map {
-          top: 88vh;
+          top: 90vh;
         }
       }
       .map-and-anchor-container {
         .map-container {
         }
         #scroll-to-form {
-          top: 191vh;
+          top: 192.8vh;
         }
       }
     }

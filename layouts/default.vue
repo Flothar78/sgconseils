@@ -109,10 +109,13 @@ $base-white: #bec8da;
 $base-black: #191c20;
 $base-grey: #858384;
 .layout-container {
-  background: $base-red;
-
+  background: $base-black;
   .navbar-container {
+    max-width: 1440px;
+    margin: auto;
     position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,7 +123,7 @@ $base-grey: #858384;
     height: 7vh;
     width: 100%;
     padding-left: 0.5rem;
-    z-index: 1001;
+    z-index: 101;
     img {
       width: 38px;
     }
