@@ -71,9 +71,27 @@ $base-black: #191c20;
 }
 
 @media screen and (max-width: 767px) {
+  @keyframes glitter {
+    0% {
+      background: $light-red;
+      box-shadow: -1px 1px 18px $base-white;
+    }
+    50% {
+      background: $base-red;
+      box-shadow: 0px 0px 0px;
+      width: 12rem;
+      height: 3.2rem;
+      font-size: 0.93rem;
+      letter-spacing: 1.1px;
+    }
+    100% {
+      background: $light-red;
+      box-shadow: -1px 1px 18px $base-white;
+    }
+  }
   .scroll-button {
     bottom: 11vh;
-    width: 58vw;
+    width:10rem;
   }
 }
 </style>
