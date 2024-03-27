@@ -48,19 +48,19 @@ $base-black: #191c20;
       $dark-blue,
       $darkest-blue
     );
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 85vw;
     height: 8vh;
-    margin-left: -3rem;
+    margin-left: 3rem;
   }
 }
-@media screen and (min-width: 1536px) {
-  .company-name {
-    font-size: 2.3rem;
-    text-shadow: 4px 4px 6px black;
-    letter-spacing: 2.3px;
-    height: 12vh;
-    box-shadow: 8px 0px;
-  }
-}
+//@media screen and (min-width: 1536px) {
+//  .company-name {
+//    font-size: 2.3rem;
+//    text-shadow: 4px 4px 6px black;
+//    letter-spacing: 2.3px;
+//    height: 12vh;
+//    box-shadow: 8px 0px;
+//  }
+//}
 </style>

@@ -1,24 +1,26 @@
 <template>
-  <div class="hero" id="accueil" @scrollTo="scrollToTopOfCards">
-    <div class="hero-img">
+  <div class="hero-container">
+    <div class="hero" id="accueil" @scrollTo="scrollToTopOfCards">
+      <div class="hero-img">
+        <NuxtImg
+          defer
+          quality="60"
+          format="webp"
+          src="/happyPeople.jpeg"
+          alt="employés de bureaux devant un PC"
+          sizes="281px"
+        ></NuxtImg>
+      </div>
+      <div class="company-features"><CompanyTitle /><CompanyBusiness /></div>
       <NuxtImg
         defer
-        quality="60"
-        format="webp"
-        src="/happyPeople.jpeg"
-        alt="employés de bureaux devant un PC"
-        sizes="281px"
-      ></NuxtImg>
+        quality="10"
+        class="background-img"
+        src="/background-image.jpeg"
+        alt="Image de bureau en arrière fond, en tant que décor et peu visible."
+      />
+      <ScrollButton @scrollTo="scrollToTopOfCards" />
     </div>
-    <div class="company-features"><CompanyTitle /><CompanyBusiness /></div>
-    <NuxtImg
-      defer
-      quality="10"
-      class="background-img"
-      src="/background-image.jpeg"
-      alt="Image de bureau en arrière fond, en tant que décor et peu visible."
-    />
-    <ScrollButton @scrollTo="scrollToTopOfCards" />
   </div>
   <div class="expertises-cards" id="metiers" ref="cardsDiv">
     <div>
@@ -179,39 +181,43 @@ $base-red: #fc440f;
 $light-red: #ff8811;
 $base-white: #bec8da;
 $base-black: #191c20;
-.hero {
-  padding-top: 10vh;
-  position: relative;
+.hero-container {
   background-color: $base-blue;
-  color: $base-white;
-  height: 93vh;
-  .company-features {
-    position: absolute;
-    top: 42.2vh;
-    left: 2vw;
-  }
-  .hero-img {
-    position: absolute;
-    right: 0;
-    margin-right: 1.6rem;
-    top: 15.5vh;
-    height: 36vh;
-    z-index: 10;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: right;
-      opacity: 0.9;
+  .hero {
+    max-width: 1440px;
+    padding-top: 10vh;
+    position: relative;
+    margin: auto;
+    color: $base-white;
+    height: 93vh;
+    .company-features {
+      position: absolute;
+      top: 42.2vh;
+      left: 2vw;
     }
-  }
-  .background-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    margin-top: -3vh;
-    filter: contrast(22%);
-    opacity: 0.1;
+    .hero-img {
+      position: absolute;
+      right: 0;
+      margin-right: 1.6rem;
+      top: 15.5vh;
+      height: 36vh;
+      z-index: 10;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: right;
+        opacity: 0.9;
+      }
+    }
+    .background-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      margin-top: -3vh;
+      filter: contrast(22%);
+      opacity: 0.1;
+    }
   }
 }
 .expertises-cards {
@@ -249,22 +255,21 @@ $base-black: #191c20;
 }
 
 @media screen and (max-width: 767px) {
-  .hero {
-    padding-top: 10vh;
-    height: 94vh;
-    .company-features {
-      top: 60vh;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 70vw;
-    }
-    .hero-img {
-      top: 13.2vh;
-      width: 230px;
-      left: 50%;
-      transform: translate(-50%);
-      img {
-        object-position: center;
+  .hero-container {
+    .hero {
+      .company-features {
+        position: absolute;
+        top: 60vh;
+        left: 2vw;
+      }
+      .hero-img {
+        top: 13.2vh;
+        width: 230px;
+        left: 50%;
+        transform: translate(-50%);
+        img {
+          object-position: center;
+        }
       }
     }
   }
@@ -284,28 +289,28 @@ $base-black: #191c20;
     }
   }
 }
-@media screen and (min-width: 1536px) {
-  .hero {
-    .company-features {
-      top: 40vh;
-    }
-    .hero-img {
-      top: 10vh;
-      height: 42vh;
-    }
-  }
-  .expertises-cards {
-    column-gap: 100px;
-    .nuxt-link {
-      font-size: 1.3rem;
-      width: 15vw;
-      height: 20vh;
-      box-shadow: 10px 10px 12px;
-    }
-    .nuxt-link:hover {
-      box-shadow: 6px 6px 10px $base-red;
-      //text-shadow: 15px -70px 3px $base-red;
-    }
-  }
-}
+//@media screen and (min-width: 1536px) {
+//  .hero {
+//    .company-features {
+//      top: 40vh;
+//    }
+//    .hero-img {
+//      top: 10vh;
+//      height: 42vh;
+//    }
+//  }
+//  .expertises-cards {
+//    column-gap: 100px;
+//    .nuxt-link {
+//      font-size: 1.3rem;
+//      width: 15vw;
+//      height: 20vh;
+//      box-shadow: 10px 10px 12px;
+//    }
+//    .nuxt-link:hover {
+//      box-shadow: 6px 6px 10px $base-red;
+//      text-shadow: 15px -70px 3px $base-red;
+//    }
+//  }
+//}
 </style>
