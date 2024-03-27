@@ -231,7 +231,7 @@ $base-black: #191c20;
         padding: 0.3rem;
       }
       .method-details {
-        font-size: 1rem;
+        font-size: 1.2rem;
         height: 60vh;
         border-radius: 10px;
         position: absolute;
