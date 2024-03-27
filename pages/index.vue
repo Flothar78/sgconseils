@@ -224,7 +224,7 @@ $base-black: #191c20;
   }
 }
 .cards-container {
-  background-color: $base-red;
+  background-color: $base-white;
   .expertises-cards {
     background-color: $base-white;
     max-width: 1440px;
