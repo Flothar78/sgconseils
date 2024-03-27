@@ -69,14 +69,11 @@ $base-black: #191c20;
 .scroll-button:hover {
   box-shadow: 0 0;
 }
-@media screen and (max-width: 699px) {
+
+@media screen and (max-width: 767px) {
   .scroll-button {
-    bottom: 7vh;
-  }
-}
-@media screen and (min-width: 1536px) {
-  .scroll-button {
-    bottom: 7vh;
+    bottom: 11vh;
+    width: 58vw;
   }
 }
 </style>

@@ -31,7 +31,7 @@ $base-black: #191c20;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-shadow: 2px 2px 8px $base-black;
   font-weight: bold;
   letter-spacing: 1.4px;
@@ -41,6 +41,9 @@ $base-black: #191c20;
 }
 @media screen and (max-width: 767px) {
   .company-name {
+    position: absolute;
+    top: 13vh;
+
     background: linear-gradient(
       0.3turn,
       $base-blue,
@@ -48,10 +51,13 @@ $base-black: #191c20;
       $dark-blue,
       $darkest-blue
     );
-    font-size: 1.2rem;
-    width: 65vw;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 3px $base-black;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    width: 100vw;
     height: 8vh;
-    margin-left: 3rem;
+    margin-right:1rem;
   }
 }
 //@media screen and (min-width: 1536px) {

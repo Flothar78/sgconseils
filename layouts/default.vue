@@ -6,39 +6,7 @@
         alt="logo sg conseils format png"
     /></NuxtLink>
     <button @click.stop="menuListSlide()" class="menu-button">MENU</button>
-    <div class="menu-list" :class="{ active: isActive }">
-      <button @click.stop="menuListSlide()" class="inner-menu-closing">
-        X
-      </button>
-      <NuxtLink class="menu-item" to="/#accueil">ACCUEIL</NuxtLink>
-      <NuxtLink class="menu-item" href="#" to="/#metiers">EXPERTISES</NuxtLink>
-      <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
-        >Comptabilité</NuxtLink
-      >
-      <NuxtLink class="metiers-item" href="#" to="/metiers/audit"
-        >Audit</NuxtLink
-      ><NuxtLink class="metiers-item" href="#" to="/metiers/juridique"
-        >Juridique</NuxtLink
-      >
-      <NuxtLink class="metiers-item" href="#" to="/metiers/conseil"
-        >Conseil</NuxtLink
-      >
-      <NuxtLink class="metiers-item" href="#" to="/metiers/gestion"
-        >Gestion</NuxtLink
-      ><NuxtLink class="metiers-item" href="#" to="/metiers/social"
-        >Social</NuxtLink
-      >
-      <NuxtLink class="metiers-item" href="#" to="/metiers/informatique"
-        >Informatique</NuxtLink
-      >
-      <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink>
-      <NuxtLink class="menu-item" href="#" to="/mentions"
-        >MENTIONS LÉGALES</NuxtLink
-      >
-      <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor"
-        >CONTACT</NuxtLink
-      >
-    </div>
+   
   </header>
   <slot />
   <footer class="footer">

@@ -28,7 +28,7 @@ $base-black: #191c20;
   align-items: center;
   justify-content: flex-start;
   padding: 1rem 0 1rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 1.2px;
   text-shadow: 1px 1px 4px $base-black;
@@ -38,25 +38,16 @@ $base-black: #191c20;
 }
 @media screen and (max-width: 767px) {
   .company-activity {
+    justify-content: center;
     font-size: 1rem;
-    letter-spacing: 0px;
-    font-weight: 500;
-    margin: 2rem 0 0 .5rem;
-    padding: 1rem 0 1rem 1rem;
-    width: 85vw;
-    height: 5vh;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px $base-black;
+    font-weight: 700;
+    margin: 13.3rem 0 0 -1rem;
+    padding: 0 1rem;
+    width: 100vw;
+    height: 8vh;
     box-shadow: -6px 0px;
   }
 }
-//@media screen and (min-width: 1536px) {
-//  .company-activity {
-//    padding: 1rem 0 1rem 2rem;
-//    font-size: 1.4rem;
-//    font-weight: 500;
-//    letter-spacing: 2px;
-//    text-shadow: 3px 3px 4px black;
-//    height: 9vh;
-//    box-shadow: -8px 0px;
-//  }
-//}
 </style>

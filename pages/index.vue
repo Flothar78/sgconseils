@@ -193,7 +193,8 @@ $base-black: #191c20;
     .company-features {
       position: absolute;
       top: 42.2vh;
-      left: 2vw;
+
+transform:translate(1%);
     }
     .hero-img {
       position: absolute;
@@ -257,11 +258,6 @@ $base-black: #191c20;
 @media screen and (max-width: 767px) {
   .hero-container {
     .hero {
-      .company-features {
-        position: absolute;
-        top: 60vh;
-        left: 2vw;
-      }
       .hero-img {
         top: 13.2vh;
         width: 230px;
