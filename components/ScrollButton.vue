@@ -69,5 +69,4 @@ $base-black: #191c20;
 .scroll-button:hover {
   box-shadow: 0 0;
 }
-
 </style>

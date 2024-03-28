@@ -140,7 +140,7 @@
       </div>
       <div>
         <NuxtLink class="nuxt-link" href="#" to="/metiers/social"
-          >SOCIAL / RH<svg
+          >SOCIAL RH<svg
             xmlns="http://www.w3.org/2000/svg"
             width="1.5rem"
             height="1.5rem"
@@ -228,15 +228,15 @@ $base-black: #191c20;
   .expertises-cards {
     background-color: $base-white;
     max-width: 1440px;
-    height: 73vh;
-    padding: 17vh 5vw 10vh 5vw;
+    height: 70vh;
+    padding: 20vh 2vw 10vh 2vw;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 120px;
-    row-gap: 30px;
+    column-gap: 80px;
+    row-gap: 35px;
     font-family: Arial, sans-serif;
     .nuxt-link {
       border: 9px solid $darkest-blue;
@@ -244,16 +244,16 @@ $base-black: #191c20;
       background-color: $base-white;
       text-decoration: none;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.1rem;
       letter-spacing: 0.8px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      width: 15vw;
-      height: 14vh;
+      width: 17vw;
+      height: 15vh;
       border-radius: 10%;
-      box-shadow: 6px 6px 10px;
+      box-shadow: 8px 8px 10px;
       padding: 0 1rem;
     }
     .nuxt-link:hover {
@@ -279,15 +279,16 @@ $base-black: #191c20;
   }
   .cards-container {
     .expertises-cards {
-      padding: 25vh 0 10vh 0;
+      padding: 17vh 0 10vh 0;
       flex-direction: column;
       row-gap: 50px;
       height: 100%;
       .nuxt-link {
-        width: 46vw;
+        width: 32vw;
         height: 15vh;
         border-radius: 10%;
-        font-size: 1.1rem;
+        font-size: 1rem;
+        justify-content: space-around;
       }
       .nuxt-link:hover {
         box-shadow: 6px 6px 8px $base-red;
@@ -295,28 +296,4 @@ $base-black: #191c20;
     }
   }
 }
-//@media screen and (min-width: 1536px) {
-//  .hero {
-//    .company-features {
-//      top: 40vh;
-//    }
-//    .hero-img {
-//      top: 10vh;
-//      height: 42vh;
-//    }
-//  }
-//  .expertises-cards {
-//    column-gap: 100px;
-//    .nuxt-link {
-//      font-size: 1.3rem;
-//      width: 15vw;
-//      height: 20vh;
-//      box-shadow: 10px 10px 12px;
-//    }
-//    .nuxt-link:hover {
-//      box-shadow: 6px 6px 10px $base-red;
-//      text-shadow: 15px -70px 3px $base-red;
-//    }
-//  }
-//}
 </style>

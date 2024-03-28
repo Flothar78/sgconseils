@@ -98,6 +98,7 @@ $base-grey: #858384;
   background: $base-black;
   .navbar-container {
     max-width: 1440px;
+    width: 100vw;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -106,7 +107,6 @@ $base-grey: #858384;
     background: $base-black;
     padding-left: 1rem;
     height: 7vh;
-    width: 100%;
     z-index: 100;
     img {
       width: 38px;
@@ -142,6 +142,7 @@ $base-grey: #858384;
   }
   .footer {
     max-width: 1440px;
+
     margin: auto;
     font-family: Arial, sans-serif;
     line-height: 1.3;
