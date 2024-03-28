@@ -102,7 +102,6 @@ $base-grey: #858384;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background: $base-black;
     padding-left: 1rem;
@@ -113,15 +112,19 @@ $base-grey: #858384;
       width: 38px;
     }
     .menu {
-      min-width: 50%;
+      width: 80%;
       padding: 0 1rem;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
+      position: absolute;
+      right: 0;
       .menu-item {
+        font-family: Arial;
         text-decoration: none;
         color: white;
         font-size: 1rem;
-        font-weight: 300;
+        font-weight: 500;
+        margin-right: 1rem;
       }
       .menu-item:hover {
         text-shadow: 1px 1px $base-black;
@@ -129,8 +132,8 @@ $base-grey: #858384;
       .metiers-item {
         text-decoration: none;
         color: $base-black;
-        font-size: 1.2rem;
-        padding-left: 1.6rem;
+        font-size: 1rem;
+        padding-left: 0rem;
       }
       .metiers-item:hover {
         font-weight: 900;
@@ -166,8 +169,23 @@ $base-grey: #858384;
   }
 }
 @media screen and (max-width: 767px) {
-  .footer {
-    font-size: 0.75rem;
+  .layout-container {
+    .navbar-container {
+      .menu {
+        //     min-width: 70%;
+        padding: 0 0.2rem;
+        //     left: 30%;
+        //     transform: translate(-12%);
+
+        .menu-item {
+          font-size: 0.72rem;
+          //       font-weight: 300;
+        }
+      }
+    }
+    .footer {
+      font-size: 0.75rem;
+    }
   }
 }
 </style>
