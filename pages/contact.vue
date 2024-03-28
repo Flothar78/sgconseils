@@ -2,11 +2,8 @@
   <div class="contact-container">
     <div class="global-contact-page">
       <div class="form-and-anchor-container" id="form-anchor">
-        <div class="contact-title">
-          Pour toutes vos questions juridiques, comptables, sociales, de
-          gestion, de conseil:
-          <div class="form-invitation">Contactez nos consultants:</div>
-        </div>
+        <div class="form-invitation">Contactez nos consultants:</div>
+
         <Form @submit="onSubmit" class="contact-form">
           <div class="form-entry">
             <div class="form-labels">Votre adresse e-mail:</div>
@@ -51,7 +48,7 @@
           <button class="form-button" type="submit">Envoyer</button>
         </Form>
         <NuxtLink to="/contact/#map-anchor" id="scroll-to-map">
-          Nous localiser</NuxtLink
+          Localisation</NuxtLink
         >
       </div>
       <div class="map-and-anchor-container" id="map-anchor">
@@ -59,6 +56,7 @@
           >Nous écrire
         </NuxtLink>
 
+        <div class="map-invitation">Retrouvez-nous sur une carte:</div>
         <div class="map-container">
           <LMap
             ref="map"
@@ -148,18 +146,13 @@ $base-black: #191c20;
     color: $base-black;
     .form-and-anchor-container {
       padding-top: 5rem;
-      .contact-title {
+      .form-invitation {
+        margin: 3.4rem 0 4.3rem 1.8rem;
+        color: $base-black;
+        font-style: italic;
         font-size: 1.2rem;
-        font-weight: 600;
-        margin: 0rem 0 4rem 2rem;
-        .form-invitation {
-          margin: 2rem 0 -2rem 0;
-          color: $base-black;
-          font-style: italic;
-          font-size: 1.2rem;
-          font-weight: 300;
-          text-shadow: 1px 1px 3px grey;
-        }
+        font-weight: 300;
+        text-shadow: 1px 1px 3px grey;
       }
       .contact-form {
         border: 12px solid $darkest-blue;
@@ -238,12 +231,21 @@ $base-black: #191c20;
     .map-and-anchor-container {
       padding-top: 20vh;
       height: 90vh;
+      .map-invitation {
+        position: absolute;
+        top: 119.6vh;
+        left: 1.8rem;
+        color: $base-black;
+        font-style: italic;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-shadow: 1px 1px 3px grey;
+      }
       .map-container {
         border: 12px solid $darkest-blue;
-        margin: 1rem 0 0 15rem;
         height: 68vh;
         width: 60%;
-        margin: 2.2rem 0 3rem 2rem;
+        margin: 3rem 0 0 2rem;
         border-radius: 7px;
       }
       #scroll-to-form {
@@ -276,11 +278,13 @@ $base-black: #191c20;
       color: $base-black;
       .form-and-anchor-container {
         height: 90vh;
-        .contact-title {
-          font-size: 0;
-          margin: 0;
-          padding-bottom: 2.5rem;
-          padding-left: 0.5rem;
+        .form-invitation {
+          margin: 6.4rem 0 0.9rem 1.8rem;
+          color: $base-black;
+          font-style: italic;
+          font-size: 1.2rem;
+          font-weight: 300;
+          text-shadow: 1px 1px 3px grey;
         }
         .contact-form {
           border: 12px solid $darkest-blue;
@@ -307,7 +311,7 @@ $base-black: #191c20;
             }
             #message {
               border: 2px solid $base-black;
-              width: 75%;
+              width: 90%;
               height: 8vh;
             }
             .error-container {
@@ -322,11 +326,11 @@ $base-black: #191c20;
           .form-button {
             background: $base-red;
             color: white;
-            font-size: 1.1rem;
-            font-weight: 900;
-            letter-spacing: 1.2px;
-            height: 4vh;
-            width: 45%;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            height: 8%;
+            width: 65%;
             border-radius: 5px;
             margin: auto;
             box-shadow: 4px 4px 6px $base-black;
@@ -343,20 +347,20 @@ $base-black: #191c20;
           color: $base-black;
           background: white;
           position: absolute;
-          right: 50%;
-          transform: translate(50%);
-          top: 88.3vh;
+          left: 0;
+          top: 95vh;
           border: 1px solid $base-black;
           height: 5vh;
-          width: 45vw;
-          border-radius: 7px;
-          box-shadow: 4px 4px 6px $base-black;
+          width: 100px;
+          border-radius: 0 7px 7px 0;
+          font-size: 0.8rem;
           color: white;
           background: $base-red;
+          opacity: 0.8;
         }
       }
       .map-and-anchor-container {
-        padding-top: 18.5vh;
+        padding-top: 25vh;
         height: 90vh;
         .map-container {
           border: 12px solid $darkest-blue;
@@ -377,16 +381,16 @@ $base-black: #191c20;
           color: $base-black;
           background: white;
           position: absolute;
-          bottom: 15vh;
-          left: 50%;
-          transform: translate(-50%);
+          left: 0;
+          top: 194vh;
           border: 1px solid $base-black;
           height: 5vh;
-          width: 45vw;
-          border-radius: 7px;
-          box-shadow: 4px 4px 6px $base-black;
+          width: 100px;
+          border-radius: 0 7px 7px 0;
+          font-size: 0.8rem;
           color: white;
           background: $base-red;
+          opacity: 0.8;
         }
       }
     }
@@ -406,14 +410,14 @@ $base-black: #191c20;
           border-radius: 7px;
         }
         #scroll-to-map {
-          top: 90vh;
+          top: 91vh;
         }
       }
       .map-and-anchor-container {
         .map-container {
         }
         #scroll-to-form {
-          top: 192.8vh;
+          top: 195vh;
         }
       }
     }
