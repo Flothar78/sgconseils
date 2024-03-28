@@ -4,15 +4,17 @@
       <NuxtLink class="link-item" href="#" to="/">
         <img
           src="~/assets/img/logo_sg_conseils.png"
-          alt="logo sg conseils format png" /></NuxtLink
-      ><NuxtLink class="menu-item" to="/#accueil">ACCUEIL</NuxtLink>
-      <NuxtLink class="menu-item" href="#" to="/#metiers">MÉTIERS</NuxtLink>
-      <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink>
-
-      <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor"
-        >CONTACT</NuxtLink
-      >
-        <!-- <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
+          alt="logo sg conseils format png"
+      /></NuxtLink>
+      <div class="menu">
+        <NuxtLink class="menu-item" to="/#accueil">ACCUEIL</NuxtLink>
+        <NuxtLink class="menu-item" href="#" to="/#metiers">MÉTIERS</NuxtLink>
+        <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink>
+        <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor"
+          >CONTACT</NuxtLink
+        >
+      </div>
+      <!-- <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
           >Comptabilité</NuxtLink
         >
         <NuxtLink class="metiers-item" href="#" to="/metiers/audit"
@@ -81,9 +83,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <style lang="scss" scoped>
 $base-blue: #7d93b5;
@@ -106,34 +106,38 @@ $base-grey: #858384;
     justify-content: space-between;
     align-items: center;
     background: $base-black;
+    padding-left: 1rem;
     height: 7vh;
     width: 100%;
-    padding-left: 0.5rem;
-    z-index: 101;
+    z-index: 100;
     img {
       width: 38px;
     }
-    .menu-item {
-      text-decoration: none;
-      color: white;
-      font-size: 1rem;
-      font-weight: 600;
-      margin: 1rem 1.2rem;
-    }
-    .menu-item:hover {
-      text-shadow: 1px 1px $base-black;
-    }
-    .metiers-item {
-      text-decoration: none;
-      color: $base-black;
-      font-size: 1.2rem;
-      padding-left: 1.6rem;
-    }
-    .metiers-item:hover {
-      font-weight: 900;
+    .menu {
+      min-width: 50%;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      .menu-item {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      .menu-item:hover {
+        text-shadow: 1px 1px $base-black;
+      }
+      .metiers-item {
+        text-decoration: none;
+        color: $base-black;
+        font-size: 1.2rem;
+        padding-left: 1.6rem;
+      }
+      .metiers-item:hover {
+        font-weight: 900;
+      }
     }
   }
-
   .footer {
     font-family: Arial, sans-serif;
     letter-spacing: 1px;
@@ -164,88 +168,23 @@ $base-grey: #858384;
 @media screen and (max-width: 767px) {
   .layout-container {
     .navbar-container {
-      .inner-menu-closing {
-        background: transparent;
-        position: absolute;
-        top: 1.5rem;
-        right: 1rem;
-        font-weight: 700;
-      }
-    }
-    .menu-list {
-      top: 28vh;
-      height: 50vh;
-      width: 50vw;
-      right: -65vw;
-      margin-right: -1rem;
-      padding: 0 1rem;
-      justify-content: center;
-      .menu-item {
-        font-size: 1.2rem;
-        margin: 0.5rem 0.5rem;
-      }
-      .metiers-item {
-        margin-top: 0.2rem;
-        font-size: 1.1rem;
-      }
-    }
-    .active {
-      right: 0vw;
-    }
-    .footer {
-      font-size: 0.8rem;
-      letter-spacing: 0px;
-      padding-top: 1rem;
-      color: white;
-      justify-content: space-around;
-
-      .footer-div {
-        border: 4px solid $base-black;
-      }
-    }
-  }
-}
-@media screen and (min-width: 1536px) {
-  .layout-container {
-    .navbar-container {
-      .menu-list {
-        font-family: Arial, sans-serif;
-        background-color: $base-white;
-        border: 7px solid $darkest-blue;
-        height: 60vh;
-        width: 20vw;
-        list-style: none;
-        position: fixed;
-        right: -50vw;
-        top: 19vh;
-        margin-right: -0.5rem;
-        display: flex;
-        flex-direction: column;
-        transition: right 0.5s ease;
-        padding: 2rem;
-        border-radius: 10% 0 0 10%;
+      .menu {
+        margin-right: 0.2rem;
         .menu-item {
-          text-decoration: none;
-          color: $base-black;
-          font-size: 1.6rem;
-          font-weight: 600;
-          margin: 1rem 1.2rem;
-        }
-        .menu-item:hover {
-          text-shadow: 2px 2px $base-black;
-        }
-        .metiers-item {
-          text-decoration: none;
-          color: $base-black;
-          font-size: 1.4rem;
-          padding-left: 1.6rem;
-        }
-        .metiers-item:hover {
-          font-weight: 900;
+          font-size: 0.8rem;
+          margin: 0.4rem;
         }
       }
-      .active {
-        right: 0vw;
+      .footer {
+        font-size: 0.8rem;
+        letter-spacing: 0px;
+        padding-top: 1rem;
+        color: white;
+        justify-content: space-around;
+
+        .footer-div {
+          border: 4px solid $base-black;
+        }
       }
     }
   }
