@@ -4,18 +4,15 @@
       <NuxtLink class="link-item" href="#" to="/">
         <img
           src="~/assets/img/logo_sg_conseils.png"
-          alt="logo sg conseils format png"
-      /></NuxtLink>
-      <button @click.stop="menuListSlide()" class="menu-button">MENU</button>
-      <div class="menu-list" :class="{ active: isActive }">
-        <button @click.stop="menuListSlide()" class="inner-menu-closing">
-          X
-        </button>
-        <NuxtLink class="menu-item" to="/#accueil">ACCUEIL</NuxtLink>
-        <NuxtLink class="menu-item" href="#" to="/#metiers"
-          >EXPERTISES</NuxtLink
-        >
-        <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
+          alt="logo sg conseils format png" /></NuxtLink
+      ><NuxtLink class="menu-item" to="/#accueil">ACCUEIL</NuxtLink>
+      <NuxtLink class="menu-item" href="#" to="/#metiers">MÉTIERS</NuxtLink>
+      <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink>
+
+      <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor"
+        >CONTACT</NuxtLink
+      >
+        <!-- <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
           >Comptabilité</NuxtLink
         >
         <NuxtLink class="metiers-item" href="#" to="/metiers/audit"
@@ -33,15 +30,7 @@
         >
         <NuxtLink class="metiers-item" href="#" to="/metiers/informatique"
           >Informatique</NuxtLink
-        >
-        <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink>
-        <NuxtLink class="menu-item" href="#" to="/mentions"
-          >MENTIONS LÉGALES</NuxtLink
-        >
-        <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor"
-          >CONTACT</NuxtLink
-        >
-      </div>
+        > -->
     </header>
     <slot />
     <footer class="footer">
@@ -93,10 +82,7 @@
 </template>
 
 <script lang="ts" setup>
-const isActive = useState("isActive");
-const menuListSlide = () => {
-  isActive.value = !isActive.value;
-};
+
 </script>
 
 <style lang="scss" scoped>
@@ -127,53 +113,10 @@ $base-grey: #858384;
     img {
       width: 38px;
     }
-    .menu-button {
-      height: 3.5vh;
-      margin-right: 2rem;
-      background: $base-red;
-      border: 1px transparent solid;
-      color: white;
-      font-size: 1rem;
-      font-weight: 600;
-      box-shadow: 2px 2px 5px $base-white;
-      border-radius: 53x;
-    }
-    .menu-button:hover {
-      box-shadow: 0 0 0;
-      font-weight: 500;
-      transform: translate(2px, 2px);
-    }
-    .inner-menu-closing {
-      border: 2px solid $base-red;
-      border-radius: 3px;
-      color: $base-red;
-      background: transparent;
-      position: absolute;
-      right: 0.5rem;
-      font-size: 1.1rem;
-      font-weight: 700;
-    }
-  }
-  .menu-list {
-    font-family: Arial, sans-serif;
-    background-color: $base-white;
-    border: 7px solid $darkest-blue;
-    height: 60vh;
-    width: 25vw;
-    list-style: none;
-    position: fixed;
-    right: -50vw;
-    top: 20vh;
-    margin-right: -0.5rem;
-    display: flex;
-    flex-direction: column;
-    transition: right 0.5s ease;
-    padding-top: 3rem;
-    border-radius: 10% 0 0 10%;
     .menu-item {
       text-decoration: none;
-      color: $base-black;
-      font-size: 1.5rem;
+      color: white;
+      font-size: 1rem;
       font-weight: 600;
       margin: 1rem 1.2rem;
     }
@@ -190,9 +133,7 @@ $base-grey: #858384;
       font-weight: 900;
     }
   }
-  .active {
-    right: 0vw;
-  }
+
   .footer {
     font-family: Arial, sans-serif;
     letter-spacing: 1px;
