@@ -172,14 +172,13 @@ $base-grey: #858384;
   .layout-container {
     .navbar-container {
       .menu {
-        //     min-width: 70%;
-        padding: 0 0.2rem;
-        //     left: 30%;
-        //     transform: translate(-12%);
-
+        min-width: 70%;
+        padding: 0;
+        left: 30%;
+        transform: translate(-12%);
         .menu-item {
           font-size: 0.72rem;
-          //       font-weight: 300;
+          font-weight: 300;
         }
       }
     }
