@@ -60,7 +60,7 @@
         <NuxtLink class="footer-infos" href="#" to="/metiers/informatique"
           >Informatique</NuxtLink
         ><NuxtLink class="footer-infos" href="#" to="/mentions"
-          >MENTIONS LÉGALES</NuxtLink
+          >Mentions légales</NuxtLink
         >
       </div>
       <div class="footer-div">
@@ -98,7 +98,6 @@ $base-grey: #858384;
   background: $base-black;
   .navbar-container {
     max-width: 1440px;
-    margin: auto;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -139,20 +138,21 @@ $base-grey: #858384;
     }
   }
   .footer {
+    max-width: 1440px;
+    margin: auto;
     font-family: Arial, sans-serif;
-    letter-spacing: 1px;
     line-height: 1.3;
     min-height: 25vh;
-    padding-top: 2rem;
+    padding: 2rem 0.5rem;
     background: $base-black;
     color: $base-white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     .footer-div {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      padding-bottom: 2rem;
+      margin-right: 1rem;
       .footer-title {
         margin: 1rem 0 1rem 0;
         text-decoration: none;
@@ -166,27 +166,8 @@ $base-grey: #858384;
   }
 }
 @media screen and (max-width: 767px) {
-  .layout-container {
-    .navbar-container {
-      .menu {
-        margin-right: 0.2rem;
-        .menu-item {
-          font-size: 0.8rem;
-          margin: 0.4rem;
-        }
-      }
-      .footer {
-        font-size: 0.8rem;
-        letter-spacing: 0px;
-        padding-top: 1rem;
-        color: white;
-        justify-content: space-around;
-
-        .footer-div {
-          border: 4px solid $base-black;
-        }
-      }
-    }
+  .footer {
+    font-size: 0.75rem;
   }
 }
 </style>
