@@ -23,6 +23,7 @@
     "@nuxt/image": "^1.4.0",
     "@nuxtjs/style-resources": "^1.2.2",
     "node-sass": "^9.0.0",
+    "nuxt-purgecss": "^2.0.0",
     "nuxt-simple-sitemap": "^4.4.1",
     "nuxt3-leaflet": "^1.0.12",
     "sass-loader": "^14.1.1",

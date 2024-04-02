@@ -81,7 +81,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup async defer>
 import { Form, Field, ErrorMessage } from "vee-validate";
 useSeoMeta({
   title: "SGConseils experts-comptable à Toulouse",
@@ -145,6 +145,7 @@ $base-black: #191c20;
     background-color: $base-white;
     color: $base-black;
     .form-and-anchor-container {
+      background-color: $base-white;
       padding-top: 5rem;
       .form-invitation {
         margin: 3.4rem 0 4.3rem 1.8rem;
@@ -209,6 +210,7 @@ $base-black: #191c20;
         }
       }
       #scroll-to-map {
+        font-size: 0.8rem;
         text-decoration: none;
         display: flex;
         justify-content: center;
@@ -220,9 +222,10 @@ $base-black: #191c20;
         top: 91vh;
         border: 1px solid $base-black;
         height: 5vh;
-        width: 15vw;
+        width: 9vw;
         border-radius: 7px;
         box-shadow: 4px 4px 6px $base-black;
+        opacity: 0.8;
       }
       #scroll-to-map:hover {
         box-shadow: 0 0 0;
@@ -249,6 +252,7 @@ $base-black: #191c20;
         border-radius: 7px;
       }
       #scroll-to-form {
+        font-size: 0.8rem;
         text-decoration: none;
         display: flex;
         justify-content: center;
@@ -260,9 +264,10 @@ $base-black: #191c20;
         bottom: 13.8vh;
         border: 1px solid $base-black;
         height: 5vh;
-        width: 15vw;
+        width: 9vw;
         border-radius: 7px;
         box-shadow: 4px 4px 6px $base-black;
+        opacity: 0.8;
       }
       #scroll-to-form:hover {
         box-shadow: 0 0 0;

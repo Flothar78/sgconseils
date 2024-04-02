@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     "@": "/<rootDir>",
   },
   css: ["~/assets/scss/main.css"],
-  modules: ["nuxt3-leaflet", "@nuxt/image"],
+  modules: ["nuxt3-leaflet", "@nuxt/image", "nuxt-purgecss"],
   app: {
     head: {
       title: "SG Conseils",
