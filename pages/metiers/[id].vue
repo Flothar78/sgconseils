@@ -5,18 +5,12 @@
       <Juridique v-if="id === 'juridique'" :childClasses="parentClasses" />
       <Gestion v-else-if="id === 'gestion'" :childClasses="parentClasses" />
       <Audit v-else-if="id === 'audit'" :childClasses="parentClasses" />
-      <Comptabilite
-        v-else-if="id === 'comptabilite'"
-        :childClasses="parentClasses"
-      />
-      <Informatique
-        v-else-if="id === 'informatique'"
-        :childClasses="parentClasses"
-      />
+      <Comptabilite v-else-if="id === 'comptabilite'" :childClasses="parentClasses" />
+      <Informatique v-else-if="id === 'informatique'" :childClasses="parentClasses" />
       <Conseil v-else-if="id === 'conseil'" :childClasses="parentClasses" />
       <Social v-else-if="id === 'social'" :childClasses="parentClasses" />
       <NuxtLink class="contact-button" href="#" to="/contact/#form-anchor"
-        >NOUS ÉCRIRE</NuxtLink
+        >Nous écrire</NuxtLink
       >
       <button class="method-button" @click="showDetails()">NOS MÉTHODES</button>
       <button class="close-details-button" @click="showDetails()">X</button>
@@ -88,22 +82,17 @@ $base-black: #191c20;
       color: white;
     }
     .activity-slogan {
-      background: linear-gradient(
-        0.25turn,
-        $base-white,
-        $base-white,
-        $base-blue
-      );
+      background: linear-gradient(0.25turn, $base-white, $base-white, $base-blue);
       color: $base-black;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 1.3rem;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.1px;
       width: 70vw;
       position: absolute;
-      top: 30vh;
-      right: 50%;
+      top: 38vh;
+      right: 44.8%;
       transform: translateX(50%);
-      margin-top: 2.5rem;
+      // margin-top: 2.5rem;
       padding: 1rem 2rem;
     }
     .activity-description {
@@ -117,7 +106,7 @@ $base-black: #191c20;
       transform: translateX(50%);
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
       padding: 0 2rem;
       font-size: 1.2rem;
     }
@@ -125,13 +114,13 @@ $base-black: #191c20;
       font-family: Arial;
       text-decoration: none;
       position: absolute;
-      bottom: 76.5vh;
+      bottom: 2vh;
       right: 0;
-      background: $light-red;
+      font-size: 0.8rem;
+      background: $base-red;
       color: white;
       padding: 0.5rem;
       border-radius: 5px;
-      opacity: 0.5;
     }
     .contact-button:hover {
       opacity: 1;
@@ -257,7 +246,7 @@ $base-black: #191c20;
         font-size: 0.8rem;
         font-weight: 600;
         height: 2.3rem;
-        bottom: 1.7vh;
+        bottom: 5vh;
         box-shadow: 3px 3px 4px $darkest-blue;
       }
       .close-details-button {

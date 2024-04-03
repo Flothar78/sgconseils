@@ -2,13 +2,41 @@
   <div class="layout-container">
     <header class="navbar-container">
       <NuxtLink class="link-item" href="#" to="/">
-        <img src="~/assets/img/logo_sg_conseils.png" alt="logo sg conseils format png"
+        <img
+          src="~/assets/img/logo_sg_conseils.png"
+          alt="logo sg conseils format png"
       /></NuxtLink>
       <div class="menu">
-        <NuxtLink class="menu-item" to="/#accueil">ACCUEIL</NuxtLink>
-        <NuxtLink class="menu-item" href="#" to="/#metiers">MÉTIERS</NuxtLink>
+        <NuxtLink class="menu-item" href="#" to="/#accueil">ACCUEIL</NuxtLink>
+        <NuxtLink class="menu-item metiers-hover" href="#" to="/#metiers"
+          >MÉTIERS
+          <div @click.stop="" class="metiers-submenu">
+            <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
+              >Comptabilité</NuxtLink
+            >
+            <NuxtLink class="metiers-item" href="#" to="/metiers/audit"
+              >Audit</NuxtLink
+            ><NuxtLink class="metiers-item" href="#" to="/metiers/juridique"
+              >Juridique</NuxtLink
+            >
+            <NuxtLink class="metiers-item" href="#" to="/metiers/conseil"
+              >Conseil</NuxtLink
+            >
+            <NuxtLink class="metiers-item" href="#" to="/metiers/gestion"
+              >Gestion</NuxtLink
+            ><NuxtLink class="metiers-item" href="#" to="/metiers/social"
+              >Social</NuxtLink
+            >
+            <NuxtLink class="metiers-item" href="#" to="/metiers/informatique"
+              >Informatique</NuxtLink
+            >
+          </div></NuxtLink
+        >
+
         <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink>
-        <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor">CONTACT</NuxtLink>
+        <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor"
+          >CONTACT</NuxtLink
+        >
       </div>
     </header>
     <slot />
@@ -18,12 +46,18 @@
         <NuxtLink class="footer-infos" href="#" to="/metiers/comptabilite"
           >Comptabilité</NuxtLink
         >
-        <NuxtLink class="footer-infos" href="#" to="/metiers/audit">Audit</NuxtLink>
+        <NuxtLink class="footer-infos" href="#" to="/metiers/audit"
+          >Audit</NuxtLink
+        >
         <NuxtLink class="footer-infos" href="#" to="/metiers/juridique"
           >Juridique</NuxtLink
         >
-        <NuxtLink class="footer-infos" href="#" to="/metiers/conseil">Conseil</NuxtLink>
-        <NuxtLink class="footer-infos" href="#" to="/metiers/gestion">Gestion</NuxtLink>
+        <NuxtLink class="footer-infos" href="#" to="/metiers/conseil"
+          >Conseil</NuxtLink
+        >
+        <NuxtLink class="footer-infos" href="#" to="/metiers/gestion"
+          >Gestion</NuxtLink
+        >
         <NuxtLink class="footer-infos" href="#" to="/metiers/social"
           >Social / RH</NuxtLink
         >
@@ -80,7 +114,7 @@ $base-grey: #858384;
     height: 7vh;
     z-index: 1001;
     img {
-      width: 38px;
+      width: 35px;
     }
     .menu {
       width: 80%;
@@ -90,24 +124,51 @@ $base-grey: #858384;
       position: absolute;
       right: 0;
       .menu-item {
+        display: flex;
+        align-items: center;
         font-family: Arial;
         text-decoration: none;
         color: white;
         font-size: 1rem;
         font-weight: 500;
         margin-right: 1rem;
+        height: 7vh;
       }
       .menu-item:hover {
-        text-shadow: 1px 1px $base-black;
+        text-shadow: 1px 1px;
       }
-      .metiers-item {
-        text-decoration: none;
-        color: $base-black;
+      .metiers-hover:hover > .metiers-submenu {
+        visibility: visible;
+      }
+      .metiers-submenu {
+        visibility: hidden;
+        position: absolute;
+        top: 7vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-shadow: 0 0;
+        border-radius: 0 0 7px 7px;
+        background: $darkest-blue;
+        height: 40vh;
+        min-width: 14vw;
         font-size: 1rem;
-        padding-left: 0rem;
-      }
-      .metiers-item:hover {
-        font-weight: 900;
+        .metiers-item {
+          letter-spacing: 1.5px;
+          border: 10px solid transparent;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          margin: 0;
+          width: 100%;
+          height: 15%;
+          text-decoration: none;
+          color: white;
+        }
+        .metiers-item:hover {
+          font-size: 1.05rem;
+          font-weight: 700;
+        }
       }
     }
   }
@@ -144,12 +205,23 @@ $base-grey: #858384;
     .navbar-container {
       .menu {
         min-width: 70%;
-        padding: 0;
+        padding: 0 2rem 0 0;
         left: 30%;
         transform: translate(-12%);
         .menu-item {
-          font-size: 0.72rem;
+          font-size: 0.8rem;
           font-weight: 300;
+          margin-right: 0.6rem;
+        }
+        .metiers-submenu {
+          min-width: 28vw;
+          .metiers-item {
+            letter-spacing: 0.5px;
+
+            .metiers-item:hover {
+              font-weight: 900;
+            }
+          }
         }
       }
     }
