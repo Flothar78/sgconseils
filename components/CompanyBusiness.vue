@@ -45,9 +45,8 @@ $base-black: #191c20;
     font-weight: 700;
     margin: 13.3rem 0 0 -1rem;
     padding: 0 1rem;
-    width: 100vw;
+    width: 95vw;
     height: 8vh;
-    box-shadow: -6px 0px;
   }
 }
 </style>

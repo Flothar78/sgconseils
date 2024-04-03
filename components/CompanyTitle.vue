@@ -43,7 +43,8 @@ $base-black: #191c20;
   .company-name {
     position: absolute;
     top: 13vh;
-
+    right: 50%;
+    transform: translateX(50%);
     background: linear-gradient(
       0.3turn,
       $base-blue,
@@ -57,16 +58,7 @@ $base-black: #191c20;
     letter-spacing: 1.4px;
     width: 100vw;
     height: 8vh;
-    margin-right:1rem;
+    box-shadow: 00;
   }
 }
-//@media screen and (min-width: 1536px) {
-//  .company-name {
-//    font-size: 2.3rem;
-//    text-shadow: 4px 4px 6px black;
-//    letter-spacing: 2.3px;
-//    height: 12vh;
-//    box-shadow: 8px 0px;
-//  }
-//}
 </style>

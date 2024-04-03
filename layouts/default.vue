@@ -2,9 +2,7 @@
   <div class="layout-container">
     <header class="navbar-container">
       <NuxtLink class="link-item" href="#" to="/">
-        <img
-          src="~/assets/img/logo_sg_conseils.png"
-          alt="logo sg conseils format png"
+        <img src="~/assets/img/logo_sg_conseils.png" alt="logo sg conseils format png"
       /></NuxtLink>
       <div class="menu">
         <NuxtLink class="menu-item" href="#" to="/#accueil">ACCUEIL</NuxtLink>
@@ -14,8 +12,7 @@
             <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
               >Comptabilité</NuxtLink
             >
-            <NuxtLink class="metiers-item" href="#" to="/metiers/audit"
-              >Audit</NuxtLink
+            <NuxtLink class="metiers-item" href="#" to="/metiers/audit">Audit</NuxtLink
             ><NuxtLink class="metiers-item" href="#" to="/metiers/juridique"
               >Juridique</NuxtLink
             >
@@ -34,9 +31,7 @@
         >
 
         <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink>
-        <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor"
-          >CONTACT</NuxtLink
-        >
+        <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor">CONTACT</NuxtLink>
       </div>
     </header>
     <slot />
@@ -46,18 +41,12 @@
         <NuxtLink class="footer-infos" href="#" to="/metiers/comptabilite"
           >Comptabilité</NuxtLink
         >
-        <NuxtLink class="footer-infos" href="#" to="/metiers/audit"
-          >Audit</NuxtLink
-        >
+        <NuxtLink class="footer-infos" href="#" to="/metiers/audit">Audit</NuxtLink>
         <NuxtLink class="footer-infos" href="#" to="/metiers/juridique"
           >Juridique</NuxtLink
         >
-        <NuxtLink class="footer-infos" href="#" to="/metiers/conseil"
-          >Conseil</NuxtLink
-        >
-        <NuxtLink class="footer-infos" href="#" to="/metiers/gestion"
-          >Gestion</NuxtLink
-        >
+        <NuxtLink class="footer-infos" href="#" to="/metiers/conseil">Conseil</NuxtLink>
+        <NuxtLink class="footer-infos" href="#" to="/metiers/gestion">Gestion</NuxtLink>
         <NuxtLink class="footer-infos" href="#" to="/metiers/social"
           >Social / RH</NuxtLink
         >
@@ -214,7 +203,7 @@ $base-grey: #858384;
           margin-right: 0.6rem;
         }
         .metiers-submenu {
-          min-width: 28vw;
+          min-width: 42vw;
           .metiers-item {
             letter-spacing: 0.5px;
 

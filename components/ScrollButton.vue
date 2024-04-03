@@ -1,9 +1,5 @@
 <template>
-  <button
-    class="scroll-button"
-    @click="scrollDown()"
-    :class="{ twinkle: isActive }"
-  >
+  <button class="scroll-button" @click="scrollDown()" :class="{ twinkle: isActive }">
     NOS MÉTIERS
   </button>
 </template>
@@ -35,8 +31,8 @@ $base-black: #191c20;
     box-shadow: 0px 0px 0px;
     width: 9rem;
     height: 3.2rem;
-    font-size: 0.93rem;
-    letter-spacing: 1.1px;
+
+    letter-spacing: 1.2px;
   }
   100% {
     background: $light-red;
@@ -51,7 +47,6 @@ $base-black: #191c20;
   align-items: center;
   justify-content: center;
   border: 0px transparent solid;
-  letter-spacing: 1px;
   font-size: 0.9rem;
   font-weight: 600;
   color: white;
@@ -60,11 +55,11 @@ $base-black: #191c20;
   height: 3rem;
   border-radius: 5%;
   position: absolute;
-  right: 50%;
-  transform: translateX(50%);
+  left: 50%;
+  transform: translateX(-44%);
   bottom: 9vh;
-  margin: auto;
-  box-shadow: 6px 6px 8px $darkest-blue;
+
+  box-shadow: 3px 3px 4px $darkest-blue;
 }
 .scroll-button:hover {
   box-shadow: 0 0;
