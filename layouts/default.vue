@@ -7,28 +7,24 @@
       <div class="menu">
         <NuxtLink class="menu-item" href="#" to="/#accueil">ACCUEIL</NuxtLink>
         <NuxtLink class="menu-item metiers-hover" href="#" to="/#metiers"
-          >MÉTIERS
-          <div @click.stop="" class="metiers-submenu">
-            <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
-              >Comptabilité</NuxtLink
-            >
-            <NuxtLink class="metiers-item" href="#" to="/metiers/audit">Audit</NuxtLink
-            ><NuxtLink class="metiers-item" href="#" to="/metiers/juridique"
-              >Juridique</NuxtLink
-            >
-            <NuxtLink class="metiers-item" href="#" to="/metiers/conseil"
-              >Conseil</NuxtLink
-            >
-            <NuxtLink class="metiers-item" href="#" to="/metiers/gestion"
-              >Gestion</NuxtLink
-            ><NuxtLink class="metiers-item" href="#" to="/metiers/social"
-              >Social</NuxtLink
-            >
-            <NuxtLink class="metiers-item" href="#" to="/metiers/informatique"
-              >Informatique</NuxtLink
-            >
-          </div></NuxtLink
+          >MÉTIERS</NuxtLink
         >
+
+        <div @click.stop="" class="metiers-submenu">
+          <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
+            >Comptabilité</NuxtLink
+          >
+          <NuxtLink class="metiers-item" href="#" to="/metiers/audit">Audit</NuxtLink
+          ><NuxtLink class="metiers-item" href="#" to="/metiers/juridique"
+            >Juridique</NuxtLink
+          >
+          <NuxtLink class="metiers-item" href="#" to="/metiers/conseil">Conseil</NuxtLink>
+          <NuxtLink class="metiers-item" href="#" to="/metiers/gestion">Gestion</NuxtLink
+          ><NuxtLink class="metiers-item" href="#" to="/metiers/social">Social</NuxtLink>
+          <NuxtLink class="metiers-item" href="#" to="/metiers/informatique"
+            >Informatique</NuxtLink
+          >
+        </div>
 
         <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink>
         <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor">CONTACT</NuxtLink>
@@ -83,8 +79,8 @@
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
-$base-red: #fc440f;
-$light-red: #ff8811;
+$base-red: #b12434;
+$light-red: #d47472;
 $base-white: #bec8da;
 $base-black: #191c20;
 $base-grey: #858384;
@@ -126,37 +122,43 @@ $base-grey: #858384;
       .menu-item:hover {
         text-shadow: 1px 1px;
       }
-      .metiers-hover:hover > .metiers-submenu {
+      .metiers-hover:hover + .metiers-submenu {
+        visibility: visible;
+      }
+      .metiers-submenu:hover {
         visibility: visible;
       }
       .metiers-submenu {
         visibility: hidden;
-        position: absolute;
+        position: fixed;
         top: 7vh;
+        right: 70px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-shadow: 0 0;
         border-radius: 0 0 7px 7px;
-        background: $darkest-blue;
-        height: 40vh;
-        min-width: 14vw;
+        background: $base-black;
+        height: 41vh;
+        padding: 1rem 1rem 1rem 0;
+        width: 200px;
         font-size: 1rem;
         .metiers-item {
           letter-spacing: 1.5px;
           border: 10px solid transparent;
           display: flex;
-          justify-content: start;
+          justify-content: flex-start;
           align-items: center;
           margin: 0;
           width: 100%;
           height: 15%;
           text-decoration: none;
           color: white;
+          font-weight: 500;
         }
         .metiers-item:hover {
-          font-size: 1.05rem;
-          font-weight: 700;
+          text-shadow: 1px 1px 2px $base-red;
+          font-weight: 300;
         }
       }
     }
@@ -202,15 +204,8 @@ $base-grey: #858384;
           font-weight: 300;
           margin-right: 0.6rem;
         }
-        .metiers-submenu {
-          min-width: 42vw;
-          .metiers-item {
-            letter-spacing: 0.5px;
-
-            .metiers-item:hover {
-              font-weight: 900;
-            }
-          }
+        .metiers-hover:hover + .metiers-submenu {
+          visibility: hidden;
         }
       }
     }

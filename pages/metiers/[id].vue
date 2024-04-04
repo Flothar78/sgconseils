@@ -54,7 +54,7 @@ const showDetails = async () => {
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
-$base-red: #fc440f;
+$base-red: #b12434;
 $light-red: #ff8811;
 $base-white: #bec8da;
 $base-black: #191c20;
@@ -192,7 +192,7 @@ $base-black: #191c20;
     .global-metiers {
       .company-title {
         position: absolute;
-        left: 0;
+        left: -35vw;
         min-width: 60vw;
         margin: 2.2rem 0 0 0;
         font-size: 1.2rem;

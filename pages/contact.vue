@@ -7,12 +7,7 @@
         <Form @submit="onSubmit" class="contact-form">
           <div class="form-entry">
             <div class="form-labels">Votre adresse e-mail:</div>
-            <Field
-              class="form-field"
-              type="email"
-              name="email"
-              :rules="validateEmail"
-            />
+            <Field class="form-field" type="email" name="email" :rules="validateEmail" />
             <div class="error-container">
               <ErrorMessage name="email" class="error-message" />
             </div>
@@ -31,12 +26,7 @@
           </div>
           <div class="form-entry">
             <div class="form-labels">Votre nom:</div>
-            <Field
-              class="form-field"
-              type="text"
-              name="lastname"
-              :rules="validateName"
-            />
+            <Field class="form-field" type="text" name="lastname" :rules="validateName" />
             <div class="error-container">
               <ErrorMessage name="lastname" class="error-message" />
             </div>
@@ -47,9 +37,7 @@
           </div>
           <button class="form-button" type="submit">Envoyer</button>
         </Form>
-        <NuxtLink to="/contact/#map-anchor" id="scroll-to-map">
-          Localisation</NuxtLink
-        >
+        <NuxtLink to="/contact/#map-anchor" id="scroll-to-map"> Localisation</NuxtLink>
       </div>
       <div class="map-and-anchor-container" id="map-anchor">
         <NuxtLink href="#" to="/contact/#form-anchor" id="scroll-to-form"
@@ -58,22 +46,14 @@
 
         <div class="map-invitation">Retrouvez-nous sur une carte:</div>
         <div class="map-container">
-          <LMap
-            ref="map"
-            :zoom="zoom"
-            :center="[43.58955925435832, 1.4896027423284606]"
-          >
+          <LMap ref="map" :zoom="zoom" :center="[43.58955925435832, 1.4896027423284606]">
             <LTileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution='&amp;copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
               layer-type="base"
               name="OpenStreetMap"
             />
-            <LCircleMarker
-              :lat-lng="[43.589559, 1.4896]"
-              :radius="35"
-              color="red"
-            />
+            <LCircleMarker :lat-lng="[43.589559, 1.4896]" :radius="35" color="red" />
           </LMap>
         </div>
       </div>
@@ -85,8 +65,7 @@
 import { Form, Field, ErrorMessage } from "vee-validate";
 useSeoMeta({
   title: "SGConseils experts-comptable à Toulouse",
-  description:
-    "Page pour contacter SGConseils via email ou localisation géographique",
+  description: "Page pour contacter SGConseils via email ou localisation géographique",
 });
 const onSubmit = async (values) => {
   const bodyContent = JSON.stringify(values);
@@ -132,8 +111,8 @@ const zoom = ref(15);
 $base-blue: #7d93b5;
 $dark-blue: #425b8a;
 $darkest-blue: #1c212f;
-$base-red: #fc440f;
-$light-red: #ff8811;
+$base-red: #b12434;
+$light-red: #d47472;
 $base-white: #bec8da;
 $base-black: #191c20;
 .contact-container {
