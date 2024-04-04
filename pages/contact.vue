@@ -2,12 +2,17 @@
   <div class="contact-container">
     <div class="global-contact-page">
       <div class="form-and-anchor-container" id="form-anchor">
-        <div class="form-invitation">Contactez nos consultants:</div>
+        <div class="form-invitation">Contactez nous:</div>
 
         <Form @submit="onSubmit" class="contact-form">
           <div class="form-entry">
             <div class="form-labels">Votre adresse e-mail:</div>
-            <Field class="form-field" type="email" name="email" :rules="validateEmail" />
+            <Field
+              class="form-field"
+              type="email"
+              name="email"
+              :rules="validateEmail"
+            />
             <div class="error-container">
               <ErrorMessage name="email" class="error-message" />
             </div>
@@ -26,7 +31,12 @@
           </div>
           <div class="form-entry">
             <div class="form-labels">Votre nom:</div>
-            <Field class="form-field" type="text" name="lastname" :rules="validateName" />
+            <Field
+              class="form-field"
+              type="text"
+              name="lastname"
+              :rules="validateName"
+            />
             <div class="error-container">
               <ErrorMessage name="lastname" class="error-message" />
             </div>
@@ -37,23 +47,33 @@
           </div>
           <button class="form-button" type="submit">Envoyer</button>
         </Form>
-        <NuxtLink to="/contact/#map-anchor" id="scroll-to-map"> Localisation</NuxtLink>
+        <NuxtLink to="/contact/#map-anchor" id="scroll-to-map">
+          Localisation</NuxtLink
+        >
       </div>
       <div class="map-and-anchor-container" id="map-anchor">
         <NuxtLink href="#" to="/contact/#form-anchor" id="scroll-to-form"
           >Nous écrire
         </NuxtLink>
 
-        <div class="map-invitation">Retrouvez-nous sur une carte:</div>
+        <div class="map-invitation">Localisez-nous:</div>
         <div class="map-container">
-          <LMap ref="map" :zoom="zoom" :center="[43.58955925435832, 1.4896027423284606]">
+          <LMap
+            ref="map"
+            :zoom="zoom"
+            :center="[43.58955925435832, 1.4896027423284606]"
+          >
             <LTileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution='&amp;copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
               layer-type="base"
               name="OpenStreetMap"
             />
-            <LCircleMarker :lat-lng="[43.589559, 1.4896]" :radius="35" color="red" />
+            <LCircleMarker
+              :lat-lng="[43.589559, 1.4896]"
+              :radius="35"
+              color="red"
+            />
           </LMap>
         </div>
       </div>
@@ -65,7 +85,8 @@
 import { Form, Field, ErrorMessage } from "vee-validate";
 useSeoMeta({
   title: "SGConseils experts-comptable à Toulouse",
-  description: "Page pour contacter SGConseils via email ou localisation géographique",
+  description:
+    "Page pour contacter SGConseils via email ou localisation géographique",
 });
 const onSubmit = async (values) => {
   const bodyContent = JSON.stringify(values);
@@ -127,12 +148,15 @@ $base-black: #191c20;
       background-color: $base-white;
       padding-top: 5rem;
       .form-invitation {
-        margin: 3.4rem 0 4.3rem 1.8rem;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        height: 20vh;
         color: $base-black;
         font-style: italic;
-        font-size: 1.2rem;
-        font-weight: 300;
-        text-shadow: 1px 1px 3px grey;
+        font-size: 2rem;
+        font-weight: 500;
+        text-shadow: 3px 3px 3px grey;
       }
       .contact-form {
         border: 12px solid $darkest-blue;
@@ -140,7 +164,7 @@ $base-black: #191c20;
         background: white;
         height: 68vh;
         width: 60%;
-        margin-bottom: 4.4rem;
+        margin-top: -2rem;
         margin-left: 2rem;
         display: flex;
         flex-direction: column;
@@ -198,9 +222,9 @@ $base-black: #191c20;
         background: $base-red;
         position: absolute;
         right: 3vw;
-        top: 91vh;
+        top: 93vh;
         border: 1px solid $base-black;
-        height: 5vh;
+        height: 3vh;
         width: 9vw;
         border-radius: 7px;
         box-shadow: 4px 4px 6px $base-black;
@@ -215,13 +239,13 @@ $base-black: #191c20;
       height: 90vh;
       .map-invitation {
         position: absolute;
-        top: 119.6vh;
-        left: 1.8rem;
+        top: 113.5vh;
+        left: 2rem;
         color: $base-black;
         font-style: italic;
-        font-size: 1.2rem;
-        font-weight: 300;
-        text-shadow: 1px 1px 3px grey;
+        font-size: 2rem;
+        font-weight: 500;
+        text-shadow: 3px 3px 3px grey;
       }
       .map-container {
         border: 12px solid $darkest-blue;
@@ -242,7 +266,7 @@ $base-black: #191c20;
         right: 3vw;
         bottom: 13.8vh;
         border: 1px solid $base-black;
-        height: 5vh;
+        height: 3vh;
         width: 9vw;
         border-radius: 7px;
         box-shadow: 4px 4px 6px $base-black;
@@ -263,12 +287,13 @@ $base-black: #191c20;
       .form-and-anchor-container {
         height: 90vh;
         .form-invitation {
-          margin: 6.4rem 0 0.9rem 1.8rem;
+          margin-left: 0;
+          height: 15.7vh;
           color: $base-black;
           font-style: italic;
-          font-size: 1.2rem;
-          font-weight: 300;
-          text-shadow: 1px 1px 3px grey;
+          font-size: 2rem;
+          font-weight: 500;
+          text-shadow: 3px 3px 3px grey;
         }
         .contact-form {
           border: 12px solid $darkest-blue;
@@ -332,9 +357,9 @@ $base-black: #191c20;
           background: white;
           position: absolute;
           left: 0;
-          top: 95vh;
+          top: 97vh;
           border: 1px solid $base-black;
-          height: 5vh;
+          height: 3vh;
           width: 100px;
           border-radius: 0 7px 7px 0;
           font-size: 0.8rem;
@@ -346,6 +371,9 @@ $base-black: #191c20;
       .map-and-anchor-container {
         padding-top: 25vh;
         height: 90vh;
+        .map-invitation {
+          margin: 0.5rem 0 0 0;
+        }
         .map-container {
           border: 12px solid $darkest-blue;
           border-radius: 7px;
@@ -366,9 +394,9 @@ $base-black: #191c20;
           background: white;
           position: absolute;
           left: 0;
-          top: 194vh;
+          top: 196.3vh;
           border: 1px solid $base-black;
-          height: 5vh;
+          height: 3vh;
           width: 100px;
           border-radius: 0 7px 7px 0;
           font-size: 0.8rem;
@@ -392,16 +420,6 @@ $base-black: #191c20;
         }
         .contact-form {
           border-radius: 7px;
-        }
-        #scroll-to-map {
-          top: 91vh;
-        }
-      }
-      .map-and-anchor-container {
-        .map-container {
-        }
-        #scroll-to-form {
-          top: 195vh;
         }
       }
     }
