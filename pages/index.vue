@@ -69,12 +69,7 @@
             height="1.5rem"
             viewBox="0 0 48 48"
           >
-            <g
-              fill="none"
-              stroke="currentColor"
-              stroke-linejoin="round"
-              stroke-width="4"
-            >
+            <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
               <path
                 d="m8 36l.005-7.957a1 1 0 0 1 1-1h10.002c.922 0 .917-.818.917-2.764c0-1.946-4.902-3.585-4.902-10.426S20.1 5 24.32 5s8.817 2.012 8.817 8.853c0 6.841-4.876 7.929-4.876 10.426s0 2.764.78 2.764h9.96a1 1 0 0 1 1 1V36z"
               />
@@ -256,11 +251,9 @@ $base-black: #191c20;
       border-radius: 10%;
       box-shadow: 8px 8px 10px;
       padding: 0 1rem;
-      text-shadow: 0px -60px 20px transparent;
     }
     .nuxt-link:hover {
-      box-shadow: 4px 4px 6px $base-red;
-      text-shadow: 0px -60px 2px $base-red;
+      box-shadow: 5px 5px 4px $base-red;
     }
   }
 }
@@ -291,15 +284,17 @@ $base-black: #191c20;
       row-gap: 50px;
       height: 100%;
       .nuxt-link {
+        color: $darkest-blue;
         width: 32vw;
         height: 15vh;
         border-radius: 10%;
         font-size: 1rem;
         justify-content: space-around;
-        text-shadow: 220px 30px 2px $base-red;
+        border: 9px solid $darkest-blue;
+        box-shadow: 8px 8px 8px;
       }
       .nuxt-link:hover {
-        box-shadow: 6px 6px 8px $base-red;
+        box-shadow: 2px 2px 4px $base-red;
       }
     }
   }
