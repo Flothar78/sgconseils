@@ -43,7 +43,7 @@ $base-black: #191c20;
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 2px $base-black;
     font-weight: 700;
-    margin: 13.3rem 0 0 -1rem;
+    margin: 13rem 0 0 -1rem;
     padding: 0 1rem;
     width: 95vw;
     height: 8vh;

@@ -270,6 +270,11 @@ $base-black: #191c20;
           object-position: center;
         }
       }
+      .company-features {
+        position: absolute;
+        top: 46vh;
+        transform: translate(1%);
+      }
     }
   }
   .cards-container {
