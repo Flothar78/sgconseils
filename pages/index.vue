@@ -249,11 +249,11 @@ $base-black: #191c20;
       height: 15vh;
       width: 17vw;
       border-radius: 10%;
-      box-shadow: 8px 8px 10px;
+      box-shadow: 6px 6px 7px $base-red;
       padding: 0 1rem;
     }
     .nuxt-link:hover {
-      box-shadow: 5px 5px 4px $base-red;
+      box-shadow: 2px 2px 2px $base-red;
     }
   }
 }
@@ -291,10 +291,10 @@ $base-black: #191c20;
         font-size: 0.9rem;
         justify-content: space-around;
         border: 9px solid $darkest-blue;
-        box-shadow: 8px 8px 8px;
+        box-shadow: 8px 8px 8px $base-red;
       }
       .nuxt-link:hover {
-        box-shadow: 2px 2px 4px $base-red;
+        box-shadow: 1px 1px 2px $base-red;
       }
     }
   }
