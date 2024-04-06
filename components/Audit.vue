@@ -16,7 +16,7 @@
   </div>
 
   <div :class="classesProp.childClasses[2]">
-    <div :class="classesProp.childClasses[1]">Audit, atteignez vos objectifs.</div>
+    <div :class="classesProp.childClasses[1]">Atteignez vos objectifs.</div>
     <div>
       L’audit est une procédure qui certifie les comptes de votre entreprise pour attester
       de la bonne santé financière ainsi que de la régularité de sa gestion.

@@ -70,7 +70,7 @@ $base-black: #191c20;
     height: 90vh;
     .company-title {
       background: $base-blue;
-      width: 45vw;
+      max-width: 590px;
       margin-top: 1.9rem;
       font-size: 1.5rem;
       color: white;
@@ -79,10 +79,11 @@ $base-black: #191c20;
       border-radius: 0 5px 5px 0;
     }
     .svg-icon {
-      margin: -3.2rem 0 0 2rem;
+      margin: -3.2rem 0 0 5vw;
       color: white;
     }
     .activity-slogan {
+      text-align: center;
       display: flex;
       justify-content: center;
       background: linear-gradient(
@@ -106,7 +107,7 @@ $base-black: #191c20;
       background: linear-gradient($base-blue, $base-white);
       top: 38vh;
       height: 40vh;
-      width: 60vw;
+      max-width: 950px;
       right: 50%;
       transform: translateX(50%);
       display: flex;
@@ -214,9 +215,10 @@ $base-black: #191c20;
         font-size: 1.2rem;
         width: 100%;
         margin: 0;
+        font-weight: 700;
       }
       .activity-description {
-        font-size: 1rem;
+        font-size: 1.2rem;
         height: 50vh;
         width: 65vw;
         top: 31vh;
@@ -277,7 +279,7 @@ $base-black: #191c20;
       }
       .activity-slogan {
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         letter-spacing: 1px;
         top: 31vh;
       }

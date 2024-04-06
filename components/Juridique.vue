@@ -15,7 +15,7 @@
   </div>
 
   <div :class="classesProp.childClasses[2]">
-    <div :class="classesProp.childClasses[1]">Juridique, simplifiez vous la vie.</div>
+    <div :class="classesProp.childClasses[1]">Simplifiez vous la vie.</div>
     <div>
       L’environnement réglementaire des entreprises contraint à formaliser un nombre
       significatif d’opérations : statuts de société, bail commercial, assemblée générale,

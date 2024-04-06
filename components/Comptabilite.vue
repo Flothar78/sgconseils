@@ -19,7 +19,7 @@
 
   <div :class="classesProp.childClasses[2]">
     <div :class="classesProp.childClasses[1]">
-      La comptabilité, pas uniquement une histoire de chiffres.
+      Pas uniquement une histoire de chiffres.
     </div>
     <div>SG Conseils vous accompagne sur la gestion de votre comptabilité.</div>
     <div>
