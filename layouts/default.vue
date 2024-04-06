@@ -198,7 +198,7 @@ $base-grey: #858384;
       padding-right: 0rem;
       .menu {
         min-width: 70%;
-        padding: 0 2rem 0 0;
+        padding: 0 3rem 0 0;
         left: 30%;
         transform: translate(-12%);
 
