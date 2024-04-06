@@ -71,42 +71,25 @@ $base-black: #191c20;
     .company-title {
       background: $base-blue;
       max-width: 590px;
-      margin-top: 1.9rem;
-      font-size: 1.5rem;
-      color: white;
+      margin-top: 4rem;
+      margin-left: -0.8rem;
+      font-size: 1.4rem;
+      color: black;
       padding: 0;
       box-shadow: 2px 2px 5px $base-black;
+      text-shadow: 0 0;
       border-radius: 0 5px 5px 0;
     }
     .svg-icon {
-      margin: -3.2rem 0 0 5vw;
-      color: white;
-    }
-    .activity-slogan {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      background: linear-gradient(
-        $base-white,
-        $base-blue,
-        $base-blue,
-        $base-blue,
-        $base-blue,
-        $base-white
-      );
+      margin: -3.2rem 0 0 1vw;
       color: black;
-      font-weight: 500;
-      font-size: 1.3rem;
-      letter-spacing: 0.1px;
-      width: 90%;
-      padding: 0.5rem;
     }
     .activity-description {
-      color: black;
       position: absolute;
-      background: linear-gradient($base-blue, $base-white);
+      background: $base-blue;
       top: 38vh;
-      height: 40vh;
+      height: 45vh;
+      width: 55vw;
       max-width: 950px;
       right: 50%;
       transform: translateX(50%);
@@ -117,9 +100,23 @@ $base-black: #191c20;
       padding: 0 2rem;
       font-size: 1.2rem;
       border-radius: 10px;
+      color: $base-black;
+      .activity-slogan {
+        margin-left: 1.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $base-white;
+        color: black;
+        font-weight: 500;
+        font-size: 1.25rem;
+        letter-spacing: 0px;
+        width: 90%;
+        padding: 1rem;
+        border-radius: 10px;
+      }
     }
     .contact-button {
-      font-family: Arial;
       text-decoration: none;
       position: absolute;
       bottom: 0;
@@ -139,7 +136,7 @@ $base-black: #191c20;
       font-size: 1.2rem;
       visibility: hidden;
       position: absolute;
-      top: 27vh;
+      top: 32vh;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -152,7 +149,7 @@ $base-black: #191c20;
       width: 80vw;
       height: 50vh;
       border-radius: 20px;
-      padding: 2rem 2rem;
+      padding: 1rem 3rem;
       .title {
         color: $darkest-blue;
         font-weight: 900;
@@ -189,8 +186,8 @@ $base-black: #191c20;
       background: transparent;
       font-weight: 700;
       position: absolute;
-      top: 29vh;
-      right: 8vw;
+      top: 34vh;
+      right: 7vw;
     }
     .visible {
       visibility: visible;
@@ -202,7 +199,7 @@ $base-black: #191c20;
     .global-metiers {
       .company-title {
         width: 90vw;
-        margin: 0;
+        margin: auto;
         font-size: 1.1rem;
         text-shadow: 2px 2px 3px $base-blue;
         box-shadow: 0 0;
@@ -210,20 +207,21 @@ $base-black: #191c20;
       .svg-icon {
         color: transparent;
       }
-      .activity-slogan {
-        color: $darkest-blue;
-        font-size: 1.2rem;
-        width: 100%;
-        margin: 0;
-        font-weight: 700;
-      }
       .activity-description {
         font-size: 1.2rem;
         height: 50vh;
         width: 65vw;
-        top: 31vh;
+        top: 30vh;
         justify-content: space-around;
         align-items: center;
+        .activity-slogan {
+          text-align: center;
+          color: black;
+          font-size: 1.2rem;
+          width: 100%;
+          margin: 0;
+          padding: 0.7rem;
+        }
       }
       .contact-button {
         font-size: 0.8rem;
@@ -290,11 +288,11 @@ $base-black: #191c20;
         opacity: 1;
       }
       .method-details {
-        top: 29vh;
+        top: 31vh;
         font-size: 1.3rem;
         width: 70%;
         height: 55vh;
-        padding: 0 5rem 0 5rem;
+        padding: 0 5rem;
       }
       .close-details-button {
         border: 4px solid black;
@@ -303,7 +301,7 @@ $base-black: #191c20;
         background: transparent;
         font-weight: 700;
         position: absolute;
-        top: 31vh;
+        top: 33vh;
         right: 145px;
       }
     }
