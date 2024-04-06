@@ -16,30 +16,30 @@
       </g>
     </svg>
   </div>
-  <div :class="classesProp.childClasses[1]">
-    La comptabilité, pas uniquement une histoire de chiffres.
-  </div>
+
   <div :class="classesProp.childClasses[2]">
+    <div :class="classesProp.childClasses[1]">
+      La comptabilité, pas uniquement une histoire de chiffres.
+    </div>
     <div>SG Conseils vous accompagne sur la gestion de votre comptabilité.</div>
     <div>
-      Nous établissons votre bilan annuel, compte de résultat et nous effectuons
-      vos déclarations fiscales.
+      Nous établissons votre bilan annuel, compte de résultat et nous effectuons vos
+      déclarations fiscales.
     </div>
   </div>
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
       <div class="title">Des informations précieuses</div>
       <div class="paragraph">
-        Grâce à nos analyses et nos conseils d’expert, nous vous aidons à
-        anticiper les décisions à prendre pour favoriser votre développement.
+        Grâce à nos analyses et nos conseils d’expert, nous vous aidons à anticiper les
+        décisions à prendre pour favoriser votre développement.
       </div>
     </div>
     <div>
       <div class="title">En ligne et interactive</div>
       <div class="paragraph">
-        Optimisez votre organisation comptable grâce à nos outils en ligne :
-        restitutez en ligne vos documents et accédez au partage de gestion
-        complet.
+        Optimisez votre organisation comptable grâce à nos outils en ligne : restitutez en
+        ligne vos documents et accédez au partage de gestion complet.
       </div>
     </div>
     <div>
@@ -52,8 +52,8 @@
     <div>
       <div class="title">Libérez-vous</div>
       <div class="paragraph">
-        Faites confiance à notre cabinet d’expertise comptable et concentrez vos
-        forces sur votre coeur de métier.
+        Faites confiance à notre cabinet d’expertise comptable et concentrez vos forces
+        sur votre coeur de métier.
       </div>
     </div>
   </div>

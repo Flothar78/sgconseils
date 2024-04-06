@@ -59,7 +59,7 @@ $light-red: #ff8811;
 $base-white: #bec8da;
 $base-black: #191c20;
 .metiers-container {
-  background-color: $base-blue;
+  background-color: $base-white;
   .global-metiers {
     max-width: 1440px;
     margin: auto;
@@ -69,44 +69,40 @@ $base-black: #191c20;
     color: $base-white;
     height: 90vh;
     .company-title {
-      background: $dark-blue;
+      background: $darkest-blue;
       width: 45vw;
       margin-top: 1.9rem;
       font-size: 1.5rem;
-      text-shadow: 2px 2px 2px $base-black;
+      color: $base-white;
       padding: 0;
-      box-shadow: 6px 6px 4px;
+      box-shadow: 2px 2px 2px $base-white;
     }
     .svg-icon {
       margin: -3.2rem 0 0 2rem;
-      color: white;
+      color: $base-white;
     }
     .activity-slogan {
-      background: linear-gradient(0.25turn, $dark-blue, $dark-blue, $base-white);
+      background: $base-white;
       color: black;
       font-weight: 500;
       font-size: 1.3rem;
       letter-spacing: 0.1px;
-      width: 50vw;
-      position: absolute;
-      top: 38vh;
-      right: 44.8%;
-      transform: translateX(50%);
-      // margin-top: 2.5rem;
-      padding: 1rem 2rem;
+      width: 90%;
+      padding: 1rem;
     }
     .activity-description {
-      color: white;
+      color: black;
       position: absolute;
-      background: $darkest-blue;
-      top: 50vh;
-      height: 25vh;
+      background: $base-blue;
+      top: 38vh;
+      height: 40vh;
       width: 60vw;
       right: 50%;
       transform: translateX(50%);
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      align-items: flex-start;
       padding: 0 2rem;
       font-size: 1.2rem;
     }
@@ -170,6 +166,7 @@ $base-black: #191c20;
     }
     .method-button:hover {
       box-shadow: 0 0;
+      //text-shadow: 330px -70px 3px $base-red;
     }
     .close-details-button {
       visibility: hidden;
@@ -191,37 +188,39 @@ $base-black: #191c20;
   .metiers-container {
     .global-metiers {
       .company-title {
-        position: absolute;
-        left: -35vw;
-        min-width: 60vw;
-        margin: 2.2rem 0 0 0;
-        font-size: 1.2rem;
-        text-shadow: 2px 2px 3px $base-black;
+        width: 90vw;
+        margin: 0;
+        font-size: 1.1rem;
+        text-shadow: 2px 2px 3px $base-blue;
+        box-shadow: 0 0;
       }
       .svg-icon {
         color: transparent;
       }
       .activity-slogan {
-        background: transparent;
-        width: 0;
-        height: 0;
-        font-size: 0;
+        color: $darkest-blue;
+        font-size: 1.2rem;
+        width: 100%;
+        margin: 0;
       }
       .activity-description {
         font-size: 1.2rem;
         height: 50vh;
         width: 65vw;
-        top: 35vh;
+        top: 31vh;
         justify-content: space-around;
+        align-items: center;
       }
       .contact-button {
         font-size: 0.8rem;
-        bottom: 77vh;
+        bottom: 0;
         padding: 0.3rem;
+        background: $base-red;
+        color: white;
+        opacity: 0.7;
       }
       .method-details {
-        font-size: 1.2rem;
-        height: 60vh;
+        font-size: 1.1rem;
         border-radius: 10px;
         position: absolute;
         z-index: 20;
@@ -229,12 +228,13 @@ $base-black: #191c20;
         left: 0%;
         transform: translateX(0%);
         display: flex;
-        flex-direction: space-between;
+        flex-direction: space-evenly;
         color: $base-black;
         border: $darkest-blue 0 solid;
         background: $base-white;
-        width: 100vw;
-        height: 93vh;
+        width: 100%;
+        height: 88vh;
+        padding: 0 0.8rem;
         .title {
           margin-bottom: 1rem;
         }
@@ -246,13 +246,13 @@ $base-black: #191c20;
         font-size: 0.8rem;
         font-weight: 600;
         height: 2.3rem;
-        bottom: 5vh;
+        bottom: 7vh;
         box-shadow: 3px 3px 4px $darkest-blue;
       }
       .close-details-button {
         z-index: 20;
         top: 7.5vh;
-        right: 1vw;
+        right: 1.5vw;
       }
     }
   }
@@ -270,8 +270,6 @@ $base-black: #191c20;
         top: 31vh;
       }
       .activity-description {
-        top: 55vh;
-        height: 28vh;
         font-size: 1.4rem;
       }
       .contact-button:hover {
@@ -280,10 +278,9 @@ $base-black: #191c20;
       .method-details {
         top: 29vh;
         font-size: 1.3rem;
-        width: 60%;
+        width: 70%;
         height: 55vh;
-
-        padding: 0 15rem 0 15rem;
+        padding: 0 5rem 0 5rem;
       }
       .close-details-button {
         border: 4px solid black;
@@ -293,7 +290,7 @@ $base-black: #191c20;
         font-weight: 700;
         position: absolute;
         top: 31vh;
-        right: 4%;
+        right: 8vw;
       }
     }
   }

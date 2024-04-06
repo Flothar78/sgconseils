@@ -96,6 +96,7 @@ $base-grey: #858384;
     align-items: center;
     background: $base-black;
     padding-left: 1rem;
+    padding-right: 0.5rem;
     height: 7vh;
     z-index: 1001;
     img {
@@ -194,11 +195,13 @@ $base-grey: #858384;
 @media screen and (max-width: 767px) {
   .layout-container {
     .navbar-container {
+      padding-right: 0rem;
       .menu {
         min-width: 70%;
         padding: 0 2rem 0 0;
         left: 30%;
         transform: translate(-12%);
+
         .menu-item {
           font-size: 0.8rem;
           font-weight: 300;

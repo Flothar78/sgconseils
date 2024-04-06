@@ -55,7 +55,7 @@ $base-black: #191c20;
   border-radius: 5%;
   position: absolute;
   left: 50%;
-  transform: translateX(-44%);
+  transform: translateX(-50%);
   bottom: 9vh;
   box-shadow: 3px 3px 4px $darkest-blue;
 }

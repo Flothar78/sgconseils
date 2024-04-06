@@ -34,15 +34,16 @@ $base-black: #191c20;
   text-shadow: 1px 1px 4px $base-black;
   width: 63vw;
   min-height: 4vh;
-  box-shadow: -4px 0px;
+  box-shadow: -6px 0px;
 }
 @media screen and (max-width: 767px) {
   .company-activity {
     justify-content: center;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
+    text-align: center;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
     text-shadow: 1px 1px 2px $base-black;
-    font-weight: 700;
+    font-weight: 500;
     margin: 13rem 0 0 -1rem;
     padding: 0 1rem;
     width: 95vw;

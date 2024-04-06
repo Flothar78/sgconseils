@@ -56,9 +56,10 @@ $base-black: #191c20;
     text-shadow: 2px 2px 3px $base-black;
     font-weight: 700;
     letter-spacing: 1.4px;
-    width: 100vw;
+    width: 100%;
     height: 8vh;
-    box-shadow: 00;
+    box-shadow: 0 0;
+    padding-right: 0.8rem;
   }
 }
 </style>
