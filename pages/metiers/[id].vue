@@ -69,31 +69,41 @@ $base-black: #191c20;
     color: $base-white;
     height: 90vh;
     .company-title {
-      background: $darkest-blue;
+      background: $base-blue;
       width: 45vw;
       margin-top: 1.9rem;
       font-size: 1.5rem;
-      color: $base-white;
+      color: white;
       padding: 0;
-      box-shadow: 2px 2px 2px $base-white;
+      box-shadow: 2px 2px 5px $base-black;
+      border-radius: 0 5px 5px 0;
     }
     .svg-icon {
       margin: -3.2rem 0 0 2rem;
-      color: $base-white;
+      color: white;
     }
     .activity-slogan {
-      background: $base-white;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(
+        $base-white,
+        $base-blue,
+        $base-blue,
+        $base-blue,
+        $base-blue,
+        $base-white
+      );
       color: black;
       font-weight: 500;
       font-size: 1.3rem;
       letter-spacing: 0.1px;
       width: 90%;
-      padding: 1rem;
+      padding: 0.5rem;
     }
     .activity-description {
       color: black;
       position: absolute;
-      background: $base-blue;
+      background: linear-gradient($base-blue, $base-white);
       top: 38vh;
       height: 40vh;
       width: 60vw;
@@ -105,18 +115,20 @@ $base-black: #191c20;
       align-items: flex-start;
       padding: 0 2rem;
       font-size: 1.2rem;
+      border-radius: 10px;
     }
     .contact-button {
       font-family: Arial;
       text-decoration: none;
       position: absolute;
-      bottom: 2vh;
-      right: 0;
+      bottom: 0;
+      right: -0.2rem;
       font-size: 0.8rem;
       background: $base-red;
       color: white;
       padding: 0.5rem;
-      border-radius: 5px;
+      border-radius: 5px 0 0 5px;
+      opacity: 0.8;
     }
     .contact-button:hover {
       opacity: 1;
@@ -138,7 +150,7 @@ $base-black: #191c20;
       background: $base-white;
       width: 80vw;
       height: 50vh;
-      border-radius: 5px;
+      border-radius: 20px;
       padding: 2rem 2rem;
       .title {
         color: $darkest-blue;
@@ -204,7 +216,7 @@ $base-black: #191c20;
         margin: 0;
       }
       .activity-description {
-        font-size: 1.2rem;
+        font-size: 1rem;
         height: 50vh;
         width: 65vw;
         top: 31vh;
@@ -234,7 +246,7 @@ $base-black: #191c20;
         background: $base-white;
         width: 100%;
         height: 88vh;
-        padding: 0 0.8rem;
+        padding: 0 0.7rem 0 0.5rem;
         .title {
           margin-bottom: 1rem;
         }
@@ -290,7 +302,7 @@ $base-black: #191c20;
         font-weight: 700;
         position: absolute;
         top: 31vh;
-        right: 8vw;
+        right: 145px;
       }
     }
   }
