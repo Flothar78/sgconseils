@@ -8,7 +8,7 @@
           format="webp"
           src="/happyPeople.jpeg"
           alt="employés de bureaux devant un PC"
-          sizes="281px"
+          sizes="200px"
         ></NuxtImg>
       </div>
       <div class="company-features"><CompanyTitle /><CompanyBusiness /></div>

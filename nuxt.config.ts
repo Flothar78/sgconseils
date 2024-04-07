@@ -8,7 +8,23 @@ export default defineNuxtConfig({
     "@": "/<rootDir>",
   },
   css: ["~/assets/scss/main.css"],
-  modules: ["nuxt3-leaflet", "@nuxt/image", "nuxt-purgecss"],
+  modules: [
+    "nuxt3-leaflet",
+    "@nuxt/image",
+    "nuxt-purgecss",
+    // [
+    //   "nuxt-mail",
+    //   {
+    //     message: {
+    //       to: "lamazeguillaume@hotmail.fr",
+    //     },
+    //     smtp: {
+    //       host: localhost,
+    //       port: 587,
+    //     },
+    //   },
+    // ],
+  ],
   app: {
     head: {
       title: "SG Conseils",

@@ -9,9 +9,9 @@
       <Informatique v-else-if="id === 'informatique'" :childClasses="parentClasses" />
       <Conseil v-else-if="id === 'conseil'" :childClasses="parentClasses" />
       <Social v-else-if="id === 'social'" :childClasses="parentClasses" />
-      <NuxtLink class="contact-button" href="#" to="/contact/#form-anchor"
+      <!-- <NuxtLink class="contact-button" href="#" to="/contact/#form-anchor"
         >Nous écrire</NuxtLink
-      >
+      > -->
       <button class="method-button" @click="showDetails()">NOS MÉTHODES</button>
       <button class="close-details-button" @click="showDetails()">X</button>
     </div>
@@ -69,12 +69,12 @@ $base-black: #191c20;
     color: $base-white;
     height: 90vh;
     .company-title {
-      background: $base-blue;
+      background: $dark-blue;
       max-width: 590px;
       margin-top: 4rem;
       margin-left: -0.8rem;
       font-size: 1.4rem;
-      color: black;
+      color: white;
       padding: 0;
       box-shadow: 2px 2px 5px $base-black;
       text-shadow: 0 0;
@@ -82,14 +82,14 @@ $base-black: #191c20;
     }
     .svg-icon {
       margin: -3.2rem 0 0 1vw;
-      color: black;
+      color: white;
     }
     .activity-description {
       position: absolute;
-      background: $base-blue;
+      background: $dark-blue;
       top: 38vh;
       height: 45vh;
-      width: 55vw;
+      width: 75vw;
       max-width: 950px;
       right: 50%;
       transform: translateX(50%);
@@ -100,7 +100,7 @@ $base-black: #191c20;
       padding: 0 2rem;
       font-size: 1.2rem;
       border-radius: 10px;
-      color: $base-black;
+      color: white;
       .activity-slogan {
         margin-left: 1.5vw;
         display: flex;

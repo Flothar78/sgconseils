@@ -26,8 +26,8 @@
           >
         </div>
 
-        <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink>
-        <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor">CONTACT</NuxtLink>
+        <!-- <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink> 
+        <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor">CONTACT</NuxtLink> -->
       </div>
     </header>
     <slot />
@@ -133,7 +133,7 @@ $base-grey: #858384;
         visibility: hidden;
         position: fixed;
         top: 7vh;
-        right: 70px;
+        right: 10px; //80px
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -201,7 +201,6 @@ $base-grey: #858384;
         padding: 0 3rem 0 0;
         left: 30%;
         transform: translate(-12%);
-
         .menu-item {
           font-size: 0.8rem;
           font-weight: 300;
