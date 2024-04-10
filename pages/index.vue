@@ -197,7 +197,7 @@ $base-black: #191c20;
       right: 0;
       margin-right: 1.6rem;
       padding-top: 0rem;
-      top: 20.5vh;
+      top: 19.5vh;
       width: 250px;
       z-index: 10;
       img {
