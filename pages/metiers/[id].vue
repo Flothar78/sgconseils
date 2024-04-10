@@ -12,7 +12,7 @@
       <!-- <NuxtLink class="contact-button" href="#" to="/contact/#form-anchor"
         >Nous écrire</NuxtLink
       > -->
-      <button class="method-button" @click="showDetails()">NOS MÉTHODES</button>
+      <button class="method-button" @click="showDetails()">VOIR PLUS</button>
       <button class="close-details-button" @click="showDetails()">X</button>
     </div>
   </div>
@@ -70,50 +70,54 @@ $base-black: #191c20;
     height: 90vh;
     .company-title {
       background: $dark-blue;
-      max-width: 590px;
-      margin-top: 4rem;
+      width: 50%;
+      height: 7vh;
+      margin-top: 5rem;
       margin-left: -0.8rem;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       color: white;
       padding: 0;
-      box-shadow: 2px 2px 5px $base-black;
-      text-shadow: 0 0;
+      box-shadow: 0 0;
+      text-shadow: 2px 2px 5px $base-black;
       border-radius: 0 5px 5px 0;
     }
     .svg-icon {
-      margin: -3.2rem 0 0 1vw;
+      margin: -1.9rem 0 0 1vw;
       color: white;
     }
     .activity-description {
       position: absolute;
       background: $dark-blue;
-      top: 38vh;
-      height: 45vh;
-      width: 75vw;
+      top: 38.5vh;
+      min-height: 35vh;
+      width: 55vw;
       max-width: 950px;
       right: 50%;
       transform: translateX(50%);
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: flex-start;
-      padding: 0 2rem;
+      padding: 1rem 2rem;
       font-size: 1.2rem;
       border-radius: 10px;
       color: white;
       .activity-slogan {
-        margin-left: 1.5vw;
+        margin-top: -2rem;
+        max-width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         background: $base-white;
         color: black;
         font-weight: 500;
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         letter-spacing: 0px;
-        width: 90%;
-        padding: 1rem;
-        border-radius: 10px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
       }
     }
     .contact-button {
@@ -136,7 +140,7 @@ $base-black: #191c20;
       font-size: 1.2rem;
       visibility: hidden;
       position: absolute;
-      top: 32vh;
+      top: 30vh;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -156,6 +160,7 @@ $base-black: #191c20;
       }
     }
     .method-button {
+      border: transparent solid 1px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -163,16 +168,16 @@ $base-black: #191c20;
       font-size: 0.9rem;
       font-weight: 600;
       width: 10rem;
-      height: 3rem;
+      height: 5vh;
       position: absolute;
-      bottom: 2.3vh;
+      bottom: 5vh;
       right: 50%;
       transform: translate(50%);
       border-radius: 5px;
       background: $base-red;
       color: white;
       padding: 0.5rem;
-      box-shadow: 3px 3px 4px $darkest-blue;
+      box-shadow: 2px 2px 3px $darkest-blue;
     }
     .method-button:hover {
       box-shadow: 0 0;
@@ -198,29 +203,28 @@ $base-black: #191c20;
   .metiers-container {
     .global-metiers {
       .company-title {
-        width: 90vw;
+        width: 100%;
         margin: auto;
         font-size: 1.1rem;
-        text-shadow: 2px 2px 3px $base-blue;
-        box-shadow: 0 0;
+        text-shadow: 2px 2px 1px $base-black;
+        border-radius: 0;
       }
       .svg-icon {
         color: transparent;
       }
       .activity-description {
-        font-size: 1.2rem;
-        height: 50vh;
-        width: 65vw;
-        top: 30vh;
-        justify-content: space-around;
-        align-items: center;
+        top: 35vh;
+        font-size: 1rem;
+        width: 70vw;
+        justify-content: space-evenly;
+        padding: 3rem 2rem 0 2rem;
         .activity-slogan {
+          margin-top: -5rem;
           text-align: center;
           color: black;
-          font-size: 1.2rem;
-          width: 100%;
-          margin: 0;
-          padding: 0.7rem;
+          font-size: 1rem;
+          max-width: 100%;
+          padding: 0.5rem;
         }
       }
       .contact-button {
@@ -246,9 +250,10 @@ $base-black: #191c20;
         background: $base-white;
         width: 100%;
         height: 88vh;
-        padding: 0 0.7rem 0 0.5rem;
+        padding: 0 0.7rem 0 1rem;
         .title {
           margin-bottom: 1rem;
+          margin-right: 3rem;
         }
         .paragraph {
           margin-right: 3rem;
@@ -258,13 +263,13 @@ $base-black: #191c20;
         font-size: 0.8rem;
         font-weight: 600;
         height: 2.3rem;
-        bottom: 7vh;
+        bottom: 6vh;
         box-shadow: 3px 3px 4px $darkest-blue;
       }
       .close-details-button {
         z-index: 20;
-        top: 7.5vh;
-        right: 1.5vw;
+        top: 4.5rem;
+        right: 0.5rem;
       }
     }
   }
@@ -272,26 +277,12 @@ $base-black: #191c20;
 @media screen and (min-width: 1440px) {
   .metiers-container {
     .global-metiers {
-      .company-title {
-        height: 9vh;
-      }
-      .activity-slogan {
-        font-weight: 700;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-        top: 31vh;
-      }
-      .activity-description {
-        font-size: 1.4rem;
-      }
       .contact-button:hover {
         opacity: 1;
       }
       .method-details {
-        top: 31vh;
-        font-size: 1.3rem;
         width: 70%;
-        height: 55vh;
+        height: 54vh;
         padding: 0 5rem;
       }
       .close-details-button {

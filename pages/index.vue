@@ -196,8 +196,9 @@ $base-black: #191c20;
       position: absolute;
       right: 0;
       margin-right: 1.6rem;
-      top: 15.5vh;
-      height: 36vh;
+      padding-top: 0rem;
+      top: 20.5vh;
+      width: 250px;
       z-index: 10;
       img {
         width: 100%;
@@ -249,11 +250,11 @@ $base-black: #191c20;
       height: 15vh;
       width: 17vw;
       border-radius: 10%;
-      box-shadow: 6px 6px 7px $base-red;
+      box-shadow: 6px 6px 7px $base-black;
       padding: 0 1rem;
     }
     .nuxt-link:hover {
-      box-shadow: 2px 2px 2px $base-red;
+      box-shadow: 4px 4px 6px $base-red;
     }
   }
 }
@@ -279,19 +280,22 @@ $base-black: #191c20;
   }
   .cards-container {
     .expertises-cards {
-      padding: 17vh 0 10vh 0;
-      flex-direction: column;
-      row-gap: 50px;
-      height: 100%;
+      align-items: center;
+      justify-content: center;
+      height: 90vh;
+      padding: 9vh 0;
+      column-gap: 35px;
+      row-gap: 0px;
+
       .nuxt-link {
         color: $darkest-blue;
-        width: 32vw;
-        height: 12vh;
-        border-radius: 10%;
+        width: 30vw;
+        height: 15vh;
+        border-radius: 10px;
         font-size: 0.9rem;
-        justify-content: space-around;
-        border: 9px solid $darkest-blue;
-        box-shadow: 8px 8px 8px $base-red;
+        justify-content: space-evenly;
+        border: 2px solid $darkest-blue;
+        box-shadow: 4px 4px 6px $base-red;
       }
       .nuxt-link:hover {
         box-shadow: 1px 1px 2px $base-red;

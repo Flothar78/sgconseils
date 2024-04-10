@@ -213,6 +213,32 @@ $base-grey: #858384;
     }
     .footer {
       font-size: 0.75rem;
+      justify-content: space-between;
+      padding: 2rem 0.5rem;
+      .footer-div {
+        height: 100%;
+        justify-content: space-between;
+        margin-right: 0;
+        .footer-title {
+          margin-right: 0.1rem;
+        }
+
+        .footer-infos {
+          margin-right: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .layout-container {
+    .navbar-container {
+      .menu {
+        padding: 0 0.3rem 0 0;
+        left: 30%;
+        transform: translate(-12%);
+      }
     }
   }
 }
