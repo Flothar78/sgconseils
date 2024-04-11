@@ -63,17 +63,16 @@ $base-black: #191c20;
   .global-metiers {
     max-width: 1440px;
     margin: auto;
-    padding-top: 10vh;
+    padding-top: 7vh;
     position: relative;
     background-color: $base-white;
     color: $base-white;
-    height: 90vh;
+    height: 93vh;
     .company-title {
       background: $dark-blue;
       width: 50%;
       height: 7vh;
       margin-top: 5rem;
-      margin-left: -0.8rem;
       font-size: 1.2rem;
       color: white;
       padding: 0;
@@ -81,19 +80,14 @@ $base-black: #191c20;
       text-shadow: 2px 2px 5px $base-black;
       border-radius: 0 5px 5px 0;
     }
-    .svg-icon {
-      margin: -1.9rem 0 0 1vw;
-      color: white;
-    }
     .activity-description {
-      position: absolute;
+      position: relative;
       background: $dark-blue;
-      top: 38.5vh;
-      min-height: 35vh;
+      top: 11vh;
+      height: 35vh;
       width: 55vw;
-      max-width: 950px;
-      right: 50%;
-      transform: translateX(50%);
+      max-width: 750px;
+      margin: auto;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -140,7 +134,7 @@ $base-black: #191c20;
       font-size: 1.2rem;
       visibility: hidden;
       position: absolute;
-      top: 30vh;
+      top: 28vh;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -170,7 +164,7 @@ $base-black: #191c20;
       width: 10rem;
       height: 5vh;
       position: absolute;
-      bottom: 5vh;
+      top: 88vh;
       right: 50%;
       transform: translate(50%);
       border-radius: 5px;
@@ -208,25 +202,20 @@ $base-black: #191c20;
         font-size: 1.1rem;
         text-shadow: 2px 2px 1px $base-black;
         border-radius: 0;
-        margin: auto;
         background: $dark-blue;
-        height: 8vh;
-        margin-top: 1rem;
+        height: 7vh;
+        margin-top: 3vh;
         font-size: 1.2rem;
         color: white;
         padding: 0;
         box-shadow: 0 0;
         text-shadow: 2px 2px 5px $base-black;
       }
-      .svg-icon {
-        visibility: hidden;
-      }
       .activity-description {
-        position: absolute;
-        top: 26%;
+        top: 6vh;
         font-size: 1rem;
         width: 60vw;
-        min-height: 18vh;
+        height: 45vh;
         justify-content: space-evenly;
         padding: 2rem;
         .activity-slogan {
@@ -248,7 +237,7 @@ $base-black: #191c20;
         opacity: 0.7;
       }
       .method-details {
-        font-size: 0.9rem;
+        font-size: 1rem;
         border-radius: 10px;
         position: absolute;
         z-index: 20;
@@ -273,6 +262,8 @@ $base-black: #191c20;
         }
       }
       .method-button {
+        position: absolute;
+        top: 88vh;
         font-size: 0.8rem;
         font-weight: 600;
         height: 2rem;
