@@ -250,14 +250,14 @@ $base-black: #191c20;
         background: $base-white;
         width: 100%;
         height: 88vh;
-        padding: 5vh 0.7rem 0 1rem;
+        padding: 5vh 0.7rem 1vh 1rem;
         .title {
-          margin-bottom: 1rem;
+          margin-bottom: 0.5rem;
           margin-right: 3rem;
         }
         .paragraph {
           margin-right: 3rem;
-          margin-bottom: 5vh;
+          margin-bottom: 1rem;
         }
       }
       .method-button {
