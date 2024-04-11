@@ -209,10 +209,8 @@ $base-black: #191c20;
         border-radius: 0;
         margin: auto;
         background: $dark-blue;
-
         height: 8vh;
-        margin-top: 3rem;
-
+        margin-top: 1rem;
         font-size: 1.2rem;
         color: white;
         padding: 0;
@@ -224,7 +222,7 @@ $base-black: #191c20;
       }
       .activity-description {
         position: absolute;
-        top: 34%;
+        top: 26%;
         font-size: 1rem;
         width: 60vw;
         min-height: 18vh;
@@ -276,7 +274,7 @@ $base-black: #191c20;
       .method-button {
         font-size: 0.8rem;
         font-weight: 600;
-        height: 2.3rem;
+        height: 2rem;
         margin-top: 2rem;
         bottom: 6vh;
         box-shadow: 3px 3px 4px $darkest-blue;
