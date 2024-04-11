@@ -248,7 +248,7 @@ $base-black: #191c20;
       max-width: 210px;
       height: 15vh;
       width: 17vw;
-      border-radius: 10px;
+      border-radius: 10%;
       box-shadow: 6px 6px 7px $base-black;
       padding: 0 1rem;
     }
