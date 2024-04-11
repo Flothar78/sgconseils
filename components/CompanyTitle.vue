@@ -48,7 +48,7 @@ $base-black: #191c20;
     //   $dark-blue,
     //   $darkest-blue
     // );
-    // font-size: 1.3rem;
+    font-size: 1.2rem;
     // text-shadow: 2px 2px 3px $base-black;
     // font-weight: 700;
     // letter-spacing: 1.4px;

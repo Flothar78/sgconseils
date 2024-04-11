@@ -266,28 +266,24 @@ $base-black: #191c20;
   .hero-container {
     .hero {
       .company-features {
-        // position: absolute; position: absolute;
-
-        top: 20vh;
+        top: 15vh;
         width: 100vw;
         transform: translate(-1%);
+
         .hero-img {
-          height: 50vh;
-          // display: flex;
+          height: 45vh;
           align-items: center;
           flex-direction: column-reverse;
           justify-content: space-between;
-          // align-items: flex-end;
-          // z-index: 10;
           img {
             margin-right: 0;
-            width: 200px;
-            // object-fit: contain;
-            // opacity: 0.9;
+            width: 180px;
           }
         }
         .company-business {
           margin-top: 2rem;
+          font-size: 1rem;
+          text-align: center;
         }
       }
     }
