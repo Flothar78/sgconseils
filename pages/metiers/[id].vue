@@ -103,7 +103,7 @@ $base-black: #191c20;
       border-radius: 10px;
       color: white;
       .activity-slogan {
-        margin-top: -2rem;
+        margin-top: -1rem;
         max-width: 100%;
         display: flex;
         justify-content: center;
@@ -204,22 +204,35 @@ $base-black: #191c20;
     .global-metiers {
       .company-title {
         width: 100%;
-        margin: auto;
         font-size: 1.1rem;
         text-shadow: 2px 2px 1px $base-black;
         border-radius: 0;
+        margin: auto;
+        background: $dark-blue;
+
+        height: 8vh;
+        margin-top: 3rem;
+
+        font-size: 1.2rem;
+        color: white;
+        padding: 0;
+        box-shadow: 0 0;
+        text-shadow: 2px 2px 5px $base-black;
       }
       .svg-icon {
-        color: transparent;
+        visibility: hidden;
       }
       .activity-description {
-        top: 35vh;
+        position: absolute;
+        top: 34%;
         font-size: 1rem;
-        width: 70vw;
+        width: 60vw;
+        min-height: 18vh;
         justify-content: space-evenly;
-        padding: 3rem 2rem 0 2rem;
+        padding: 2rem;
         .activity-slogan {
-          margin-top: -5rem;
+          margin-top: 0;
+          margin-bottom: 2rem;
           text-align: center;
           color: black;
           font-size: 1rem;
@@ -264,6 +277,7 @@ $base-black: #191c20;
         font-size: 0.8rem;
         font-weight: 600;
         height: 2.3rem;
+        margin-top: 2rem;
         bottom: 6vh;
         box-shadow: 3px 3px 4px $darkest-blue;
       }

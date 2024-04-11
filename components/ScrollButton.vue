@@ -30,7 +30,7 @@ $base-black: #191c20;
     background: $base-red;
     box-shadow: 0px 0px 0px;
     width: 9rem;
-    height: 3.2rem;
+    height: 2.5rem;
     letter-spacing: 1.2px;
   }
   100% {
@@ -51,12 +51,12 @@ $base-black: #191c20;
   color: white;
   background: $base-red;
   width: 8rem;
-  height: 3rem;
-  border-radius: 5%;
+  height: 2rem;
+  border-radius: 5px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 9vh;
+  bottom: 6vh;
   box-shadow: 3px 3px 4px $darkest-blue;
 }
 .scroll-button:hover {

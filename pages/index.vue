@@ -182,10 +182,10 @@ $base-black: #191c20;
   background-color: $base-blue;
   .hero {
     max-width: 1440px;
-    padding-top: 7vh;
+    margin-top: 7vh;
     position: relative;
     margin: auto;
-    height: 93vh;
+    height: 100vh;
     .company-features {
       position: absolute;
       top: 42.2vh;
@@ -197,7 +197,7 @@ $base-black: #191c20;
       right: 0;
       margin-right: 1.6rem;
       padding-top: 0rem;
-      top: 16vh;
+      top: 15vh;
       z-index: 10;
       img {
         width: 100%;
