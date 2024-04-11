@@ -198,11 +198,10 @@ $base-black: #191c20;
       margin-right: 1.6rem;
       padding-top: 0rem;
       top: 19.5vh;
-      width: 250px;
       z-index: 10;
       img {
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
         object-fit: contain;
         object-position: right;
         opacity: 0.9;
@@ -249,7 +248,7 @@ $base-black: #191c20;
       max-width: 210px;
       height: 15vh;
       width: 17vw;
-      border-radius: 10%;
+      border-radius: 10px;
       box-shadow: 6px 6px 7px $base-black;
       padding: 0 1rem;
     }
@@ -262,19 +261,31 @@ $base-black: #191c20;
 @media screen and (max-width: 767px) {
   .hero-container {
     .hero {
+      max-width: 1440px;
+      padding-top: 10vh;
+      position: relative;
+      margin: auto;
+      color: $base-white;
+      max-height: 93vh;
       .hero-img {
+        margin: auto;
         top: 13.2vh;
         width: 230px;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-60%);
         img {
           object-position: center;
         }
       }
       .company-features {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         position: absolute;
-        top: 46vh;
-        transform: translate(1%);
+        height: 20vh;
+        width: 100%;
+        top: 57vh;
+        transform: translate(0);
       }
     }
   }

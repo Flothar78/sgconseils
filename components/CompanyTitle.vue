@@ -41,10 +41,6 @@ $base-black: #191c20;
 }
 @media screen and (max-width: 767px) {
   .company-name {
-    position: absolute;
-    top: 13vh;
-    right: 50%;
-    transform: translateX(50%);
     background: linear-gradient(
       0.3turn,
       $base-blue,
@@ -59,7 +55,7 @@ $base-black: #191c20;
     width: 100%;
     height: 8vh;
     box-shadow: 0 0;
-    padding-right: 0.8rem;
+    padding-right: 0;
   }
 }
 </style>
