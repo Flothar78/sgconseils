@@ -272,7 +272,7 @@ $base-black: #191c20;
         top: 13.2vh;
         width: 230px;
         left: 50%;
-        transform: translate(-60%);
+        transform: translate(-50%);
         img {
           object-position: center;
         }
