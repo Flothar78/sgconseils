@@ -236,28 +236,28 @@ $base-black: #191c20;
         opacity: 0.7;
       }
       .method-details {
-        font-size: 1rem;
+        font-size: 0.9rem;
         border-radius: 10px;
         position: absolute;
         z-index: 20;
         top: 7vh;
         left: 0%;
         transform: translateX(0%);
-        padding: 5rem 3rem;
         justify-content: center;
         color: $base-black;
         border: $darkest-blue 0 solid;
         background: $base-white;
         width: 100%;
         height: 88vh;
-        padding: 5vh 0.7rem 0 1rem;
+        padding: 2rem 0.7rem 2rem 1rem;
         .title {
           margin-bottom: 0.3rem;
           margin-right: 3rem;
+          font-size: 1rem;
         }
         .paragraph {
           margin-right: 3rem;
-          margin-bottom: 0.5rem;
+          margin-bottom: 1.5rem;
         }
       }
       .method-button {
@@ -269,7 +269,7 @@ $base-black: #191c20;
       }
       .close-details-button {
         z-index: 20;
-        top: 3.5rem;
+        top: 4rem;
         right: 0.4rem;
       }
     }

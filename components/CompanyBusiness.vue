@@ -33,7 +33,7 @@ $base-black: #191c20;
   letter-spacing: 1.2px;
   text-shadow: 1px 1px 4px $base-black;
   width: 63vw;
-  min-height: 4vh;
+  height: 5vh;
   box-shadow: -6px 0px;
 }
 @media screen and (max-width: 767px) {

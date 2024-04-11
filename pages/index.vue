@@ -197,7 +197,7 @@ $base-black: #191c20;
       right: 0;
       margin-right: 1.6rem;
       padding-top: 0rem;
-      top: 20vh;
+      top: 16vh;
       z-index: 10;
       img {
         width: 100%;
@@ -286,17 +286,16 @@ $base-black: #191c20;
     .expertises-cards {
       align-items: center;
       justify-content: center;
-      height: 90vh;
-      padding: 9vh 0;
-      column-gap: 35px;
+      height: 83vh;
+      padding: 8vh 1vh 9vh 1vh;
+      column-gap: 45px;
       row-gap: 0px;
-
       .nuxt-link {
         color: $darkest-blue;
-        width: 30vw;
-        height: 15vh;
+        width: 25vw;
+        height: 13vh;
         border-radius: 10px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         justify-content: space-evenly;
         border: 2px solid $darkest-blue;
         box-shadow: 4px 4px 6px $base-red;
