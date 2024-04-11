@@ -278,27 +278,27 @@ $base-black: #191c20;
         }
       }
     }
-    .cards-container {
-      .expertises-cards {
-        align-items: center;
-        justify-content: center;
-        height: 83vh;
-        padding: 8vh 1vh 9vh 1vh;
-        column-gap: 45px;
-        row-gap: 0px;
-        .nuxt-link {
-          color: $darkest-blue;
-          width: 25vw;
-          height: 13vh;
-          border-radius: 10px;
-          font-size: 0.8rem;
-          justify-content: space-evenly;
-          border: 2px solid $darkest-blue;
-          box-shadow: 4px 4px 6px $base-red;
-        }
-        .nuxt-link:hover {
-          box-shadow: 1px 1px 2px $base-red;
-        }
+  }
+  .cards-container {
+    .expertises-cards {
+      align-items: center;
+      justify-content: center;
+      height: 83vh;
+      padding: 8vh 1vh 9vh 1vh;
+      column-gap: 45px;
+      row-gap: 0px;
+      .nuxt-link {
+        color: $darkest-blue;
+        width: 25vw;
+        height: 13vh;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        justify-content: space-evenly;
+        border: 2px solid $darkest-blue;
+        box-shadow: 4px 4px 6px $base-red;
+      }
+      .nuxt-link:hover {
+        box-shadow: 1px 1px 2px $base-red;
       }
     }
   }

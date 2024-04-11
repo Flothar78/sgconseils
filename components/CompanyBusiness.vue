@@ -39,11 +39,10 @@ $base-black: #191c20;
 @media screen and (max-width: 767px) {
   .company-activity {
     position: absolute;
-    bottom: -25vh;
+    bottom: -18vh;
     font-size: 1.05rem;
     margin-left: -1rem;
     width: 100%;
-    margin-bottom: 3rem;
     font-size: 1rem;
     text-align: center;
     height: 3vh;
