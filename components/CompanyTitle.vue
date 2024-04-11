@@ -54,6 +54,7 @@ $base-black: #191c20;
     // letter-spacing: 1.4px;
     margin-right: -1rem;
     width: 100%;
+    margin-bottom: -2rem;
     // height: 8vh;
     // box-shadow: 0 0;
     // padding-right: 0;

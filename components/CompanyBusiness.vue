@@ -48,6 +48,9 @@ $base-black: #191c20;
     // padding: 0;
     width: 100%;
     // height: 8vh;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
   }
 }
 </style>

@@ -3,7 +3,7 @@
     <div class="hero" id="accueil" @scrollTo="scrollToTopOfCards">
       <div class="company-features">
         <div class="hero-img">
-          <CompanyTitle class="company-title" />
+          <CompanyTitle />
           <NuxtImg
             defer
             quality="60"
@@ -13,7 +13,7 @@
             sizes="200px"
           ></NuxtImg>
         </div>
-        <CompanyBusiness class="company-business" />
+        <CompanyBusiness />
       </div>
       <NuxtImg
         defer
@@ -185,10 +185,10 @@ $base-black: #191c20;
   background-color: $base-blue;
   .hero {
     max-width: 1440px;
-    margin-top: 7vh;
+    padding-top: 7vh;
     position: relative;
     margin: auto;
-    height: 100vh;
+    height: 93vh;
     .company-features {
       position: absolute;
       top: 20vh;
@@ -280,37 +280,29 @@ $base-black: #191c20;
             width: 180px;
           }
         }
-        .company-title {
-          margin-bottom: -2rem;
-        }
-        .company-business {
-          margin-top: 3rem;
-          font-size: 1rem;
-          text-align: center;
-        }
       }
     }
-  }
-  .cards-container {
-    .expertises-cards {
-      align-items: center;
-      justify-content: center;
-      height: 83vh;
-      padding: 8vh 1vh 9vh 1vh;
-      column-gap: 45px;
-      row-gap: 0px;
-      .nuxt-link {
-        color: $darkest-blue;
-        width: 25vw;
-        height: 13vh;
-        border-radius: 10px;
-        font-size: 0.8rem;
-        justify-content: space-evenly;
-        border: 2px solid $darkest-blue;
-        box-shadow: 4px 4px 6px $base-red;
-      }
-      .nuxt-link:hover {
-        box-shadow: 1px 1px 2px $base-red;
+    .cards-container {
+      .expertises-cards {
+        align-items: center;
+        justify-content: center;
+        height: 83vh;
+        padding: 8vh 1vh 9vh 1vh;
+        column-gap: 45px;
+        row-gap: 0px;
+        .nuxt-link {
+          color: $darkest-blue;
+          width: 25vw;
+          height: 13vh;
+          border-radius: 10px;
+          font-size: 0.8rem;
+          justify-content: space-evenly;
+          border: 2px solid $darkest-blue;
+          box-shadow: 4px 4px 6px $base-red;
+        }
+        .nuxt-link:hover {
+          box-shadow: 1px 1px 2px $base-red;
+        }
       }
     }
   }
