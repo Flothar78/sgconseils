@@ -204,7 +204,7 @@ $base-black: #191c20;
         border-radius: 0;
         background: $dark-blue;
         height: 7vh;
-        margin-top: 3vh;
+        margin-top: 7vh;
         font-size: 1.2rem;
         color: white;
         padding: 0;
@@ -212,7 +212,7 @@ $base-black: #191c20;
         text-shadow: 2px 2px 5px $base-black;
       }
       .activity-description {
-        top: 6vh;
+        top: 14vh;
         font-size: 1rem;
         width: 60vw;
         height: 45vh;
