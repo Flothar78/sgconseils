@@ -188,7 +188,7 @@ $base-black: #191c20;
     padding-top: 7vh;
     position: relative;
     margin: auto;
-    height: 93vh;
+    height: 94vh;
     .company-features {
       position: absolute;
       top: 20vh;
