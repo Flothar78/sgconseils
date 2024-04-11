@@ -207,9 +207,6 @@ $base-black: #191c20;
           opacity: 0.9;
         }
       }
-      .company-business {
-        margin-top: 10rem;
-      }
     }
     .background-img {
       height: 100%;
@@ -269,7 +266,6 @@ $base-black: #191c20;
         top: 15vh;
         width: 100vw;
         transform: translate(-1%);
-
         .hero-img {
           height: 45vh;
           align-items: center;

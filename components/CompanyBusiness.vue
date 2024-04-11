@@ -27,7 +27,7 @@ $base-black: #191c20;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem;
   font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 1.2px;
@@ -38,19 +38,15 @@ $base-black: #191c20;
 }
 @media screen and (max-width: 767px) {
   .company-activity {
-    // justify-content: center;
-    // text-align: center;
+    position: absolute;
+    bottom: -25vh;
     font-size: 1.05rem;
-    // letter-spacing: 1px;
-    // text-shadow: 1px 1px 2px $base-black;
-    // font-weight: 500;
     margin-left: -1rem;
-    // padding: 0;
     width: 100%;
-    // height: 8vh;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-size: 1rem;
     text-align: center;
+    height: 3vh;
   }
 }
 </style>
