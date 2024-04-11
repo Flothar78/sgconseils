@@ -182,10 +182,9 @@ $base-black: #191c20;
   background-color: $base-blue;
   .hero {
     max-width: 1440px;
-    padding-top: 10vh;
+    padding-top: 7vh;
     position: relative;
     margin: auto;
-    color: $base-white;
     height: 93vh;
     .company-features {
       position: absolute;
@@ -194,14 +193,15 @@ $base-black: #191c20;
     }
     .hero-img {
       position: absolute;
+      width: 250px;
       right: 0;
       margin-right: 1.6rem;
       padding-top: 0rem;
-      top: 19.5vh;
+      top: 15.8vh;
       z-index: 10;
       img {
-        width: 90%;
-        height: 90%;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
         object-position: right;
         opacity: 0.9;
@@ -261,16 +261,9 @@ $base-black: #191c20;
 @media screen and (max-width: 767px) {
   .hero-container {
     .hero {
-      max-width: 1440px;
-      padding-top: 10vh;
-      position: relative;
-      margin: auto;
-      color: $base-white;
-      max-height: 93vh;
       .hero-img {
-        margin: auto;
         top: 13.2vh;
-        width: 230px;
+        width: 200px;
         left: 50%;
         transform: translate(-50%);
         img {

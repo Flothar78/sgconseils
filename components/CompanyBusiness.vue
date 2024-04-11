@@ -45,7 +45,7 @@ $base-black: #191c20;
     text-shadow: 1px 1px 2px $base-black;
     font-weight: 500;
     margin: 0;
-    padding: 0 0 0 1rem;
+    padding: 0;
     width: 100%;
     height: 8vh;
   }
