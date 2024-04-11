@@ -3,7 +3,7 @@
     <div class="hero" id="accueil" @scrollTo="scrollToTopOfCards">
       <div class="company-features">
         <div class="hero-img">
-          <CompanyTitle />
+          <CompanyTitle class="company-title" />
           <NuxtImg
             defer
             quality="60"
@@ -280,8 +280,11 @@ $base-black: #191c20;
             width: 180px;
           }
         }
+        .company-title {
+          margin-bottom: -2rem;
+        }
         .company-business {
-          margin-top: 2rem;
+          margin-top: 3rem;
           font-size: 1rem;
           text-align: center;
         }
