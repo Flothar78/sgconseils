@@ -29,8 +29,8 @@ $base-black: #191c20;
   50% {
     background: $base-red;
     box-shadow: 0px 0px 0px;
-    width: 9rem;
-    height: 2.5rem;
+    width: 8.4rem;
+    height: 3.4rem;
     letter-spacing: 1.2px;
   }
   100% {
@@ -51,12 +51,12 @@ $base-black: #191c20;
   color: white;
   background: $base-red;
   width: 8rem;
-  height: 2rem;
+  height: 3rem;
   border-radius: 5px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 6vh;
+  bottom: 3vh;
   box-shadow: 3px 3px 4px $darkest-blue;
 }
 .scroll-button:hover {
@@ -72,7 +72,7 @@ $base-black: #191c20;
       background: $base-red;
       box-shadow: 0px 0px 0px;
       width: 8rem;
-      height: 2.4rem;
+      height: 3.4rem;
       letter-spacing: 1.5px;
     }
     100% {
@@ -84,7 +84,6 @@ $base-black: #191c20;
     animation: glitter 1.4s ease-in-out infinite;
   }
   .scroll-button {
-    height: 2.2rem;
     width: 7rem;
     font-size: 0.8rem;
     letter-spacing: 0.8px;

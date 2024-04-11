@@ -1,17 +1,20 @@
 <template>
   <div class="hero-container">
     <div class="hero" id="accueil" @scrollTo="scrollToTopOfCards">
-      <div class="hero-img">
-        <NuxtImg
-          defer
-          quality="60"
-          format="webp"
-          src="/happyPeople.jpeg"
-          alt="employés de bureaux devant un PC"
-          sizes="200px"
-        ></NuxtImg>
+      <div class="company-features">
+        <div class="hero-img">
+          <CompanyTitle />
+          <NuxtImg
+            defer
+            quality="60"
+            format="webp"
+            src="/happyPeople.jpeg"
+            alt="employés de bureaux devant un PC"
+            sizes="200px"
+          ></NuxtImg>
+        </div>
+        <CompanyBusiness class="company-business" />
       </div>
-      <div class="company-features"><CompanyTitle /><CompanyBusiness /></div>
       <NuxtImg
         defer
         quality="10"
@@ -188,23 +191,24 @@ $base-black: #191c20;
     height: 100vh;
     .company-features {
       position: absolute;
-      top: 42.2vh;
-      transform: translate(1%);
-    }
-    .hero-img {
-      position: absolute;
-      width: 250px;
-      right: 0;
-      margin-right: 1.6rem;
-      padding-top: 0rem;
       top: 20vh;
-      z-index: 10;
-      img {
+      width: 100%;
+      transform: translate(1%);
+      .hero-img {
         width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: right;
-        opacity: 0.9;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        z-index: 10;
+        img {
+          margin-right: 4rem;
+          width: 250px;
+          object-fit: contain;
+          opacity: 0.9;
+        }
+      }
+      .company-business {
+        margin-top: 10rem;
       }
     }
     .background-img {
@@ -261,24 +265,30 @@ $base-black: #191c20;
 @media screen and (max-width: 767px) {
   .hero-container {
     .hero {
-      .hero-img {
-        top: 13.2vh;
-        width: 200px;
-        left: 50%;
-        transform: translate(-50%);
-        img {
-          object-position: center;
-        }
-      }
       .company-features {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: absolute;
-        height: 20vh;
-        width: 100%;
-        top: 57vh;
-        transform: translate(0);
+        // position: absolute; position: absolute;
+
+        top: 20vh;
+        width: 100vw;
+        transform: translate(-1%);
+        .hero-img {
+          height: 50vh;
+          // display: flex;
+          align-items: center;
+          flex-direction: column-reverse;
+          justify-content: space-between;
+          // align-items: flex-end;
+          // z-index: 10;
+          img {
+            margin-right: 0;
+            width: 200px;
+            // object-fit: contain;
+            // opacity: 0.9;
+          }
+        }
+        .company-business {
+          margin-top: 2rem;
+        }
       }
     }
   }

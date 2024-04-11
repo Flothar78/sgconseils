@@ -26,28 +26,28 @@ $base-black: #191c20;
   );
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 1rem 0 1rem 1rem;
   font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 1.2px;
   text-shadow: 1px 1px 4px $base-black;
-  width: 63vw;
+  width: 60vw;
   height: 5vh;
   box-shadow: -6px 0px;
 }
 @media screen and (max-width: 767px) {
   .company-activity {
-    justify-content: center;
-    text-align: center;
+    // justify-content: center;
+    // text-align: center;
     font-size: 1.05rem;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px $base-black;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
+    // letter-spacing: 1px;
+    // text-shadow: 1px 1px 2px $base-black;
+    // font-weight: 500;
+    margin-left: -1rem;
+    // padding: 0;
     width: 100%;
-    height: 8vh;
+    // height: 8vh;
   }
 }
 </style>
