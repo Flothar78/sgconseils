@@ -275,8 +275,6 @@ $base-black: #191c20;
         font-size: 0.8rem;
         font-weight: 600;
         height: 2rem;
-        margin-top: 2rem;
-        bottom: 6vh;
         box-shadow: 3px 3px 4px $darkest-blue;
       }
       .close-details-button {
