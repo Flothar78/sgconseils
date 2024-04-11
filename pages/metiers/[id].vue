@@ -202,6 +202,7 @@ $base-black: #191c20;
 @media screen and (max-width: 767px) {
   .metiers-container {
     .global-metiers {
+      height: 93vh;
       .company-title {
         width: 100%;
         font-size: 1.1rem;
