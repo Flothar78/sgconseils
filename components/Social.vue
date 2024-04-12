@@ -5,8 +5,8 @@
     <div :class="classesProp.childClasses[1]">L’expertise RH qu’il vous faut.</div>
     <div>
       SG Conseils vous accompagne face aux changements constants de la réglementation et
-      du droit social. Par un suivi régulier de la gestion du personnel, depuis la gestion
-      de la paie jusqu’aux ressources humaines, restez toujours confiant.
+      du droit social. Par un suivi régulier de la gestion du personnel, restez toujours
+      confiant.
     </div>
   </div>
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
