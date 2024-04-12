@@ -83,7 +83,8 @@ $base-black: #191c20;
     .activity-description {
       position: relative;
       background: $dark-blue;
-      top: 11vh;
+      border: 3px solid $darkest-blue;
+      top: 13vh;
       height: 35vh;
       width: 55vw;
       max-width: 750px;
@@ -97,6 +98,7 @@ $base-black: #191c20;
       border-radius: 10px;
       color: white;
       .activity-slogan {
+        border: 1px solid $darkest-blue;
         margin-top: -1rem;
         max-width: 100%;
         display: flex;
@@ -164,7 +166,7 @@ $base-black: #191c20;
       width: 10rem;
       height: 5vh;
       position: absolute;
-      top: 88vh;
+      bottom: 7vh;
       right: 50%;
       transform: translate(50%);
       border-radius: 5px;
@@ -185,7 +187,7 @@ $base-black: #191c20;
       background: transparent;
       font-weight: 700;
       position: absolute;
-      top: 34vh;
+      top: 30vh;
       right: 7vw;
     }
     .visible {

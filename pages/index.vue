@@ -283,8 +283,8 @@ $base-black: #191c20;
     .expertises-cards {
       align-items: center;
       justify-content: center;
-      height: 83vh;
-      padding: 8vh 1vh 9vh 1vh;
+      height: 90vh;
+      padding: 8vh 1vh 2vh 1vh;
       column-gap: 45px;
       row-gap: 0px;
       .nuxt-link {
