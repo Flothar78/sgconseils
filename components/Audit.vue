@@ -5,7 +5,7 @@
     <div>
       L’audit est une procédure qui certifie les comptes de votre entreprise pour attester
       de la bonne santé financière ainsi que de la régularité de sa gestion. Chez SG
-      Conseils nous allons plus loin, nous vous proposons un réel accompagnement.
+      Conseils, nous vous proposons un réel accompagnement.
     </div>
   </div>
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
