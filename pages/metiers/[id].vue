@@ -216,7 +216,7 @@ $base-black: #191c20;
       }
       .activity-description {
         top: 16.5vh;
-        font-size: 1rem;
+        font-size: 1.1rem;
         width: 60vw;
         height: 40vh;
         justify-content: space-around;
