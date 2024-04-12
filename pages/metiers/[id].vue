@@ -219,7 +219,7 @@ $base-black: #191c20;
         width: 60vw;
         height: 40vh;
         justify-content: space-around;
-        padding: 1rem 1rem 1.5rem 1rem;
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
         .activity-slogan {
           margin-top: 0;
           margin-bottom: 2rem;
