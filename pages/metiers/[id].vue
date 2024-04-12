@@ -97,7 +97,6 @@ $base-black: #191c20;
       font-size: 1.2rem;
       border-radius: 10px;
       color: white;
-      text-align: center;
       .activity-slogan {
         border: 1px solid $darkest-blue;
         margin-top: -1rem;
@@ -221,7 +220,6 @@ $base-black: #191c20;
         height: 40vh;
         justify-content: space-around;
         padding: 1rem 1rem 1.5rem 1rem;
-        text-align: center;
         .activity-slogan {
           margin-top: 0;
           margin-bottom: 2rem;
