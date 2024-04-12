@@ -297,7 +297,7 @@ $base-black: #191c20;
         background: transparent;
         font-weight: 700;
         position: absolute;
-        top: 33vh;
+        top: 30vh;
         right: 145px;
       }
     }
