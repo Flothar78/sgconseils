@@ -41,7 +41,7 @@ $base-black: #191c20;
     position: absolute;
     bottom: -19vh;
     font-size: 1.05rem;
-    margin-left: -1rem;
+    margin-left: 0rem;
     width: 100%;
     font-size: 1rem;
     text-align: center;
