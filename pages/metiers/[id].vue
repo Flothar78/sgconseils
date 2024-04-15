@@ -251,7 +251,7 @@ $base-black: #191c20;
         border: $darkest-blue 0 solid;
         background: $base-white;
         width: 100%;
-        height: 88vh;
+        height: 100vh;
         padding: 2rem 0.7rem 2rem 1rem;
         .title {
           margin-bottom: 0.3rem;
