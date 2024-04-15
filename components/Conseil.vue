@@ -1,7 +1,7 @@
 <template>
   <div :class="classesProp.childClasses[0]"></div>
   <div :class="classesProp.childClasses[2]">
-    <div :class="classesProp.childClasses[1]">Mieux vous accompagner au quotidien.</div>
+    <div :class="classesProp.childClasses[1]">Mieux vous accompagner au quotidien</div>
     <div>
       Nous nous impliquons dans la stratégie de votre entreprise et ses projets de
       croissance. Nous apportons notre vision, en la compilant à vos objectifs.

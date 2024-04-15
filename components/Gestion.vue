@@ -1,7 +1,7 @@
 <template>
   <div :class="classesProp.childClasses[0]"></div>
   <div :class="classesProp.childClasses[2]">
-    <div :class="classesProp.childClasses[1]">Un accompagnement complet.</div>
+    <div :class="classesProp.childClasses[1]">Un accompagnement complet</div>
     <div>
       A chaque étape du cycle de vie de votre entreprise, SG Conseils vous accompagne pour
       prendre les bonnes décisions. Nous vous offrons un véritable suivi de gestion et des

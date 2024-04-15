@@ -1,6 +1,6 @@
 <template>
   <div class="company-activity">
-    <div>Pour le développement de vos entreprises.</div>
+    <div>Pour le développement de vos entreprises</div>
   </div>
 </template>
 

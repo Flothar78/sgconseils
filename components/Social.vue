@@ -2,7 +2,7 @@
   <div :class="classesProp.childClasses[0]"></div>
 
   <div :class="classesProp.childClasses[2]">
-    <div :class="classesProp.childClasses[1]">L’expertise RH qu’il vous faut.</div>
+    <div :class="classesProp.childClasses[1]">L’expertise RH qu’il vous faut</div>
     <div>
       SG Conseils vous accompagne face aux changements constants de la réglementation et
       du droit social. Par un suivi régulier de la gestion du personnel, restez toujours

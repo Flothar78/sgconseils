@@ -2,7 +2,7 @@
   <div :class="classesProp.childClasses[0]"></div>
   <div :class="classesProp.childClasses[2]">
     <div :class="classesProp.childClasses[1]">
-      Pas uniquement une histoire de chiffres.
+      Pas uniquement une histoire de chiffres
     </div>
     <div>
       SG Conseils vous accompagne sur la gestion de votre comptabilité. Nous établissons

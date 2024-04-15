@@ -1,7 +1,7 @@
 <template>
   <div :class="classesProp.childClasses[0]"></div>
   <div :class="classesProp.childClasses[2]">
-    <div :class="classesProp.childClasses[1]">Gagnez du temps.</div>
+    <div :class="classesProp.childClasses[1]">Gagnez du temps</div>
     <div>
       Nous mettons en place une organisation administrative, comptable et informatique
       optimale pour vous libérer du temps. Nous nous adaptons à votre environnement de
