@@ -244,15 +244,15 @@ $base-black: #191c20;
         border-radius: 0;
         position: absolute;
         z-index: 20;
-        top: 10vh;
+        top: 0vh;
         left: 0%;
         transform: translateX(0%);
-        justify-content: center;
+        justify-content: flex-end;
         color: $base-black;
         border: $darkest-blue 0 solid;
         background: $base-white;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         padding: 2rem 0.7rem 2rem 1rem;
         .title {
           margin-bottom: 0.3rem;
