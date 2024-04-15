@@ -88,7 +88,7 @@ $base-black: #191c20;
     font-size: 0.6rem;
     letter-spacing: 0.8px;
     height: 2.2rem;
-    bottom: 11vh;
+    top: 81vh;
   }
 }
 </style>

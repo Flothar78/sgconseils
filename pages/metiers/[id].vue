@@ -265,10 +265,10 @@ $base-black: #191c20;
       }
       .method-button {
         position: absolute;
-        top: 80vh;
+        top: 81vh;
         font-size: 0.8rem;
         font-weight: 600;
-        height: 3.5vh;
+        height: 2.2rem;
         width: 7rem;
         box-shadow: 3px 3px 4px $darkest-blue;
       }
