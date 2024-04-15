@@ -228,6 +228,7 @@ $base-black: #191c20;
           font-size: 1rem;
           max-width: 100%;
           padding: 0.5rem;
+          border-radius: 7px;
         }
       }
       .contact-button {
