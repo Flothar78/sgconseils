@@ -266,9 +266,9 @@ $base-black: #191c20;
       padding-top: 7vh;
       position: relative;
       margin: auto;
-      height: 94vh;
+      height: 93vh;
       .company-features {
-        top: 15vh;
+        top: 13vh;
         width: 100vw;
         transform: translate(-1%);
         .hero-img {
