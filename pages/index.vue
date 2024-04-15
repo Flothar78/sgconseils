@@ -286,7 +286,7 @@ $base-black: #191c20;
   }
   .cards-container {
     .expertises-cards {
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       height: 90vh;
       padding: 8vh 1vh 2vh 1vh;
