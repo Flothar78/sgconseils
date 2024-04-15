@@ -240,7 +240,7 @@ $base-black: #191c20;
       }
       .method-details {
         font-size: 1rem;
-        border-radius: 10px;
+        border-radius: 0;
         position: absolute;
         z-index: 20;
         top: 10vh;
