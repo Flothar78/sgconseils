@@ -244,7 +244,7 @@ $base-black: #191c20;
         border-radius: 0;
         position: absolute;
         z-index: 20;
-        top: 15vh;
+        top: 13vh;
         left: 0%;
         transform: translateX(0%);
         justify-content: flex-end;
