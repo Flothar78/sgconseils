@@ -1,57 +1,44 @@
 <template>
   <div class="layout-container">
     <header class="navbar-container">
-      <NuxtLink class="link-item" href="#" to="/">
+      <NuxtLink class="link-item" to="/">
         <img src="~/assets/img/logo_sg_conseils.png" alt="logo sg conseils format png"
       /></NuxtLink>
       <div class="menu">
-        <NuxtLink class="menu-item" href="#" to="/#accueil">ACCUEIL</NuxtLink>
-        <NuxtLink class="menu-item metiers-hover" href="#" to="/#metiers"
-          >MÉTIERS</NuxtLink
-        >
+        <NuxtLink class="menu-item" to="/#accueil">ACCUEIL</NuxtLink>
+        <NuxtLink class="menu-item metiers-hover" to="/#metiers">MÉTIERS</NuxtLink>
 
         <div @click.stop="" class="metiers-submenu">
-          <NuxtLink class="metiers-item" href="#" to="/metiers/comptabilite"
+          <NuxtLink class="metiers-item" to="/metiers/comptabilite"
             >Comptabilité</NuxtLink
           >
-          <NuxtLink class="metiers-item" href="#" to="/metiers/audit">Audit</NuxtLink
-          ><NuxtLink class="metiers-item" href="#" to="/metiers/juridique"
-            >Juridique</NuxtLink
-          >
-          <NuxtLink class="metiers-item" href="#" to="/metiers/conseil">Conseil</NuxtLink>
-          <NuxtLink class="metiers-item" href="#" to="/metiers/gestion">Gestion</NuxtLink
-          ><NuxtLink class="metiers-item" href="#" to="/metiers/social">Social</NuxtLink>
-          <NuxtLink class="metiers-item" href="#" to="/metiers/informatique"
+          <NuxtLink class="metiers-item" to="/metiers/audit">Audit</NuxtLink
+          ><NuxtLink class="metiers-item" to="/metiers/juridique">Juridique</NuxtLink>
+          <NuxtLink class="metiers-item" to="/metiers/conseil">Conseil</NuxtLink>
+          <NuxtLink class="metiers-item" to="/metiers/gestion">Gestion</NuxtLink
+          ><NuxtLink class="metiers-item" to="/metiers/social">Social</NuxtLink>
+          <NuxtLink class="metiers-item" to="/metiers/informatique"
             >Informatique</NuxtLink
           >
         </div>
 
-        <!-- <NuxtLink class="menu-item" href="#" to="/equipe">ÉQUIPE</NuxtLink> 
-        <NuxtLink class="menu-item" href="#" to="/contact/#form-anchor">CONTACT</NuxtLink> -->
+        <!-- <NuxtLink class="menu-item"  to="/equipe">ÉQUIPE</NuxtLink> -->
+        <NuxtLink class="menu-item" to="/contact/#form-anchor">CONTACT</NuxtLink>
       </div>
     </header>
     <slot />
     <footer class="footer">
       <div class="footer-div">
-        <NuxtLink class="footer-title" href="#">METIERS:</NuxtLink>
-        <NuxtLink class="footer-infos" href="#" to="/metiers/comptabilite"
-          >Comptabilité</NuxtLink
-        >
-        <NuxtLink class="footer-infos" href="#" to="/metiers/audit">Audit</NuxtLink>
-        <NuxtLink class="footer-infos" href="#" to="/metiers/juridique"
-          >Juridique</NuxtLink
-        >
-        <NuxtLink class="footer-infos" href="#" to="/metiers/conseil">Conseil</NuxtLink>
-        <NuxtLink class="footer-infos" href="#" to="/metiers/gestion">Gestion</NuxtLink>
-        <NuxtLink class="footer-infos" href="#" to="/metiers/social"
-          >Social / RH</NuxtLink
-        >
+        <NuxtLink class="footer-title">METIERS:</NuxtLink>
+        <NuxtLink class="footer-infos" to="/metiers/comptabilite">Comptabilité</NuxtLink>
+        <NuxtLink class="footer-infos" to="/metiers/audit">Audit</NuxtLink>
+        <NuxtLink class="footer-infos" to="/metiers/juridique">Juridique</NuxtLink>
+        <NuxtLink class="footer-infos" to="/metiers/conseil">Conseil</NuxtLink>
+        <NuxtLink class="footer-infos" to="/metiers/gestion">Gestion</NuxtLink>
+        <NuxtLink class="footer-infos" to="/metiers/social">Social / RH</NuxtLink>
 
-        <NuxtLink class="footer-infos" href="#" to="/metiers/informatique"
-          >Informatique</NuxtLink
-        ><NuxtLink class="footer-infos" href="#" to="/mentions"
-          >Mentions légales</NuxtLink
-        >
+        <NuxtLink class="footer-infos" to="/metiers/informatique">Informatique</NuxtLink
+        ><NuxtLink class="footer-infos" to="/mentions">Mentions légales</NuxtLink>
       </div>
       <div class="footer-div">
         <div class="footer-title">NOUS CONTACTER:</div>

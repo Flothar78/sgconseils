@@ -28,7 +28,7 @@
   <div class="cards-container">
     <div class="expertises-cards" id="metiers" ref="cardsDiv">
       <div>
-        <NuxtLink class="nuxt-link" href="#" to="/metiers/comptabilite"
+        <NuxtLink class="nuxt-link" to="/metiers/comptabilite"
           >COMPTABILITÉ
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@
         ></NuxtLink>
       </div>
       <div>
-        <NuxtLink class="nuxt-link" href="#" to="/metiers/juridique"
+        <NuxtLink class="nuxt-link" to="/metiers/juridique"
           >JURIDIQUE<svg
             xmlns="http://www.w3.org/2000/svg"
             width="1.5rem"
@@ -63,7 +63,7 @@
         </NuxtLink>
       </div>
       <div>
-        <NuxtLink class="nuxt-link" href="#" to="/metiers/audit"
+        <NuxtLink class="nuxt-link" to="/metiers/audit"
           >AUDIT
 
           <svg
@@ -82,7 +82,7 @@
         </NuxtLink>
       </div>
       <div>
-        <NuxtLink class="nuxt-link" href="#" to="/metiers/conseil"
+        <NuxtLink class="nuxt-link" to="/metiers/conseil"
           >CONSEIL<svg
             xmlns="http://www.w3.org/2000/svg"
             width="1.5rem"
@@ -104,7 +104,7 @@
         ></NuxtLink>
       </div>
       <div>
-        <NuxtLink class="nuxt-link" href="#" to="/metiers/gestion"
+        <NuxtLink class="nuxt-link" to="/metiers/gestion"
           >GESTION<svg
             xmlns="http://www.w3.org/2000/svg"
             width="1.5rem"
@@ -122,7 +122,7 @@
         ></NuxtLink>
       </div>
       <div>
-        <NuxtLink class="nuxt-link" href="#" to="/metiers/informatique"
+        <NuxtLink class="nuxt-link" to="/metiers/informatique"
           >INFORMATIQUE<svg
             xmlns="http://www.w3.org/2000/svg"
             width="1.5rem"
@@ -137,7 +137,7 @@
         ></NuxtLink>
       </div>
       <div>
-        <NuxtLink class="nuxt-link" href="#" to="/metiers/social"
+        <NuxtLink class="nuxt-link" to="/metiers/social"
           >SOCIAL RH<svg
             xmlns="http://www.w3.org/2000/svg"
             width="1.5rem"
