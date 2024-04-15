@@ -20,7 +20,7 @@
         quality="10"
         class="background-img"
         src="/background-image.jpeg"
-        alt="Image de bureau en arrière fond, en tant que décor et peu visible."
+        alt="Image de bureau en arrière fond, en tant que décor et peu visible"
       />
       <ScrollButton @scrollTo="scrollToTopOfCards" />
     </div>
