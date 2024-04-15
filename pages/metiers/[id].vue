@@ -275,7 +275,7 @@ $base-black: #191c20;
       }
       .close-details-button {
         z-index: 20;
-        top: 4rem;
+        top: 3.5rem;
         right: 0.4rem;
       }
     }
