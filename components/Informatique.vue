@@ -10,7 +10,6 @@
   </div>
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
-      <div class="title">Simplifiez votre gestion</div>
       <div class="paragraph">
         Nous convenons avec vous du meilleur outil qui pourra vous accompagner au
         quotidien. Simplifiez vous les démarches administratives pour vous concentrer sur

@@ -10,7 +10,6 @@
   </div>
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
-      <div class="title">Droit des affaires</div>
       <div class="paragraph">
         Nos équipes de juristes apportent leurs compétences dans tous les domaines du
         Droit des Affaires pour vous guider dans vos projets.

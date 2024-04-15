@@ -11,7 +11,6 @@
   </div>
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
-      <div class="title">Des informations précieuses</div>
       <div class="paragraph">
         Grâce à nos analyses et nos conseils d’expert, nous vous aidons à anticiper les
         décisions à prendre pour favoriser votre développement.

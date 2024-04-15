@@ -9,7 +9,6 @@
   </div>
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
-      <div class="title">Créateur d’entreprise</div>
       <div class="paragraph">
         Afin que vous maîtrisiez vos coûts, nous nous engageons à vous accompagner de
         manière personnalisée. Nous vous conseillons en fonction de vos besoins et de vos

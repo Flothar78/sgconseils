@@ -10,6 +10,12 @@
   </div>
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
+      <div class="paragraph">
+        Dans un environnement économique plus complexe, vous devez avoir une vision claire
+        sur la santé financière de votre entreprise.
+      </div>
+    </div>
+    <div>
       <div class="title">Certification des comptes de l’entreprise</div>
       <div class="paragraph">
         Cette obligation légale permet d’assurer la conformité avec les normes en vigueur,
@@ -17,13 +23,7 @@
         structure.
       </div>
     </div>
-    <div>
-      <div class="title">Sécurisez votre développement</div>
-      <div class="paragraph">
-        Dans un environnement économique plus complexe, vous devez avoir une vision claire
-        sur la santé financière de votre entreprise.
-      </div>
-    </div>
+
     <div>
       <div class="title">Améliorez votre contrôle interne</div>
       <div class="paragraph">

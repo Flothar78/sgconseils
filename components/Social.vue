@@ -11,8 +11,6 @@
   </div>
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
-      <div class="title">Congés annuels</div>
-
       <div class="paragraph">
         Il est parfois difficile d’y voir clair sur la règlementation en vigueur. Nous
         vous accompagnons pour gérer les congés au sein de votre entreprise.

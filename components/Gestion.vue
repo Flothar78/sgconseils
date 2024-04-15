@@ -10,7 +10,6 @@
   </div>
   <div :class="[classesProp.childClasses[3], classesProp.childClasses[4]]">
     <div>
-      <div class="title">Aide à la prise de décision</div>
       <div class="paragraph">
         Nous rassemblons et organisons les informations pertinentes pour consolider vos
         choix.
