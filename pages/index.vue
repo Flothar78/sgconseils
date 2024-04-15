@@ -262,6 +262,11 @@ $base-black: #191c20;
 @media screen and (max-width: 767px) {
   .hero-container {
     .hero {
+      max-width: 1440px;
+      padding-top: 7vh;
+      position: relative;
+      margin: auto;
+      height: 94vh;
       .company-features {
         top: 15vh;
         width: 100vw;

@@ -72,8 +72,8 @@ $base-black: #191c20;
       background: $base-red;
       box-shadow: 0px 0px 0px;
       width: 8rem;
-      height: 3rem;
-      letter-spacing: 1.5px;
+      height: 2.5rem;
+      letter-spacing: 1x;
     }
     100% {
       background: $light-red;
@@ -85,8 +85,10 @@ $base-black: #191c20;
   }
   .scroll-button {
     width: 7rem;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     letter-spacing: 0.8px;
+    height: 2.2rem;
+    bottom: 11vh;
   }
 }
 </style>
