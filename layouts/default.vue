@@ -22,8 +22,8 @@
           >
         </div>
 
-        <!-- <NuxtLink class="menu-item"  to="/equipe">ÉQUIPE</NuxtLink> -->
-        <NuxtLink class="menu-item" to="/contact/#form-anchor">CONTACT</NuxtLink>
+        <!-- <NuxtLink class="menu-item"  to="/equipe">ÉQUIPE</NuxtLink> 
+        <NuxtLink class="menu-item" to="/contact/#form-anchor">CONTACT</NuxtLink>-->
       </div>
     </header>
     <slot />

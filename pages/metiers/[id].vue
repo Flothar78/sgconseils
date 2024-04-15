@@ -9,7 +9,7 @@
       <Informatique v-else-if="id === 'informatique'" :childClasses="parentClasses" />
       <Conseil v-else-if="id === 'conseil'" :childClasses="parentClasses" />
       <Social v-else-if="id === 'social'" :childClasses="parentClasses" />
-      <NuxtLink class="contact-button" to="/contact/#form-anchor">Nous écrire</NuxtLink>
+      <!-- <NuxtLink class="contact-button" to="/contact/#form-anchor">Nous écrire</NuxtLink> -->
 
       <button class="method-button" @click="showDetails()">VOIR PLUS</button>
       <button class="close-details-button" @click="showDetails()">X</button>
