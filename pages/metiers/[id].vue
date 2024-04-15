@@ -243,7 +243,7 @@ $base-black: #191c20;
         border-radius: 10px;
         position: absolute;
         z-index: 20;
-        top: 8vh;
+        top: 10vh;
         left: 0%;
         transform: translateX(0%);
         justify-content: center;
