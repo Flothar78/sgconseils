@@ -12,18 +12,18 @@ export default defineNuxtConfig({
     "nuxt3-leaflet",
     "@nuxt/image",
     "nuxt-purgecss",
-    // [
-    //   "nuxt-mail",
-    //   {
-    //     message: {
-    //       to: "lamazeguillaume@hotmail.fr",
-    //     },
-    //     smtp: {
-    //       host: localhost,
-    //       port: 587,
-    //     },
-    //   },
-    // ],
+     [
+       "nuxt-mail",
+       {
+         message: {
+           to: "lamazeguillaume@hotmail.fr",
+         },
+         smtp: {
+          host: "smtp-relay.brevo.com",
+          port: 587,
+         },
+       },
+     ],
   ],
   app: {
     head: {
