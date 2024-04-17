@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       "nuxt-mail",
       {
         message: {
-          to: "lamazeguillaume@hotmail.fr",
+          to: "krakounscth@gmail.com",
         },
         smtp: {
           host: "smtp-relay.brevo.com",
