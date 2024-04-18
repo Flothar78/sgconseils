@@ -7,23 +7,29 @@ export default defineNuxtConfig({
   alias: {
     "@": "/<rootDir>",
   },
-  css: ["~/assets/scss/main.css"],
+  css: ["~/assets/css/main.css", "~/assets/css/leaflet.css"],
   modules: [
     "nuxt3-leaflet",
     "@nuxt/image",
     "nuxt-purgecss",
-     [
-       "nuxt-mail",
-       {
-         message: {
-           to: "lamazeguillaume@hotmail.fr",
-         },
-         smtp: {
+    [
+      "nuxt-mail",
+      {
+        message: {
+          from: "lamazeguillaume@hotmail.fr",
+          to: "krakounscth@yahoo.fr",
+        },
+        smtp: {
           host: "smtp-relay.brevo.com",
-          port: 587,
-         },
-       },
-     ],
+          port: 465,
+          secure: true,
+          auth: {
+            user: "lamazeguillaume@hotmail.fr",
+            pass: process.env.SMTP_KEY,
+          },
+        },
+      },
+    ],
   ],
   app: {
     head: {

@@ -43,7 +43,7 @@ $base-black: #191c20;
     font-size: 1.05rem;
     margin-left: -0.6rem;
     width: 100%;
-    font-size: 1rem;
+    font-size: .8rem;
     text-align: center;
     height: 3vh;
   }
