@@ -5,9 +5,10 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   alias: {
+    "leaflet-css": "../node_modules/leaflet/dist/leaflet.css",
     "@": "/<rootDir>",
   },
-  css: ["~/assets/scss/main.css", "../node_modules/leaflet/dist/leaflet.css"],
+  css: ["~/assets/scss/main.css", "leaflet-css"],
   modules: [
     "nuxt3-leaflet",
     "@nuxt/image",
