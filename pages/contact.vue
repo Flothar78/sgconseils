@@ -324,10 +324,11 @@ $base-black: #191c20;
           height:0;
         }
         .toast {
+          visibility: visible;
           height: 5vh;
           padding: 0 1rem;
           position: absolute;
-          top: 12vh;
+          top: 10vh;
           right: 2%;
           z-index: 101;
           border-radius: 10px;
@@ -338,10 +339,10 @@ $base-black: #191c20;
           border: 12px solid $darkest-blue;
           border-radius: 7px;
           background: white;
-          height: 60vh;
+          height: 70vh;
           width: 70vw;
           margin: auto;
-          margin-top: 11vh;
+          margin-top: 5vh;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
