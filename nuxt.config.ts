@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         },
         smtp: {
           host: "smtp-relay.brevo.com",
-          port: 587,
+          port: 465,
           auth: {
             user: "lamazeguillaume@hotmail.fr",
             pass: process.env.SMTP_KEY,
