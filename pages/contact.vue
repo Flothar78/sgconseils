@@ -231,7 +231,7 @@ $base-black: #191c20;
         }
       }
       .toast {
-        visibility: hidden;
+        visibility: visible;
         background: $dark-blue;
         color: white;
         font-weight: 700;
@@ -241,9 +241,9 @@ $base-black: #191c20;
         padding: 0 1rem;
         position: absolute;
         top: 12vh;
-        right: 2%;
+        right: 0;
         z-index: 101;
-        border-radius: 10px;
+        border-radius: 10px 0 0 10px;
       }
       #scroll-to-map {
         font-size: 0.8rem;
@@ -318,18 +318,19 @@ $base-black: #191c20;
       background-color: $base-white;
       color: $base-black;
       .form-and-anchor-container {
+        padding-top: 8vh;
         height: 90vh;
         .form-invitation {
           visibility: hidden;
-          height:0;
+          height: 0;
         }
         .toast {
-          visibility: visible;
-          height: 8vh;
+          
+          height: 5vh;
           padding: 0 1rem;
           position: absolute;
-          top: 45vh;
-          right: 2%;
+          top: 8vh;
+          right: 0;
           z-index: 101;
           border-radius: 10px 0 0 10px;
           right: 0;
@@ -341,7 +342,7 @@ $base-black: #191c20;
           height: 70vh;
           width: 70vw;
           margin: auto;
-          margin-top: 0vh;
+          margin-top: 6vh;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
@@ -409,8 +410,8 @@ $base-black: #191c20;
         }
       }
       .map-and-anchor-container {
-        padding-top: 21.7vh;
-        height: 90vh;
+        padding-top: 14vh;
+        height: 91vh;
         .map-invitation {
           visibility: hidden;
           margin: 0;
@@ -419,7 +420,7 @@ $base-black: #191c20;
           border: 12px solid $darkest-blue;
           border-radius: 7px;
           background: white;
-          height: 60vh;
+          height: 70vh;
           width: 70vw;
           margin: auto;
           display: flex;
@@ -435,7 +436,7 @@ $base-black: #191c20;
           background: white;
           position: absolute;
           left: 0;
-          top: 191.7vh;
+          top: 186vh;
           border: 1px solid $base-black;
           height: 3vh;
           width: 100px;
