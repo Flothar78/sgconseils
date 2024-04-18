@@ -325,15 +325,14 @@ $base-black: #191c20;
         }
         .toast {
           visibility: visible;
-          height: 5vh;
+          height: 8vh;
           padding: 0 1rem;
           position: absolute;
-          top: 10vh;
+          top: 45vh;
           right: 2%;
           z-index: 101;
-          border-radius: 10px;
-          right: 50%;
-          transform: translateX(50%);
+          border-radius: 10px 0 0 10px;
+          right: 0;
         }
         .contact-form {
           border: 12px solid $darkest-blue;
@@ -342,7 +341,7 @@ $base-black: #191c20;
           height: 70vh;
           width: 70vw;
           margin: auto;
-          margin-top: 5vh;
+          margin-top: 0vh;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
@@ -398,7 +397,7 @@ $base-black: #191c20;
           background: white;
           position: absolute;
           left: 0;
-          top: 91vh;
+          top: 88vh;
           border: 1px solid $base-black;
           height: 3vh;
           width: 100px;
