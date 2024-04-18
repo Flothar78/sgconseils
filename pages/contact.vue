@@ -190,7 +190,7 @@ $base-black: #191c20;
         .form-entry {
           display: flex;
           flex-direction: column;
-          padding: .8rem 1em;
+          padding: 0.8rem 1em;
           .form-labels {
             color: $base-black;
             padding-bottom: 0.5rem;
@@ -241,7 +241,7 @@ $base-black: #191c20;
         padding: 0 1.2rem;
         position: absolute;
         top: 12vh;
-        right: -.7rem;
+        right: -0.7rem;
         z-index: 101;
         border-radius: 10px 0 0 10px;
       }
@@ -325,7 +325,6 @@ $base-black: #191c20;
           height: 0;
         }
         .toast {
-          
           height: 5vh;
           padding: 0 1rem;
           position: absolute;
@@ -339,7 +338,7 @@ $base-black: #191c20;
           border: 12px solid $darkest-blue;
           border-radius: 7px;
           background: white;
-          height: 70vh;
+          height: 65vh;
           width: 70vw;
           margin: auto;
           margin-top: 6vh;
@@ -398,7 +397,7 @@ $base-black: #191c20;
           background: white;
           position: absolute;
           left: 0;
-          top: 88vh;
+          top: 84vh;
           border: 1px solid $base-black;
           height: 3vh;
           width: 100px;
@@ -407,6 +406,7 @@ $base-black: #191c20;
           color: white;
           background: $base-red;
           opacity: 0.8;
+          box-shadow: 1px 1px 3px black;
         }
       }
       .map-and-anchor-container {
@@ -420,7 +420,7 @@ $base-black: #191c20;
           border: 12px solid $darkest-blue;
           border-radius: 7px;
           background: white;
-          height: 70vh;
+          height: 65vh;
           width: 70vw;
           margin: auto;
           display: flex;
@@ -432,11 +432,10 @@ $base-black: #191c20;
           display: flex;
           justify-content: center;
           align-items: center;
-          color: $base-black;
           background: white;
           position: absolute;
           left: 0;
-          top: 186vh;
+          top: 182vh;
           border: 1px solid $base-black;
           height: 3vh;
           width: 100px;
@@ -445,6 +444,7 @@ $base-black: #191c20;
           color: white;
           background: $base-red;
           opacity: 0.8;
+          box-shadow: 1px 1px 3px black;
         }
       }
     }
