@@ -109,7 +109,7 @@ const onSubmit = async (values, { resetForm }) => {
     const mail = useMail();
     await mail.send({
       from: `La société ${values.company}`,
-      subject: "Message envoyé depuis le site web sgconseils.com",
+      subject: "Envoyé depuis le site web sgconseils.com",
       text: `
       Mme / Mr ${values.lastname}
       Mail de l'expéditeur: ${values.email}
