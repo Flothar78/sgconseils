@@ -190,7 +190,7 @@ $base-black: #191c20;
         .form-entry {
           display: flex;
           flex-direction: column;
-          padding: 1rem 1rem;
+          padding: .8rem 1em;
           .form-labels {
             color: $base-black;
             padding-bottom: 0.5rem;
@@ -202,7 +202,7 @@ $base-black: #191c20;
           }
           #message {
             border: 2px solid $base-black;
-            width: 65%;
+            width: 85%;
             height: 8vh;
           }
           .error-container {
@@ -217,11 +217,11 @@ $base-black: #191c20;
         .form-button {
           background: $base-red;
           color: white;
-          font-size: 1.1rem;
-          font-weight: 900;
-          letter-spacing: 1.2px;
+          font-size: 1rem;
+          font-weight: 700;
+          letter-spacing: 1px;
           height: 4vh;
-          width: 33%;
+          width: 23%;
           border-radius: 7px;
           margin: auto;
           box-shadow: 4px 4px 6px $base-black;
@@ -254,12 +254,12 @@ $base-black: #191c20;
         color: white;
         background: $base-red;
         position: absolute;
-        right: 3vw;
-        top: 93vh;
+        right: 0;
+        top: 94vh;
         border: 1px solid $base-black;
         height: 3vh;
-        width: 9vw;
-        border-radius: 7px;
+        width: 12vw;
+        border-radius: 7px 0 0 7px;
         box-shadow: 4px 4px 6px $base-black;
         opacity: 0.8;
       }
@@ -296,12 +296,12 @@ $base-black: #191c20;
         color: white;
         background: $base-red;
         position: absolute;
-        right: 3vw;
-        bottom: 13.8vh;
+        right: 0;
+        bottom: 13vh;
         border: 1px solid $base-black;
         height: 3vh;
-        width: 9vw;
-        border-radius: 7px;
+        width: 12vw;
+        border-radius: 7px 0 0 7px;
         box-shadow: 4px 4px 6px $base-black;
         opacity: 0.8;
       }
@@ -380,7 +380,7 @@ $base-black: #191c20;
             font-weight: 700;
             letter-spacing: 0.5px;
             height: 8%;
-            width: 65%;
+            width: 40%;
             border-radius: 5px;
             margin: auto;
             box-shadow: 4px 4px 6px $base-black;
