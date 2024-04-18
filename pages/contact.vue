@@ -238,10 +238,10 @@ $base-black: #191c20;
         display: flex;
         align-items: center;
         height: 10vh;
-        padding: 0 1rem;
+        padding: 0 1.2rem;
         position: absolute;
         top: 12vh;
-        right: 0;
+        right: -.7rem;
         z-index: 101;
         border-radius: 10px 0 0 10px;
       }
