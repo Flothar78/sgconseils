@@ -16,13 +16,13 @@ export default defineNuxtConfig({
       "nuxt-mail",
       {
         message: {
-          from:"lamazeguillaume@hotmail.fr",
+          from: "lamazeguillaume@hotmail.fr",
           to: "krakounscth@yahoo.fr",
         },
         smtp: {
           host: "smtp-relay.brevo.com",
           port: 465,
-          secure:true,
+          secure: true,
           auth: {
             user: "lamazeguillaume@hotmail.fr",
             pass: process.env.SMTP_KEY,

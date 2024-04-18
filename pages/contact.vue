@@ -103,6 +103,7 @@ const hideMessageConfirm = () => {
   toastElement.style.visibility = "hidden";
 };
 const onSubmit = async (values, { resetForm }) => {
+  console.log(process.env.SMTP_KEY),
   console.log(values);
   try {
     const mail = useMail();
