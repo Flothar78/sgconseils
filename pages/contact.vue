@@ -231,7 +231,7 @@ $base-black: #191c20;
         }
       }
       .toast {
-        visibility: visible;
+        visibility: hidden;
         background: $dark-blue;
         color: white;
         font-weight: 700;
