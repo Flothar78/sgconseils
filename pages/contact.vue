@@ -281,8 +281,8 @@ $base-black: #191c20;
       }
       .map-container {
         border: 12px solid $darkest-blue;
-        height: 68vh;
-        width: 60%;
+        height: 300px;
+        width: 300px;
         margin: 3rem 0 0 2rem;
         border-radius: 7px;
       }
