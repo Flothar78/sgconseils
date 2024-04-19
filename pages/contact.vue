@@ -62,23 +62,24 @@
 
         <div class="map-invitation">Localisez-nous:</div>
         <div class="map-container">
-          <LMap
-            ref="map"
-            :zoom="zoom"
-            :center="[43.58955925435832, 1.4896027423284606]"
-          >
-            <LTileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='&amp;copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-              layer-type="base"
-              name="OpenStreetMap"
-            />
-            <LCircleMarker
-              :lat-lng="[43.589559, 1.4896]"
-              :radius="35"
-              color="red"
-            />
-          </LMap>
+          <client-only>
+            <LMap
+              ref="map"
+              :zoom="zoom"
+              :center="[43.58955925435832, 1.4896027423284606]"
+            >
+              <LTileLayer
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution='&amp;copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+                layer-type="base"
+                name="OpenStreetMap"
+              />
+              <LCircleMarker
+                :lat-lng="[43.589559, 1.4896]"
+                :radius="35"
+                color="red"
+              /> </LMap
+          ></client-only>
         </div>
       </div>
     </div>
@@ -281,8 +282,8 @@ $base-black: #191c20;
       }
       .map-container {
         border: 12px solid $darkest-blue;
-        height: 300px;
-        width: 300px;
+        height: 68vh;
+        width: 60%;
         margin: 3rem 0 0 2rem;
         border-radius: 7px;
       }
