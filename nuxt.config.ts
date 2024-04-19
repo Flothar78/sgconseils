@@ -1,15 +1,15 @@
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   nitro: {
     compressPublicAssets: false,
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   alias: {
     "@": "/<rootDir>",
   },
   css: ["~/assets/css/main.css", "leaflet/dist/leaflet.css"],
-  build: { transpile: [ "@vue-leaflet/vue-leaflet"] },
   modules: [
+    "nuxt3-leaflet",
     "@nuxt/image",
     "nuxt-purgecss",
     [

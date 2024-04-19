@@ -61,14 +61,30 @@
         </NuxtLink>
 
         <div class="map-invitation">Localisez-nous:</div>
-        <div class="map-container" id="map"></div>
+        <div class="map-container">
+          <LMap
+            ref="map"
+            :zoom="zoom"
+            :center="[43.58955925435832, 1.4896027423284606]"
+          >
+            <LTileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&amp;copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+              layer-type="base"
+              name="OpenStreetMap"
+            />
+            <LCircleMarker
+              :lat-lng="[43.589559, 1.4896]"
+              :radius="35"
+              color="red"
+            />
+          </LMap>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script setup async defer>
-import * as L from 'leaflet';
-console.log(L)
 import { Form, Field, ErrorMessage } from "vee-validate";
 useSeoMeta({
   title: "SGConseils experts-comptable à Toulouse",
@@ -126,22 +142,7 @@ const validateName = (value) => {
   }
   return true;
 };
-onMounted(() => {
-  const zoom = 15;
-  const radius = 35;
-  const colorMarker = "red";
-
-  const myMap = L.map("map").setView([43.58955925435832, 1.4896027423284606], zoom);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution:
-      '&amp;copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-  }).addTo(myMap);
-
-  const marker = L.marker([43.589559, 1.4896], {
-    radius,
-    color: colorMarker,
-  }).addTo(myMap);
-});
+const zoom = ref(15);
 </script>
 
 <style scoped lang="scss">

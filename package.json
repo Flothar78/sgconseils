@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
-    "leaflet": "^1.9.4",
     "nuxt": "^3.10.2",
     "nuxt-mail": "^5.0.0",
+    "nuxt3-leaflet": "^1.0.12",
     "prettier": "^3.2.5",
     "sass": "^1.71.1",
     "vee-validate": "^4.12.6",
