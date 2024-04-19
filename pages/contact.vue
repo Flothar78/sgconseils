@@ -108,6 +108,7 @@ const onSubmit = async (values, { resetForm }) => {
       from: `La société ${values.company}`,
       subject: "Envoyé depuis le site web sgconseils.com",
       text: `
+      Pour la société ${values.company}
       Mme / Mr ${values.lastname}
       Mail de l'expéditeur: ${values.email}
       Message de la personne: ${values.message}
