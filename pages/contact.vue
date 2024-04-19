@@ -62,30 +62,40 @@
 
         <div class="map-invitation">Localisez-nous:</div>
         <div class="map-container">
-          <client-only>
-            <LMap
-              ref="map"
-              :zoom="zoom"
-              :center="[43.58955925435832, 1.4896027423284606]"
-            >
-              <LTileLayer
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                attribution='&amp;copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-                layer-type="base"
-                name="OpenStreetMap"
-              />
-              <LCircleMarker
-                :lat-lng="[43.589559, 1.4896]"
-                :radius="35"
-                color="red"
-              /> </LMap
-          ></client-only>
+          <!-- <LMap
+            style="height: 100%"
+            ref="map"
+            :zoom="zoom"
+            :center="[43.58955925435832, 1.4896027423284606]"
+          >
+            <LTileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&amp;copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+              layer-type="base"
+              name="OpenStreetMap"
+            />
+            <LCircleMarker
+              :lat-lng="[43.589559, 1.4896]"
+              :radius="35"
+              color="red"
+            />
+          </LMap> -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.8173626337552!2d1.4896241999999997!3d43.5895204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebdeaf36a44cf%3A0x65c468b428350ce!2sSG%20Conseils!5e0!3m2!1sfr!2sfr!4v1713551197949!5m2!1sfr!2sfr"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script setup async defer>
+import "leaflet/dist/leaflet.css";
 import { Form, Field, ErrorMessage } from "vee-validate";
 useSeoMeta({
   title: "SGConseils experts-comptable à Toulouse",
@@ -283,7 +293,7 @@ $base-black: #191c20;
       .map-container {
         border: 12px solid $darkest-blue;
         height: 68vh;
-        width: 60%;
+        width: 60vw;
         margin: 3rem 0 0 2rem;
         border-radius: 7px;
       }
