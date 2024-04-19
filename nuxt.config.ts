@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   alias: {
     "@": "/<rootDir>",
   },
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/main.css", "leaflet/dist/leaflet.css"],
   modules: [
     "nuxt3-leaflet",
     "@nuxt/image",
