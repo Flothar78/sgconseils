@@ -84,7 +84,6 @@
     </div>
   </div>
 </template>
-
 <script setup async defer>
 import { Form, Field, ErrorMessage } from "vee-validate";
 useSeoMeta({
