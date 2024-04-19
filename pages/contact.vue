@@ -85,6 +85,7 @@
   </div>
 </template>
 <script setup async defer>
+import "leaflet/dist/leaflet.css";
 import { Form, Field, ErrorMessage } from "vee-validate";
 useSeoMeta({
   title: "SGConseils experts-comptable à Toulouse",
@@ -142,7 +143,7 @@ const validateName = (value) => {
   }
   return true;
 };
-const zoom = ref(0);
+const zoom = ref(15);
 </script>
 
 <style scoped lang="scss">
