@@ -142,7 +142,7 @@ const validateName = (value) => {
   }
   return true;
 };
-const zoom = ref(15);
+const zoom = ref(5);
 </script>
 
 <style scoped lang="scss">
