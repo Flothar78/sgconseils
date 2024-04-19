@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       "nuxt-mail",
       {
         message: {
-          from: "krakounscth@yahoo.fr",
+          from: "Envoyé depuis le site ___@b.com",
           to: "krakounscth@yahoo.fr",
         },
         smtp: {
