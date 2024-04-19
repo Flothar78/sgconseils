@@ -142,7 +142,7 @@ const validateName = (value) => {
   }
   return true;
 };
-const zoom = ref(5);
+const zoom = ref(0);
 </script>
 
 <style scoped lang="scss">
@@ -467,4 +467,3 @@ $base-black: #191c20;
   }
 }
 </style>
-
