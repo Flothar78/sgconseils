@@ -87,6 +87,8 @@ $base-grey: #858384;
     height: 7vh;
     z-index: 1001;
     img {
+      margin-top: .2rem;
+      margin-left: .2rem;
       width: 35px;
     }
     .menu {
@@ -183,6 +185,9 @@ $base-grey: #858384;
   .layout-container {
     .navbar-container {
       padding-right: 0rem;
+      img{
+        margin-left: 0rem;
+      }
       .menu {
         min-width: 70%;
         padding: 0 3rem 0 0;

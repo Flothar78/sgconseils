@@ -188,7 +188,7 @@ $base-black: #191c20;
       }
       .contact-form {
         border: 12px solid $darkest-blue;
-        border-radius: 7px;
+        border-radius: 10px;
         background: white;
         height: 68vh;
         width: 60%;
@@ -265,12 +265,12 @@ $base-black: #191c20;
         background: $base-red;
         position: absolute;
         right: 0;
-        top: 94vh;
+        top: 94.5vh;
         border: 1px solid $base-black;
         height: 3vh;
         width: 12vw;
         border-radius: 7px 0 0 7px;
-        box-shadow: 4px 4px 6px $base-black;
+        box-shadow: 2px 2px 3px $base-black;
         opacity: 0.8;
       }
       #scroll-to-map:hover {
@@ -295,7 +295,7 @@ $base-black: #191c20;
         height: 68vh;
         width: 60vw;
         margin: 3rem 0 0 2rem;
-        border-radius: 7px;
+        border-radius: 10px;
       }
       #scroll-to-form {
         font-size: 0.8rem;
@@ -307,12 +307,12 @@ $base-black: #191c20;
         background: $base-red;
         position: absolute;
         right: 0;
-        bottom: 13vh;
+        bottom: 12.3vh;
         border: 1px solid $base-black;
         height: 3vh;
         width: 12vw;
         border-radius: 7px 0 0 7px;
-        box-shadow: 4px 4px 6px $base-black;
+        box-shadow: 2px 2px 3px $base-black;
         opacity: 0.8;
       }
       #scroll-to-form:hover {
@@ -392,7 +392,7 @@ $base-black: #191c20;
             width: 40%;
             border-radius: 5px;
             margin: auto;
-            box-shadow: 4px 4px 6px $base-black;
+            box-shadow: 2px 2px 3px $base-black;
           }
           .form-button:hover {
             box-shadow: 0 0 0;

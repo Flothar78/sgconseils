@@ -5,11 +5,19 @@
       <Juridique v-if="id === 'juridique'" :childClasses="parentClasses" />
       <Gestion v-else-if="id === 'gestion'" :childClasses="parentClasses" />
       <Audit v-else-if="id === 'audit'" :childClasses="parentClasses" />
-      <Comptabilite v-else-if="id === 'comptabilite'" :childClasses="parentClasses" />
-      <Informatique v-else-if="id === 'informatique'" :childClasses="parentClasses" />
+      <Comptabilite
+        v-else-if="id === 'comptabilite'"
+        :childClasses="parentClasses"
+      />
+      <Informatique
+        v-else-if="id === 'informatique'"
+        :childClasses="parentClasses"
+      />
       <Conseil v-else-if="id === 'conseil'" :childClasses="parentClasses" />
       <Social v-else-if="id === 'social'" :childClasses="parentClasses" />
-      <NuxtLink class="contact-button" to="/contact/#form-anchor">Nous écrire</NuxtLink>
+      <NuxtLink class="contact-button" to="/contact/#form-anchor"
+        >Nous écrire</NuxtLink
+      >
 
       <button class="method-button" @click="showDetails()">VOIR PLUS</button>
       <button class="close-details-button" @click="showDetails()">X</button>
@@ -82,7 +90,6 @@ $base-black: #191c20;
     .activity-description {
       position: relative;
       background: $dark-blue;
-      border: 3px solid $darkest-blue;
       top: 13vh;
       height: 35vh;
       width: 55vw;
@@ -93,13 +100,13 @@ $base-black: #191c20;
       justify-content: space-evenly;
       align-items: flex-start;
       padding: 1rem 2rem;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       border-radius: 10px;
       color: white;
       .activity-slogan {
+        max-width: 70%;
         border: 1px solid $darkest-blue;
         margin-top: -1rem;
-        max-width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -108,6 +115,7 @@ $base-black: #191c20;
         font-weight: 500;
         font-size: 1.1rem;
         letter-spacing: 0px;
+        text-align: center;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -225,7 +233,6 @@ $base-black: #191c20;
           text-align: center;
           color: black;
           font-size: 1rem;
-          max-width: 100%;
           padding: 0.5rem;
           border-radius: 7px;
         }
@@ -270,7 +277,7 @@ $base-black: #191c20;
         font-weight: 600;
         height: 2.2rem;
         width: 7rem;
-        box-shadow: 3px 3px 4px $darkest-blue;
+        box-shadow: 2px 2px 3px $darkest-blue;
       }
       .close-details-button {
         z-index: 20;
