@@ -1,23 +1,22 @@
 <template>
   <div class="card">
     <div class="paragraph">
-      Nous n'utilisons aucun cookie à des fins de suivi, ni de collecte de
-      données personnelles.
+      Nous n'utilisons aucun cookie de suivi, ni de collecte de données
+      personnelles. Seuls les cookies de Google Maps sont présents dans le
+      navigateur et ne concernent pas la localisation de l'utilisateur du site.
     </div>
     <div class="paragraph">
-      Les cookies enregistrés sur votre navigateur sont ceux de Google Maps pour
-      la localisation de la société SG Conseils, au sein de la page contact du
-      site web. Ils ne concernent pas la localisation de l'utilisateur du site.
+      Le site utilise également le local storage du navigateur, pour empêcher la
+      présente notification d'intervenir en permanence.
     </div>
     <div class="paragraph">
-      Les seules données personnelles utilisées par SG Conseils sont celles
-      transmises via le formulaire de contact, au sein de la page contact du
-      site web. Vous pouvez le vérifier en consultant la page "Mentions légales"
-      du site web.
+      Les données personnelles utilisées par SG Conseils sont celles transmises
+      via le formulaire de contact. Vous pouvez consulter la page "Mentions
+      légales" du site web.
     </div>
     <div class="buttonsDiv">
       <button @click="closeWindow" type="button" class="button">
-        Je continue
+        D'accord
       </button>
       <NuxtLink to="/mentions" @click="closeWindow" class="button"
         >Mentions légales</NuxtLink
@@ -36,6 +35,9 @@ onMounted(() => {
     displayPopup();
   }
 });
+setTimeout(() => {
+  localStorage.removeItem("popUp");
+}, 86400000);
 const closeWindow = () => {
   const card = document.querySelector(".card");
   card.classList.remove("visible");
