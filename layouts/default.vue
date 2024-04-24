@@ -1,5 +1,6 @@
 <template>
   <div class="layout-container">
+  <cookiesPopUp/>
     <header class="navbar-container">
       <NuxtLink class="link-item" to="/">
         <img src="~/assets/img/logo_sg_conseils.png" alt="logo sg conseils format png"
