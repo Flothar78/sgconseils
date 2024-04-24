@@ -105,16 +105,16 @@ $base-black: #191c20;
       color: white;
       .activity-slogan {
         max-width: 70%;
-        border: 1px solid $darkest-blue;
+        //    border: 1px solid $darkest-blue;
         margin-top: -1rem;
         display: flex;
         justify-content: center;
         align-items: center;
         background: $base-white;
         color: black;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 1.1rem;
-        letter-spacing: 0px;
+        letter-spacing: 0.8px;
         text-align: center;
         position: relative;
         left: 50%;
@@ -227,6 +227,7 @@ $base-black: #191c20;
         height: 40vh;
         justify-content: space-around;
         padding: 1rem 1rem 1.5rem 1rem;
+
         .activity-slogan {
           margin-top: 0;
           margin-bottom: 2rem;
@@ -235,6 +236,7 @@ $base-black: #191c20;
           font-size: 1rem;
           padding: 0.5rem;
           border-radius: 7px;
+          letter-spacing: 0px;
         }
       }
       .contact-button {
