@@ -28,14 +28,18 @@
 
 <script setup>
 onMounted(() => {
-  const card = document.querySelector(".card");
-  const displayPopup = () => card.classList.add("visibilityVisible");
-  displayPopup();
+  if (!localStorage["popUp"]) {
+    const displayPopup = async () => {
+      await document.querySelector(".card").classList.add("visible");
+      await localStorage.setItem("popUp", Date());
+    };
+    displayPopup();
+  }
 });
 const closeWindow = () => {
   const card = document.querySelector(".card");
-  card.classList.remove("visibilityVisible");
-  card.classList.add("visibilityHidden");
+  card.classList.remove("visible");
+  card.classList.add("hidden");
 };
 </script>
 
@@ -49,6 +53,7 @@ $base-white: #bec8da;
 $base-black: #191c20;
 $base-grey: #858384;
 .card {
+  visibility: hidden;
   width: 80vw;
   max-width: 1166px;
   background: white;
@@ -87,10 +92,10 @@ $base-grey: #858384;
     }
   }
 }
-.visibilityHidden {
+.hidden {
   visibility: hidden;
 }
-.visibilityVisible {
+.visible {
   visibility: visible;
 }
 </style>
