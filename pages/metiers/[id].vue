@@ -140,7 +140,7 @@ $base-black: #191c20;
       background: $base-red;
     }
     .method-details {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       visibility: hidden;
       position: absolute;
       top: 28vh;
