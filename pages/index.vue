@@ -289,17 +289,18 @@ $base-black: #191c20;
       align-items: flex-start;
       justify-content: center;
       height: 86vh;
-      padding: 12vh 1vh 2vh 1vh;
-      column-gap: 80px;
+      padding: 15vh 1vh 2vh 1vh;
+      column-gap: 50px;
       row-gap: 0px;
       .nuxt-link {
         color: $darkest-blue;
-        width: 20vw;
+   
+        max-width: 123px;
         height: 8vh;
         border-radius: 10px;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         justify-content: space-evenly;
-        border: 8px solid $darkest-blue;
+        border: 4px solid $darkest-blue;
         box-shadow: 0 0;
       }
       .nuxt-link:hover {
