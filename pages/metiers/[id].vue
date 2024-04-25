@@ -223,14 +223,12 @@ $base-black: #191c20;
         top: 16.5vh;
         font-size: 1rem;
         width: 60vw;
-        padding: 1rem 1rem 1.5rem 1rem;
-
+        
         .activity-slogan {
           margin-top: 0;
-          margin-bottom: 2rem;
           text-align: center;
           color: black;
-          font-size: .8rem;
+          font-size: .9rem;
           padding: 0.5rem;
           border-radius: 7px;
           letter-spacing: 0px;
