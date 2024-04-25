@@ -288,8 +288,8 @@ $base-black: #191c20;
     .expertises-cards {
       align-items: flex-start;
       justify-content: center;
-      height: 90vh;
-      padding: 8vh 1vh 2vh 1vh;
+      height: 86vh;
+      padding: 12vh 1vh 2vh 1vh;
       column-gap: 45px;
       row-gap: 0px;
       .nuxt-link {
@@ -299,8 +299,8 @@ $base-black: #191c20;
         border-radius: 10px;
         font-size: 0.8rem;
         justify-content: space-evenly;
-        border: 2px solid $darkest-blue;
-        box-shadow: 4px 4px 6px $base-red;
+        border: 8px solid $darkest-blue;
+        box-shadow: 0 0;
       }
       .nuxt-link:hover {
         box-shadow: 1px 1px 2px $base-red;
