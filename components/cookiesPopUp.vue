@@ -37,7 +37,7 @@ onMounted(() => {
 });
 setTimeout(() => {
   localStorage.removeItem("popUp");
-}, 86400000);
+}, 3000); // 86400000 24 H
 const closeWindow = () => {
   const card = document.querySelector(".card");
   card.classList.remove("visible");
@@ -57,7 +57,7 @@ $base-grey: #858384;
 .card {
   visibility: hidden;
   width: 80vw;
-  max-width: 1166px;
+  max-width: 900px;
   background: white;
   border: 3px solid black;
   position: absolute;
@@ -72,6 +72,7 @@ $base-grey: #858384;
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
+  font-size:.8rem;
   .paragraph {
     margin: 0.3rem 3rem;
   }
