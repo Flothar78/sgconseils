@@ -32,7 +32,7 @@
           >COMPTABILITÉ
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="1.3rem"
+            width="1.0rem"
             height="1.3rem"
             viewBox="0 0 16 16"
           >
@@ -50,7 +50,7 @@
         <NuxtLink class="nuxt-link" to="/metiers/juridique"
           >JURIDIQUE<svg
             xmlns="http://www.w3.org/2000/svg"
-            width="1.5rem"
+            width="1.1rem"
             height="1.5rem"
             viewBox="0 0 14 16"
           >
@@ -68,7 +68,7 @@
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="1.5rem"
+            width="1.1rem"
             height="1.5rem"
             viewBox="0 0 48 48"
           >
@@ -85,7 +85,7 @@
         <NuxtLink class="nuxt-link" to="/metiers/conseil"
           >CONSEIL<svg
             xmlns="http://www.w3.org/2000/svg"
-            width="1.5rem"
+            width="1.1rem"
             height="1.5rem"
             viewBox="0 0 63 64"
           >
@@ -107,7 +107,7 @@
         <NuxtLink class="nuxt-link" to="/metiers/gestion"
           >GESTION<svg
             xmlns="http://www.w3.org/2000/svg"
-            width="1.5rem"
+            width="1.1rem"
             height="1.5rem"
             viewBox="0 0 32 32"
           >
@@ -125,7 +125,7 @@
         <NuxtLink class="nuxt-link" to="/metiers/informatique"
           >INFORMATIQUE<svg
             xmlns="http://www.w3.org/2000/svg"
-            width="1.5rem"
+            width="1.1rem"
             height="1.5rem"
             viewBox="0 0 15 15"
           >
@@ -138,9 +138,9 @@
       </div>
       <div>
         <NuxtLink class="nuxt-link" to="/metiers/social"
-          >SOCIAL RH<svg
+          >SOCIAL/RH<svg
             xmlns="http://www.w3.org/2000/svg"
-            width="1.5rem"
+            width="1.1rem"
             height="1.5rem"
             viewBox="0 0 32 32"
           >
