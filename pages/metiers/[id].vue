@@ -258,7 +258,7 @@ $base-black: #191c20;
         background: $base-white;
         width: 100%;
         height: 100%;
-        padding: 2rem 0.7rem 2rem 1rem;
+        padding: 2rem 0rem 0rem 2rem;
         .title {
           margin-bottom: 0.3rem;
           margin-right: 3rem;
