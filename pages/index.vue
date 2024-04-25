@@ -295,7 +295,7 @@ $base-black: #191c20;
       .nuxt-link {
         color: $darkest-blue;
         width: 25vw;
-        height: 12vh;
+        height: 10vh;
         border-radius: 10px;
         font-size: 0.8rem;
         justify-content: space-evenly;
