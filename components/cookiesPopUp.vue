@@ -29,7 +29,7 @@
 onMounted(() => {
   setTimeout(() => {
     localStorage.removeItem("popUp");
-  }, 3000);// 86400000 24 H
+  }, 86400000);// 86400000 24 H
   if (!localStorage["popUp"]) {
     const displayPopup = async () => {
       await document.querySelector(".card").classList.add("visible");
