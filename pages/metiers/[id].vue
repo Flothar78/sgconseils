@@ -90,7 +90,7 @@ $base-black: #191c20;
     .activity-description {
       position: relative;
       background: $dark-blue;
-      top: 13vh;
+      top: 12.5vh;
       height: 35vh;
       width: 55vw;
       max-width: 750px;
@@ -103,6 +103,7 @@ $base-black: #191c20;
       font-size: 1.1rem;
       border-radius: 10px;
       color: white;
+      box-shadow:  inset 2px -2px 12px $base-blue;
       .activity-slogan {
         max-width: 70%;
         //    border: 1px solid $darkest-blue;
@@ -220,15 +221,14 @@ $base-black: #191c20;
         text-shadow: 2px 2px 5px $base-black;
       }
       .activity-description {
-        top: 16.5vh;
+        top: 15vh;
         font-size: 1rem;
-        width: 60vw;
-        
+        width: 60vw;height: 40vh;
         .activity-slogan {
           margin-top: 0;
           text-align: center;
           color: black;
-          font-size: .9rem;
+          font-size: 0.9rem;
           padding: 0.5rem;
           border-radius: 7px;
           letter-spacing: 0px;
@@ -274,7 +274,6 @@ $base-black: #191c20;
         font-weight: 600;
         height: 2.2rem;
         width: 7rem;
-      
       }
       .close-details-button {
         z-index: 20;
@@ -295,7 +294,8 @@ $base-black: #191c20;
         width: 70%;
         padding: 0 5rem;
       }
-      .close-details-button {top: 37vh;
+      .close-details-button {
+        top: 37vh;
         border: 4px solid black;
         border-radius: 3px;
         color: black;
