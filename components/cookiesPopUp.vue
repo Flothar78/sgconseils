@@ -27,6 +27,9 @@
 
 <script setup>
 onMounted(() => {
+  setTimeout(() => {
+    localStorage.removeItem("popUp");
+  }, 3000);// 86400000 24 H
   if (!localStorage["popUp"]) {
     const displayPopup = async () => {
       await document.querySelector(".card").classList.add("visible");
@@ -35,9 +38,7 @@ onMounted(() => {
     displayPopup();
   }
 });
-setTimeout(() => {
-  localStorage.removeItem("popUp");
-}, 3000); // 86400000 24 H
+
 const closeWindow = () => {
   const card = document.querySelector(".card");
   card.classList.remove("visible");
@@ -72,7 +73,7 @@ $base-grey: #858384;
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
-  font-size:.8rem;
+  font-size: 0.8rem;
   .paragraph {
     margin: 0.3rem 3rem;
   }
