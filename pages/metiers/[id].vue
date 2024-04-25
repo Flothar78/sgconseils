@@ -110,11 +110,10 @@ $base-black: #191c20;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: $base-white;
+        background: white;
         color: black;
         font-weight: 400;
-        font-size: 1.1rem;
-        letter-spacing: 0.8px;
+        font-size: 1rem;
         text-align: center;
         position: relative;
         left: 50%;
@@ -140,10 +139,10 @@ $base-black: #191c20;
       background: $base-red;
     }
     .method-details {
-      font-size: 1.1rem;
+      font-size: 1rem;
       visibility: hidden;
       position: absolute;
-      top: 36vh;
+      top: 33vh;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -154,7 +153,7 @@ $base-black: #191c20;
       border: $darkest-blue 10px solid;
       background: $base-white;
       width: 80vw;
-      height: 35vh;
+      height: 40vh;
       border-radius: 20px;
       padding: 1rem 3rem;
       .title {
@@ -180,7 +179,7 @@ $base-black: #191c20;
       background: $base-red;
       color: white;
       padding: 0.5rem;
-      box-shadow: 2px 2px 3px $darkest-blue;
+      box-shadow: 1px 1px 2px $darkest-blue;
     }
     .method-button:hover {
       box-shadow: 0 0;
@@ -194,8 +193,8 @@ $base-black: #191c20;
       background: transparent;
       font-weight: 700;
       position: absolute;
-      top: 38vh;
-      right: 6vw;
+      top: 35vh;
+      right: 7vw;
     }
     .visible {
       visibility: visible;
@@ -224,8 +223,6 @@ $base-black: #191c20;
         top: 16.5vh;
         font-size: 1rem;
         width: 60vw;
-        height: 40vh;
-        justify-content: space-around;
         padding: 1rem 1rem 1.5rem 1rem;
 
         .activity-slogan {
@@ -233,7 +230,7 @@ $base-black: #191c20;
           margin-bottom: 2rem;
           text-align: center;
           color: black;
-          font-size: 1rem;
+          font-size: .8rem;
           padding: 0.5rem;
           border-radius: 7px;
           letter-spacing: 0px;
@@ -279,7 +276,7 @@ $base-black: #191c20;
         font-weight: 600;
         height: 2.2rem;
         width: 7rem;
-        box-shadow: 1px 1px 8px $darkest-blue;
+      
       }
       .close-details-button {
         z-index: 20;
@@ -296,18 +293,17 @@ $base-black: #191c20;
         opacity: 1;
       }
       .method-details {
+        top: 35vh;
         width: 70%;
-        height: 54vh;
         padding: 0 5rem;
       }
-      .close-details-button {
+      .close-details-button {top: 37vh;
         border: 4px solid black;
         border-radius: 3px;
         color: black;
         background: transparent;
         font-weight: 700;
         position: absolute;
-        top: 30vh;
         right: 145px;
       }
     }
