@@ -143,7 +143,7 @@ $base-black: #191c20;
       font-size: 1.1rem;
       visibility: hidden;
       position: absolute;
-      top: 28vh;
+      top: 36vh;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -154,7 +154,7 @@ $base-black: #191c20;
       border: $darkest-blue 10px solid;
       background: $base-white;
       width: 80vw;
-      height: 50vh;
+      height: 35vh;
       border-radius: 20px;
       padding: 1rem 3rem;
       .title {
@@ -188,14 +188,14 @@ $base-black: #191c20;
     }
     .close-details-button {
       visibility: hidden;
-      border: 4px solid black;
+      border: 2px solid black;
       border-radius: 3px;
       color: black;
       background: transparent;
       font-weight: 700;
       position: absolute;
-      top: 30vh;
-      right: 7vw;
+      top: 38vh;
+      right: 6vw;
     }
     .visible {
       visibility: visible;
@@ -279,7 +279,7 @@ $base-black: #191c20;
         font-weight: 600;
         height: 2.2rem;
         width: 7rem;
-        box-shadow: 2px 2px 3px $darkest-blue;
+        box-shadow: 1px 1px 8px $darkest-blue;
       }
       .close-details-button {
         z-index: 20;
