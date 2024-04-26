@@ -103,7 +103,7 @@ $base-black: #191c20;
       font-size: 1.1rem;
       border-radius: 10px;
       color: white;
-      box-shadow:  inset 4px -4px 12px $base-blue;
+      box-shadow: inset 10px -10px 12px $base-blue;
       .activity-slogan {
         max-width: 70%;
         //    border: 1px solid $darkest-blue;
@@ -224,7 +224,8 @@ $base-black: #191c20;
         padding: 1rem 2rem;
         top: 15vh;
         font-size: 1rem;
-        width: 60vw;height: 40vh;
+        width: 60vw;
+        height: 40vh;
         .activity-slogan {
           margin-top: 0;
           text-align: center;
