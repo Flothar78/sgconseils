@@ -13,7 +13,7 @@
     <div>
       <div class="paragraph">
         Il est parfois difficile d’y voir clair sur la règlementation en vigueur. Nous
-        vous accompagnons pour gérer les congés au sein de votre entreprise.
+        vous accompagnons pour gérer, par exemple, les congés au sein de votre entreprise.
       </div>
     </div>
     <div>
