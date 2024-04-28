@@ -294,13 +294,13 @@ $base-black: #191c20;
       row-gap: 0px;
       .nuxt-link {
         color: $darkest-blue;
-   
         max-width: 123px;
         height: 8vh;
         border-radius: 10px;
         font-size: 0.6rem;
+        font-weight: 900;
         justify-content: space-evenly;
-        border: 4px solid $darkest-blue;
+        border: 6px solid $darkest-blue;
         box-shadow: 0 0;
       }
       .nuxt-link:hover {

@@ -293,7 +293,8 @@ $base-black: #191c20;
         opacity: 1;
       }
       .method-details {
-        top: 35vh;
+        height: 45vh;
+        top: 33vh;
         width: 70%;
         padding: 0 5rem;
       }
